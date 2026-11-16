@@ -1,0 +1,13 @@
+{
+  "name": "cbse-question-generator",
+  "version": "1.0.0",
+  "description": "CBSE Question Generator POC based on topic-wise LaTeX textbook chunks and Gemini Flash",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,3207 @@
+{
+  "chapter": "Class 12 Chemistry - Unit 1: Solutions",
+  "chapter_id": 94,
+  "prompt_version": "master-v1",
+  "model": "claude (manual, standing in for Gemini)",
+  "topic_count": 19,
+  "question_count": 194,
+  "topics": [
+    {
+      "number": "1.1",
+      "title": "Types of Solutions"
+    },
+    {
+      "number": "1.2",
+      "title": "Expressing Concentration of Solutions"
+    },
+    {
+      "number": "1.3",
+      "title": "Solubility"
+    },
+    {
+      "number": "1.3.1",
+      "title": "Solubility of a Solid in a Liquid"
+    },
+    {
+      "number": "1.3.2",
+      "title": "Solubility of a Gas in a Liquid"
+    },
+    {
+      "number": "1.4",
+      "title": "Vapour Pressure of Liquid Solutions"
+    },
+    {
+      "number": "1.4.1",
+      "title": "Vapour Pressure of Liquid-Liquid Solutions"
+    },
+    {
+      "number": "1.4.2",
+      "title": "Raoult's Law as a special case of Henry's Law"
+    },
+    {
+      "number": "1.4.3",
+      "title": "Vapour Pressure of Solutions of Solids in Liquids"
+    },
+    {
+      "number": "1.5",
+      "title": "Ideal and Non-ideal Solutions"
+    },
+    {
+      "number": "1.5.1",
+      "title": "Ideal Solutions"
+    },
+    {
+      "number": "1.5.2",
+      "title": "Non-ideal Solutions"
+    },
+    {
+      "number": "1.6",
+      "title": "Colligative Properties and Determination of Molar Mass"
+    },
+    {
+      "number": "1.6.1",
+      "title": "Relative Lowering of Vapour Pressure"
+    },
+    {
+      "number": "1.6.2",
+      "title": "Elevation of Boiling Point"
+    },
+    {
+      "number": "1.6.3",
+      "title": "Depression of Freezing Point"
+    },
+    {
+      "number": "1.6.4",
+      "title": "Osmosis and Osmotic Pressure"
+    },
+    {
+      "number": "1.6.5",
+      "title": "Reverse Osmosis and Water Purification"
+    },
+    {
+      "number": "1.7",
+      "title": "Abnormal Molar Masses"
+    }
+  ],
+  "batches": [
+    [
+      "1.1",
+      "1.2"
+    ],
+    [
+      "1.3",
+      "1.3.1"
+    ],
+    [
+      "1.3.2",
+      "1.4"
+    ],
+    [
+      "1.4.1",
+      "1.4.2"
+    ],
+    [
+      "1.4.3",
+      "1.5"
+    ],
+    [
+      "1.5.1",
+      "1.5.2"
+    ],
+    [
+      "1.6",
+      "1.6.1"
+    ],
+    [
+      "1.6.2",
+      "1.6.3"
+    ],
+    [
+      "1.6.4",
+      "1.6.5"
+    ],
+    [
+      "1.7"
+    ]
+  ],
+  "questions": [
+    {
+      "tier": 1,
+      "topic": "1.1",
+      "type": "mcq",
+      "q": "Camphor dissolved in nitrogen gas is classified as which type of solution?",
+      "marks": 1,
+      "ans": "C",
+      "hint": "The solvent (nitrogen) is a gas, so it is a gaseous solution; the solute camphor is a solid.",
+      "whyTier": "Classifying solutions by the physical state of solute and solvent is taken directly from NCERT Table 1.1.",
+      "opts": [
+        "A. Liquid solution with a solid solute",
+        "B. Solid solution with a gaseous solute",
+        "C. Gaseous solution with a solid solute",
+        "D. Gaseous solution with a liquid solute"
+      ],
+      "id": "NB94-1"
+    },
+    {
+      "tier": 1,
+      "topic": "1.1",
+      "type": "fill",
+      "q": "The component of a solution that determines the physical state in which the solution exists is called the ________.",
+      "marks": 1,
+      "answer": "solvent",
+      "whyTier": "It is the examinable NCERT definition of solvent.",
+      "id": "NB94-2"
+    },
+    {
+      "tier": 1,
+      "topic": "1.1",
+      "type": "tf",
+      "q": "An amalgam of mercury with sodium is a liquid solution because mercury is a liquid.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "It is a solid solution: the liquid (mercury) is the solute and the solid (sodium) is the solvent.",
+      "whyTier": "It targets a common misconception about which component decides the type of solution.",
+      "id": "NB94-3"
+    },
+    {
+      "tier": 1,
+      "topic": "1.1",
+      "type": "match",
+      "q": "Match each solution in Column A with its solute–solvent type in Column B.",
+      "marks": 1,
+      "whyTier": "All four examples come straight from NCERT Table 1.1.",
+      "pairs": [
+        {
+          "L": "Chloroform mixed with nitrogen gas",
+          "R": "Liquid in gas"
+        },
+        {
+          "L": "Oxygen dissolved in water",
+          "R": "Gas in liquid"
+        },
+        {
+          "L": "Copper dissolved in gold",
+          "R": "Solid in solid"
+        },
+        {
+          "L": "Glucose dissolved in water",
+          "R": "Solid in liquid"
+        }
+      ],
+      "id": "NB94-4"
+    },
+    {
+      "tier": 2,
+      "topic": "1.1",
+      "type": "odd",
+      "q": "Identify the odd one out on the basis of the type of solution.",
+      "marks": 1,
+      "answer": "Hydrogen in palladium",
+      "hint": "It is a solid solution (gas in solid); the other three are liquid solutions.",
+      "whyTier": "It is a sorting/classification task, which is a Tier 2 reasoning format.",
+      "opts": [
+        "Ethanol in water",
+        "Glucose in water",
+        "Oxygen in water",
+        "Hydrogen in palladium"
+      ],
+      "id": "NB94-5"
+    },
+    {
+      "tier": 1,
+      "topic": "1.1",
+      "type": "short",
+      "q": "What is meant by a binary solution?",
+      "marks": 1,
+      "answer": "A binary solution is a solution consisting of only two components, one solute and one solvent.",
+      "whyTier": "It is a direct NCERT definition used in one-mark questions.",
+      "id": "NB94-6"
+    },
+    {
+      "tier": 1,
+      "topic": "1.1",
+      "type": "short",
+      "q": "Distinguish between a solute and a solvent, giving one example of each from a common solution.",
+      "marks": 2,
+      "answer": "The solvent is the component present in the largest quantity and it determines the physical state of the solution; the solute is the component(s) present in smaller quantity other than the solvent. For example, in a glucose solution in water, water is the solvent and glucose is the solute.",
+      "whyTier": "Definitions of solute and solvent are examinable NCERT content.",
+      "id": "NB94-7"
+    },
+    {
+      "tier": 1,
+      "topic": "1.1",
+      "type": "case",
+      "q": "Case Study: Solutions in everyday materials",
+      "marks": 4,
+      "passage": "Gold jewellery is rarely made of pure gold; copper is dissolved in it to make it harder, giving a uniform solid. Dentists once filled cavities with amalgams in which mercury is mixed with other metals. The air we breathe is itself a mixture of oxygen and nitrogen with uniform composition throughout. Hydrogen gas can also be absorbed by palladium metal, forming a homogeneous solid.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Name the type of solution formed when copper is dissolved in gold.",
+          "answer": "A solid solution (solid in solid)."
+        },
+        {
+          "label": "(b)",
+          "q": "Air contains about 21 parts oxygen per 100 parts by volume. Which component of air acts as the solvent and why?",
+          "answer": "Nitrogen, since it is present in the largest proportion (about 78%) in air."
+        },
+        {
+          "label": "(c)",
+          "q": "Why is air considered a solution and not a heterogeneous mixture?",
+          "answer": "Because its composition and properties are uniform throughout, which is the defining feature of a homogeneous mixture (solution)."
+        },
+        {
+          "label": "(d)",
+          "q": "If hydrogen absorbed in palladium were later released as a separate gas phase, would the system still be a solution? Explain.",
+          "answer": "No. Once hydrogen separates into its own gas phase, the system is no longer uniform (it has two phases), so it is no longer a single homogeneous solution."
+        }
+      ],
+      "id": "NB94-8"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "mcq",
+      "q": "Which of the following concentration terms depends on temperature?",
+      "marks": 1,
+      "ans": "C",
+      "hint": "Molarity uses the volume of solution, and volume changes with temperature.",
+      "whyTier": "Temperature dependence of concentration terms is stated directly in NCERT and is frequently asked.",
+      "opts": [
+        "A. Molality",
+        "B. Mole fraction",
+        "C. Molarity",
+        "D. Mass percentage"
+      ],
+      "id": "NB94-9"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "fill",
+      "q": "Molality is the number of moles of solute dissolved per ________ of the solvent.",
+      "marks": 1,
+      "answer": "kilogram",
+      "whyTier": "It completes an NCERT definition.",
+      "id": "NB94-10"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "tf",
+      "q": "A concentration of 1 ppm by mass means 1 g of solute is present in 10⁶ g of solution.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "Parts per million = (parts of component / total parts of solution) × 10⁶.",
+      "whyTier": "Tests the NCERT definition of ppm.",
+      "id": "NB94-11"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "match",
+      "q": "Match each concentration term with its definition.",
+      "marks": 1,
+      "whyTier": "All formulas appear directly in NCERT (equations 1.1–1.9).",
+      "pairs": [
+        {
+          "L": "Mass percentage",
+          "R": "(Mass of component / total mass of solution) × 100"
+        },
+        {
+          "L": "Mole fraction",
+          "R": "Moles of component / total moles of all components"
+        },
+        {
+          "L": "Molarity",
+          "R": "Moles of solute / volume of solution in litre"
+        },
+        {
+          "L": "Molality",
+          "R": "Moles of solute / mass of solvent in kg"
+        }
+      ],
+      "id": "NB94-12"
+    },
+    {
+      "tier": 2,
+      "topic": "1.2",
+      "type": "odd",
+      "q": "Identify the odd one out.",
+      "marks": 1,
+      "answer": "Molarity",
+      "hint": "Molarity is temperature dependent; the other three depend only on masses and are independent of temperature.",
+      "whyTier": "It requires classifying terms by a finer property, a Tier 2 reasoning task.",
+      "opts": [
+        "Molality",
+        "Mole fraction",
+        "Mass percentage",
+        "Molarity"
+      ],
+      "id": "NB94-13"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "short",
+      "q": "Why is molality preferred to molarity when a solution is studied over a range of temperatures?",
+      "marks": 1,
+      "answer": "Molality is based on mass of solvent, which does not change with temperature, whereas molarity is based on volume, which changes with temperature.",
+      "whyTier": "Directly based on the NCERT statement on merits and demerits of concentration terms.",
+      "id": "NB94-14"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "short",
+      "q": "Give two differences between molarity and molality of a solution.",
+      "marks": 2,
+      "answer": "1. Molarity is moles of solute per litre of solution, while molality is moles of solute per kilogram of solvent. 2. Molarity depends on temperature because volume changes with temperature, while molality is independent of temperature because mass does not change.",
+      "whyTier": "Comparison of molarity and molality is a standard CBSE 2-mark question.",
+      "id": "NB94-15"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "short",
+      "q": "Show that in a binary solution of A and B the sum of the mole fractions is unity, and express x_A in terms of the moles n_A and n_B.",
+      "marks": 3,
+      "answer": "Step 1: By definition, x_A = n_A/(n_A + n_B) and x_B = n_B/(n_A + n_B).\\nStep 2: Adding, x_A + x_B = (n_A + n_B)/(n_A + n_B).\\nStep 3: Therefore x_A + x_B = 1, so x_A = n_A/(n_A + n_B) = 1 − x_B. The result generalises to x₁ + x₂ + … + xᵢ = 1 for i components.",
+      "whyTier": "The relation Σxᵢ = 1 is an NCERT equation (1.7).",
+      "isDerivation": true,
+      "id": "NB94-16"
+    },
+    {
+      "tier": 2,
+      "topic": "1.2",
+      "type": "short",
+      "q": "Calculate the mole fraction of methanol (CH₃OH) and of water in a solution containing 16 g of methanol and 54 g of water.",
+      "marks": 3,
+      "answer": "Given: mass of CH₃OH = 16 g (M = 32 g mol⁻¹); mass of water = 54 g (M = 18 g mol⁻¹).\\nFormula: x_A = n_A/(n_A + n_B).\\nSubstitution: n(CH₃OH) = 16 g / 32 g mol⁻¹ = 0.50 mol; n(H₂O) = 54 g / 18 g mol⁻¹ = 3.00 mol.\\nx(CH₃OH) = 0.50/(0.50 + 3.00) = 0.143; x(H₂O) = 1 − 0.143 = 0.857.\\nAnswer: x(methanol) = 0.143, x(water) = 0.857.",
+      "whyTier": "It uses the chapter formula with values not taken from NCERT examples.",
+      "isNumerical": true,
+      "id": "NB94-17"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "long",
+      "q": "10.6 g of sodium carbonate (Na₂CO₃) is dissolved in water to make 250 mL of solution of density 1.10 g mL⁻¹. Calculate (a) the molarity, (b) the molality and (c) the mass percentage of Na₂CO₃ in the solution.",
+      "marks": 5,
+      "answer": "Given: w₂ = 10.6 g, M(Na₂CO₃) = 106 g mol⁻¹, V = 250 mL = 0.250 L, density = 1.10 g mL⁻¹.\\nMoles of Na₂CO₃ = 10.6 g / 106 g mol⁻¹ = 0.100 mol.\\n(a) Molarity = moles of solute / volume in L = 0.100 mol / 0.250 L = 0.400 mol L⁻¹ (0.400 M).\\n(b) Mass of solution = 250 mL × 1.10 g mL⁻¹ = 275 g; mass of water = 275 g − 10.6 g = 264.4 g = 0.2644 kg.\\nMolality = 0.100 mol / 0.2644 kg = 0.378 mol kg⁻¹.\\n(c) Mass % = (10.6 g / 275 g) × 100 = 3.85%.",
+      "whyTier": "It is a standard NCERT-style multi-step numerical on interconversion of concentration terms.",
+      "keyPoints": [
+        "Moles of Na₂CO₃ = 0.100 mol",
+        "Molarity = 0.400 M",
+        "Mass of solvent from density = 264.4 g",
+        "Molality = 0.378 mol kg⁻¹",
+        "Mass percentage = 3.85%"
+      ],
+      "isNumerical": true,
+      "id": "NB94-18"
+    },
+    {
+      "tier": 2,
+      "topic": "1.2",
+      "type": "short",
+      "q": "Sketch, on the same axes, how the molarity and the molality of an aqueous solution change as its temperature is raised from 20 °C to 60 °C. Justify the shapes.",
+      "marks": 2,
+      "answer": "Molality is a horizontal straight line (constant) because it depends only on masses. Molarity is a line that slopes slightly downward with rising temperature because the volume of the solution increases on heating while the moles of solute stay the same.",
+      "whyTier": "It applies the temperature dependence to a graph, an extended reasoning task.",
+      "isDiagram": true,
+      "id": "NB94-19"
+    },
+    {
+      "tier": 1,
+      "topic": "1.2",
+      "type": "case",
+      "q": "Case Study: Concentrations in medicine and water supply",
+      "marks": 4,
+      "passage": "Normal saline used in hospital drips is labelled 0.9% (w/V) sodium chloride. Municipal water boards add fluoride to drinking water at about 1 ppm because this level prevents tooth decay, while higher levels mottle teeth. Chemists in the laboratory prefer molality when they heat or cool solutions during experiments. Each field picks the concentration unit that suits its needs.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "What does a label of 0.9% (w/V) NaCl mean?",
+          "answer": "0.9 g of NaCl is dissolved in every 100 mL of the solution."
+        },
+        {
+          "label": "(b)",
+          "q": "Calculate the mass of NaCl present in a 500 mL bottle of normal saline.",
+          "answer": "0.9 g per 100 mL × 500 mL = 4.5 g of NaCl."
+        },
+        {
+          "label": "(c)",
+          "q": "Why is fluoride in water expressed in ppm rather than in percentage?",
+          "answer": "Fluoride is present in trace quantities, so ppm gives a convenient number (1 ppm) instead of a very small percentage (0.0001%)."
+        },
+        {
+          "label": "(d)",
+          "q": "If some water evaporated from an open saline bottle, how would its molarity change? Explain.",
+          "answer": "Molarity would increase, because the same moles of NaCl would now be present in a smaller volume of solution."
+        }
+      ],
+      "id": "NB94-20"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3",
+      "type": "mcq",
+      "q": "The solubility of a substance in a solvent does NOT depend on:",
+      "marks": 1,
+      "ans": "D",
+      "hint": "Solubility is a fixed maximum for given solute, solvent, temperature and pressure; excess undissolved solid does not change it.",
+      "whyTier": "The factors affecting solubility are stated directly in NCERT section 1.3.",
+      "opts": [
+        "A. The nature of the solute",
+        "B. The nature of the solvent",
+        "C. The temperature",
+        "D. The amount of undissolved solute left at the bottom"
+      ],
+      "id": "NB94-21"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3",
+      "type": "fill",
+      "q": "Solubility of a substance is its maximum amount that can be dissolved in a specified amount of solvent at a specified ________.",
+      "marks": 1,
+      "answer": "temperature",
+      "whyTier": "It completes the NCERT definition of solubility.",
+      "id": "NB94-22"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3",
+      "type": "tf",
+      "q": "For every solute–solvent pair, solubility is independent of pressure.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "Pressure has little effect on solids in liquids but greatly affects the solubility of gases in liquids.",
+      "whyTier": "It targets a misconception that NCERT explicitly corrects.",
+      "id": "NB94-23"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3",
+      "type": "match",
+      "q": "Match each term with its correct description.",
+      "marks": 1,
+      "whyTier": "All four definitions appear directly in the NCERT text.",
+      "pairs": [
+        {
+          "L": "Solubility",
+          "R": "Maximum amount of solute dissolved in a given amount of solvent at a given temperature"
+        },
+        {
+          "L": "Saturated solution",
+          "R": "No more solute can dissolve at the same temperature and pressure"
+        },
+        {
+          "L": "Unsaturated solution",
+          "R": "More solute can still be dissolved at the same temperature"
+        },
+        {
+          "L": "Dynamic equilibrium",
+          "R": "Rate of dissolution equals rate of crystallisation"
+        }
+      ],
+      "id": "NB94-24"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3",
+      "type": "odd",
+      "q": "Identify the factor that does NOT change the solubility of a given solute.",
+      "marks": 1,
+      "answer": "Volume of solvent taken in the beaker",
+      "hint": "Solubility is expressed per fixed amount of solvent, so using more solvent dissolves more solute but does not change the solubility itself.",
+      "whyTier": "It tests a finer feature of the definition of solubility.",
+      "opts": [
+        "Temperature",
+        "Pressure (for a gaseous solute)",
+        "Nature of the solvent",
+        "Volume of solvent taken in the beaker"
+      ],
+      "id": "NB94-25"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3",
+      "type": "short",
+      "q": "Define a saturated solution.",
+      "marks": 1,
+      "answer": "A saturated solution is one in which no more solute can be dissolved at the same temperature and pressure; it is in dynamic equilibrium with undissolved solute.",
+      "whyTier": "It is a key NCERT definition.",
+      "id": "NB94-26"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3",
+      "type": "short",
+      "q": "Why is it necessary to state both temperature and pressure when quoting the solubility of a substance?",
+      "marks": 2,
+      "answer": "Solubility of a solid changes with temperature, and the solubility of a gas changes strongly with both temperature and pressure. A solubility value is therefore meaningful only for the stated temperature and pressure.",
+      "whyTier": "It requires extended reasoning about the definition rather than recall.",
+      "id": "NB94-27"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3",
+      "type": "short",
+      "q": "The solubility of potassium nitrate at 313 K is 64 g per 100 g of water. Calculate (a) the maximum mass of KNO₃ that can dissolve in 250 g of water at this temperature and (b) the mass percentage of KNO₃ in the saturated solution.",
+      "marks": 3,
+      "answer": "Given: solubility = 64 g KNO₃ per 100 g water at 313 K; mass of water = 250 g.\\nFormula: maximum mass = solubility × (mass of water/100 g); mass % = (mass of solute/mass of solution) × 100.\\n(a) Maximum mass = 64 g × 250 g/100 g = 160 g.\\n(b) Saturated solution has 64 g KNO₃ in 164 g solution: mass % = (64/164) × 100 = 39.0%.\\nAnswer: 160 g; 39.0%.",
+      "whyTier": "It combines solubility with mass percentage using values not in NCERT.",
+      "isNumerical": true,
+      "id": "NB94-28"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3",
+      "type": "case",
+      "q": "Case Study: Growing copper sulphate crystals",
+      "marks": 4,
+      "passage": "A student adds copper sulphate to 100 g of hot water, stirring until some solid remains undissolved at the bottom. The clear solution is poured into a clean dish and left to cool overnight. By morning, blue crystals have formed on a thread suspended in the dish. The remaining liquid still looks blue.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "What is the solution called when solid stays undissolved despite stirring?",
+          "answer": "A saturated solution."
+        },
+        {
+          "label": "(b)",
+          "q": "If the solubility falls from 40 g to 20 g per 100 g water on cooling, what mass of crystals can form from the 100 g of water?",
+          "answer": "40 g − 20 g = 20 g of crystals."
+        },
+        {
+          "label": "(c)",
+          "q": "Why do crystals form as the solution cools?",
+          "answer": "Solubility decreases on cooling, so the solution holds more solute than it can at the lower temperature and the excess crystallises out."
+        },
+        {
+          "label": "(d)",
+          "q": "Is the liquid left in the dish in the morning saturated or unsaturated? Justify.",
+          "answer": "It is saturated at the lower temperature, because it is in equilibrium with the crystals that formed."
+        }
+      ],
+      "id": "NB94-29"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "mcq",
+      "q": "Which of the following dissolves most readily in benzene?",
+      "marks": 1,
+      "ans": "C",
+      "hint": "Like dissolves like: non-polar naphthalene dissolves in non-polar benzene.",
+      "whyTier": "It applies the NCERT 'like dissolves like' examples.",
+      "opts": [
+        "A. Sodium chloride",
+        "B. Sugar",
+        "C. Naphthalene",
+        "D. Potassium chloride"
+      ],
+      "id": "NB94-30"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "fill",
+      "q": "The process in which dissolved solute particles collide with the solid solute and separate out of solution is called ________.",
+      "marks": 1,
+      "answer": "crystallisation",
+      "whyTier": "It is a key NCERT term.",
+      "id": "NB94-31"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "tf",
+      "q": "If the dissolution of a solid in a nearly saturated solution is exothermic (Δ_sol H < 0), its solubility increases with rise in temperature.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "By Le Chatelier's principle, solubility decreases with temperature for an exothermic dissolution.",
+      "whyTier": "It tests a classic misconception about temperature and solubility.",
+      "id": "NB94-32"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "match",
+      "q": "Match each condition with its effect on the solubility of a solid in a liquid.",
+      "marks": 1,
+      "whyTier": "Each statement appears directly in NCERT section 1.3.1.",
+      "pairs": [
+        {
+          "L": "Δ_sol H > 0",
+          "R": "Solubility increases with rise in temperature"
+        },
+        {
+          "L": "Δ_sol H < 0",
+          "R": "Solubility decreases with rise in temperature"
+        },
+        {
+          "L": "Increase in pressure",
+          "R": "No significant effect"
+        },
+        {
+          "L": "Polar solute in polar solvent",
+          "R": "Readily soluble"
+        }
+      ],
+      "id": "NB94-33"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3.1",
+      "type": "odd",
+      "q": "Which of these is the odd one out with respect to solubility in water?",
+      "marks": 1,
+      "answer": "Anthracene",
+      "hint": "Anthracene is non-polar and does not dissolve in water; the others are polar/ionic and water-soluble.",
+      "whyTier": "It is a classification task requiring reasoning.",
+      "opts": [
+        "Sodium chloride",
+        "Sugar",
+        "Anthracene",
+        "Potassium nitrate"
+      ],
+      "id": "NB94-34"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "short",
+      "q": "State the principle 'like dissolves like'.",
+      "marks": 1,
+      "answer": "A solute dissolves in a solvent if the intermolecular interactions in the two are similar, so polar solutes dissolve in polar solvents and non-polar solutes in non-polar solvents.",
+      "whyTier": "It is a direct NCERT principle.",
+      "id": "NB94-35"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "short",
+      "q": "Why does pressure have no significant effect on the solubility of a solid in a liquid?",
+      "marks": 2,
+      "answer": "Solids and liquids are highly incompressible, so changing the pressure barely changes their volumes or the equilibrium between dissolved and undissolved solute. Hence solubility practically remains unaffected.",
+      "whyTier": "The reason is stated directly in NCERT.",
+      "id": "NB94-36"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "short",
+      "q": "Using Le Chatelier's principle, explain how a change in temperature affects the solubility of a solid in a nearly saturated solution.",
+      "marks": 3,
+      "answer": "1. Dissolution reaches a dynamic equilibrium: Solute + Solvent ⇌ Solution.\\n2. If dissolution is endothermic (Δ_sol H > 0), raising the temperature shifts the equilibrium forward to absorb heat, so solubility increases.\\n3. If dissolution is exothermic (Δ_sol H < 0), raising the temperature shifts the equilibrium backward, so solubility decreases. These trends are observed experimentally.",
+      "whyTier": "Applying Le Chatelier's principle to solubility is explained in NCERT and is commonly examined.",
+      "id": "NB94-37"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3.1",
+      "type": "short",
+      "q": "A student plots solubility (g per 100 g water) against temperature for salt X (Δ_sol H > 0) and salt Y (Δ_sol H < 0). Describe the shape of each curve.",
+      "marks": 2,
+      "answer": "The curve for X rises with temperature (solubility increases) because its dissolution is endothermic. The curve for Y falls with temperature (solubility decreases) because its dissolution is exothermic.",
+      "whyTier": "It requires interpreting a graph not drawn in NCERT.",
+      "isDiagram": true,
+      "id": "NB94-38"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3.1",
+      "type": "short",
+      "q": "At 333 K, 100 g of water dissolves at most 110 g of a salt; at 293 K it dissolves only 32 g. If 105 g of the saturated solution at 333 K is cooled to 293 K, what mass of salt crystallises out?",
+      "marks": 3,
+      "answer": "Given: solubility 110 g/100 g water at 333 K; 32 g/100 g water at 293 K; 105 g saturated solution.\\nStep 1: At 333 K, 110 g salt is in 210 g solution, so 105 g solution has 55 g salt and 50 g water.\\nStep 2: At 293 K, 50 g water can hold 32 × 50/100 = 16 g salt.\\nStep 3: Mass crystallising = 55 g − 16 g = 39 g.\\nAnswer: 39 g of the salt crystallises.",
+      "whyTier": "It is a student-constructed problem needing an extra step beyond NCERT.",
+      "isNumerical": true,
+      "id": "NB94-39"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.1",
+      "type": "case",
+      "q": "Case Study: Cleaning grease and salt stains",
+      "marks": 4,
+      "passage": "A mechanic finds that grease on his hands does not wash off with water but comes off easily with kerosene. Salt spilled on the workbench, however, dissolves quickly in a bucket of water but not in kerosene. Warm water dissolves the sugar in his tea faster and in larger amounts than cold water. He wonders why different liquids clean different stains.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "State the principle that explains why grease dissolves in kerosene.",
+          "answer": "Like dissolves like: non-polar grease dissolves in non-polar kerosene."
+        },
+        {
+          "label": "(b)",
+          "q": "Is the dissolution of sugar in water more likely endothermic or exothermic? Give a reason from the passage.",
+          "answer": "Endothermic, because more sugar dissolves in warm water, i.e. solubility increases with temperature."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does salt not dissolve in kerosene?",
+          "answer": "Salt is ionic/polar while kerosene is non-polar, so their intermolecular interactions are not similar."
+        },
+        {
+          "label": "(d)",
+          "q": "What would happen if the mechanic pressed the salt and water together under high pressure? Explain.",
+          "answer": "Almost nothing would change, because pressure has no significant effect on the solubility of solids in liquids, both being nearly incompressible."
+        }
+      ],
+      "id": "NB94-40"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "mcq",
+      "q": "The Henry's law constant K_H of a gas in water increases as the temperature rises. This indicates that the solubility of the gas:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "Higher K_H at a given pressure means lower mole fraction of the dissolved gas, i.e. lower solubility.",
+      "whyTier": "The K_H–solubility relation is stated directly in NCERT with Table 1.2.",
+      "opts": [
+        "A. Increases with temperature",
+        "B. Decreases with temperature",
+        "C. Does not depend on temperature",
+        "D. First increases and then decreases"
+      ],
+      "id": "NB94-41"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "fill",
+      "q": "According to Henry's law, the partial pressure of a gas in the vapour phase is proportional to its ________ in the solution.",
+      "marks": 1,
+      "answer": "mole fraction",
+      "whyTier": "It completes the NCERT statement of Henry's law.",
+      "id": "NB94-42"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "tf",
+      "q": "At a given pressure, the higher the value of K_H, the higher is the solubility of the gas in the liquid.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "x = p/K_H, so a higher K_H gives a lower mole fraction, i.e. lower solubility.",
+      "whyTier": "It targets a frequent misconception about K_H.",
+      "id": "NB94-43"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "match",
+      "q": "Match each phenomenon with its explanation based on Henry's law.",
+      "marks": 1,
+      "whyTier": "All applications are discussed in NCERT.",
+      "pairs": [
+        {
+          "L": "Bends in scuba divers",
+          "R": "Nitrogen bubbles form in blood as pressure decreases on ascent"
+        },
+        {
+          "L": "Anoxia at high altitudes",
+          "R": "Low partial pressure of oxygen lowers oxygen in blood"
+        },
+        {
+          "L": "Soda bottles sealed under high pressure",
+          "R": "Increases solubility of CO₂"
+        },
+        {
+          "L": "Helium-diluted air in scuba tanks",
+          "R": "Reduces the toxic effects of dissolved nitrogen"
+        }
+      ],
+      "id": "NB94-44"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3.2",
+      "type": "odd",
+      "q": "Based on Henry's law constants at 298 K, which gas is the odd one out?",
+      "marks": 1,
+      "answer": "Formaldehyde",
+      "hint": "Its K_H (1.83 × 10⁻⁵ kbar) is extremely small, so it is far more soluble in water than the others.",
+      "whyTier": "It requires comparing data from Table 1.2, a reasoning task.",
+      "opts": [
+        "Argon",
+        "CO₂",
+        "Formaldehyde",
+        "Methane"
+      ],
+      "id": "NB94-45"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "short",
+      "q": "Why are aquatic species more comfortable in cold water than in warm water?",
+      "marks": 1,
+      "answer": "The solubility of oxygen in water is higher at lower temperature, so cold water holds more dissolved oxygen.",
+      "whyTier": "It is an 'explain why' application directly from NCERT.",
+      "id": "NB94-46"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "short",
+      "q": "Explain why the solubility of a gas in a liquid decreases with increase in temperature.",
+      "marks": 3,
+      "answer": "1. When a gas dissolves, its molecules move into the liquid phase; the process is similar to condensation, so heat is evolved (dissolution is exothermic).\\n2. Dissolution is a dynamic equilibrium, so it follows Le Chatelier's principle.\\n3. Raising the temperature shifts the equilibrium in the endothermic (reverse) direction, releasing dissolved gas, so solubility decreases.",
+      "whyTier": "The explanation is given in NCERT and is a common 3-mark question.",
+      "id": "NB94-47"
+    },
+    {
+      "tier": 2,
+      "topic": "1.3.2",
+      "type": "short",
+      "q": "The Henry's law constant for oxygen in water at 303 K is 46.82 kbar. Calculate the mole fraction of oxygen dissolved in water when the partial pressure of oxygen above it is 0.21 bar.",
+      "marks": 3,
+      "answer": "Given: K_H = 46.82 kbar = 46820 bar; p(O₂) = 0.21 bar.\\nFormula: p = K_H x, so x = p/K_H.\\nSubstitution: x(O₂) = 0.21 bar / 46820 bar.\\nAnswer: x(O₂) = 4.49 × 10⁻⁶.",
+      "whyTier": "It uses the Henry's law formula with a value from Table 1.2 but a new pressure.",
+      "isNumerical": true,
+      "id": "NB94-48"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "long",
+      "q": "The Henry's law constant for CO₂ in water at 298 K is 1.67 kbar. Calculate the mass of CO₂ dissolved in 1 litre (1000 g) of water when the partial pressure of CO₂ over it is 2.0 bar.",
+      "marks": 5,
+      "answer": "Given: K_H = 1.67 kbar = 1670 bar; p(CO₂) = 2.0 bar; 1000 g water = 1000/18 = 55.5 mol.\\nStep 1 (Henry's law): x(CO₂) = p/K_H = 2.0 bar / 1670 bar = 1.20 × 10⁻³.\\nStep 2: x = n/(n + 55.5) ≈ n/55.5, since n << 55.5.\\nStep 3: n(CO₂) = 1.20 × 10⁻³ × 55.5 mol = 6.65 × 10⁻² mol.\\nStep 4: Mass of CO₂ = 6.65 × 10⁻² mol × 44 g mol⁻¹ = 2.93 g.\\nAnswer: about 2.93 g of CO₂ dissolves in 1 L of water.",
+      "whyTier": "It is a standard NCERT-style Henry's law numerical with new values.",
+      "keyPoints": [
+        "x(CO₂) = p/K_H = 1.20 × 10⁻³",
+        "Moles of water = 55.5 mol",
+        "n(CO₂) ≈ x × 55.5 = 0.0665 mol",
+        "Mass = 0.0665 × 44 = 2.93 g"
+      ],
+      "isNumerical": true,
+      "id": "NB94-49"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "short",
+      "q": "A graph of the partial pressure of HCl gas against its mole fraction in cyclohexane at 293 K is a straight line through the origin. What does the slope of this line represent, and what law does the graph verify?",
+      "marks": 2,
+      "answer": "The straight line through the origin verifies Henry's law (p = K_H x). Its slope equals the Henry's law constant K_H for HCl in cyclohexane at 293 K.",
+      "whyTier": "It interprets NCERT Fig. 1.2 directly.",
+      "isDiagram": true,
+      "id": "NB94-50"
+    },
+    {
+      "tier": 1,
+      "topic": "1.3.2",
+      "type": "case",
+      "q": "Case Study: Diving safely",
+      "marks": 4,
+      "passage": "A recreational diver descends to 30 m, where the surrounding pressure is about four times atmospheric pressure. Breathing compressed air at this depth makes more nitrogen dissolve in the blood. If the diver rises too quickly, bubbles of nitrogen form in the blood vessels, causing a painful condition. Professional divers therefore breathe air diluted with helium.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Name the law that governs how much nitrogen dissolves in blood.",
+          "answer": "Henry's law."
+        },
+        {
+          "label": "(b)",
+          "q": "If the partial pressure of nitrogen in the lungs becomes four times larger, by what factor does its mole fraction in blood change (temperature constant)?",
+          "answer": "It becomes four times larger, since x = p/K_H."
+        },
+        {
+          "label": "(c)",
+          "q": "Why do nitrogen bubbles form when the diver surfaces quickly?",
+          "answer": "The pressure falls rapidly, lowering the solubility of nitrogen, so the excess dissolved nitrogen comes out of solution as bubbles (bends)."
+        },
+        {
+          "label": "(d)",
+          "q": "What would happen if a diver used pure oxygen instead of helium-diluted air at great depths? Evaluate.",
+          "answer": "High dissolved oxygen concentrations become toxic, so pure oxygen at high pressure is dangerous; helium-diluted mixtures reduce both nitrogen and oxygen toxicity."
+        }
+      ],
+      "id": "NB94-51"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4",
+      "type": "mcq",
+      "q": "In a solution of a non-volatile solid in a volatile liquid, the vapour pressure of the solution is due to:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "Only volatile components contribute to vapour pressure; the non-volatile solute does not.",
+      "whyTier": "It is a direct conceptual point from NCERT section 1.4.",
+      "opts": [
+        "A. The solute only",
+        "B. The solvent only",
+        "C. Both solute and solvent equally",
+        "D. Neither solute nor solvent"
+      ],
+      "id": "NB94-52"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4",
+      "type": "fill",
+      "q": "Liquid solutions are formed when the ________ is a liquid.",
+      "marks": 1,
+      "answer": "solvent",
+      "whyTier": "It completes the opening statement of NCERT section 1.4.",
+      "id": "NB94-53"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4",
+      "type": "tf",
+      "q": "In a liquid solution, the solute must always be volatile.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "The solute may be a gas, a liquid or a solid, and may or may not be volatile.",
+      "whyTier": "It tests a subtle point mentioned in passing in the text.",
+      "id": "NB94-54"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4",
+      "type": "match",
+      "q": "Match the type of liquid solution with its example.",
+      "marks": 1,
+      "whyTier": "Examples are taken from NCERT.",
+      "pairs": [
+        {
+          "L": "Liquid in liquid",
+          "R": "Ethanol in water"
+        },
+        {
+          "L": "Solid in liquid",
+          "R": "Glucose in water"
+        },
+        {
+          "L": "Gas in liquid",
+          "R": "Oxygen in water"
+        },
+        {
+          "L": "Both components volatile",
+          "R": "Benzene and toluene"
+        }
+      ],
+      "id": "NB94-55"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4",
+      "type": "odd",
+      "q": "Identify the odd mixture with respect to the volatility of its components.",
+      "marks": 1,
+      "answer": "Glucose + water",
+      "hint": "Glucose is non-volatile; in the other mixtures both components are volatile.",
+      "whyTier": "It is a classification task.",
+      "opts": [
+        "Benzene + toluene",
+        "Ethanol + water",
+        "Glucose + water",
+        "Chloroform + acetone"
+      ],
+      "id": "NB94-56"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4",
+      "type": "short",
+      "q": "What is meant by the vapour pressure of a liquid?",
+      "marks": 1,
+      "answer": "It is the pressure exerted by the vapour of a liquid in equilibrium with the liquid phase at a given temperature.",
+      "whyTier": "It is a basic definition used throughout the chapter.",
+      "id": "NB94-57"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4",
+      "type": "short",
+      "q": "Name the two kinds of binary liquid solutions whose vapour pressures are discussed in this chapter, and give one example of each.",
+      "marks": 2,
+      "answer": "(i) Solutions of liquids in liquids, e.g. benzene and toluene, where both components may be volatile. (ii) Solutions of solids in liquids, e.g. glucose in water, where the solute is non-volatile.",
+      "whyTier": "It recalls the NCERT classification directly.",
+      "id": "NB94-58"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4",
+      "type": "case",
+      "q": "Case Study: Room fresheners",
+      "marks": 4,
+      "passage": "A room freshener contains a mixture of two volatile liquids that slowly evaporate and spread fragrance. A second product is a gel made by dissolving a non-volatile solid in a little water. Both are kept in closed containers before use. When opened, the liquid freshener smells strong at once, while the gel releases mostly water vapour.",
+      "whyTier": "It applies the concept to a scenario not discussed in NCERT, an open-ended Tier 2 task.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Which product is a solution of a liquid in a liquid?",
+          "answer": "The liquid room freshener containing two volatile liquids."
+        },
+        {
+          "label": "(b)",
+          "q": "In the gel, which component contributes to the vapour pressure?",
+          "answer": "Only the solvent, water, since the solid solute is non-volatile."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does a closed container of the liquid freshener develop a vapour pressure above the liquid?",
+          "answer": "Molecules of both volatile liquids evaporate until an equilibrium is set up between the vapour phase and the liquid phase."
+        },
+        {
+          "label": "(d)",
+          "q": "Predict what happens to the smell if one of the two liquids in the freshener were replaced by a non-volatile liquid.",
+          "answer": "The fragrance would come only from the remaining volatile component and would be weaker, because the non-volatile liquid does not contribute to the vapour."
+        }
+      ],
+      "id": "NB94-59"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "mcq",
+      "q": "For an ideal solution of two volatile liquids, the total vapour pressure varies with the mole fraction of component 2 as:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "p_total = p₁⁰ + (p₂⁰ − p₁⁰) x₂, which is a straight-line relation.",
+      "whyTier": "It is a conclusion drawn directly from NCERT equation 1.16.",
+      "opts": [
+        "A. Exponentially",
+        "B. Linearly",
+        "C. Inversely",
+        "D. Parabolically"
+      ],
+      "id": "NB94-60"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "fill",
+      "q": "According to Raoult's law, for a solution of volatile liquids, the partial vapour pressure of each component is directly proportional to its ________ present in solution.",
+      "marks": 1,
+      "answer": "mole fraction",
+      "whyTier": "It completes the NCERT statement of Raoult's law.",
+      "id": "NB94-61"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "tf",
+      "q": "At equilibrium, the vapour phase above a solution of two volatile liquids is always richer in the more volatile component.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "This is the NCERT conclusion from Example 1.5.",
+      "whyTier": "It is a key conclusion highlighted in bold in NCERT.",
+      "id": "NB94-62"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "match",
+      "q": "Match each equation with what it represents.",
+      "marks": 1,
+      "whyTier": "All equations appear directly in NCERT section 1.4.1.",
+      "pairs": [
+        {
+          "L": "p₁ = x₁ p₁⁰",
+          "R": "Raoult's law for component 1"
+        },
+        {
+          "L": "p_total = p₁ + p₂",
+          "R": "Dalton's law of partial pressures"
+        },
+        {
+          "L": "p₁ = y₁ p_total",
+          "R": "Composition of the vapour phase"
+        },
+        {
+          "L": "p_total = p₁⁰ + (p₂⁰ − p₁⁰) x₂",
+          "R": "Total vapour pressure in terms of x₂"
+        }
+      ],
+      "id": "NB94-63"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.1",
+      "type": "odd",
+      "q": "Identify the odd relation.",
+      "marks": 1,
+      "answer": "π = CRT",
+      "hint": "It gives osmotic pressure; the others relate vapour pressures and composition of a liquid–liquid solution.",
+      "whyTier": "It is a classification task across sections.",
+      "opts": [
+        "p₁ = x₁ p₁⁰",
+        "p_total = p₁ + p₂",
+        "pᵢ = yᵢ p_total",
+        "π = CRT"
+      ],
+      "id": "NB94-64"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "short",
+      "q": "State Raoult's law for a solution of volatile liquids.",
+      "marks": 1,
+      "answer": "For a solution of volatile liquids, the partial vapour pressure of each component is directly proportional to its mole fraction present in the solution.",
+      "whyTier": "It is a law statement directly from NCERT.",
+      "id": "NB94-65"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "short",
+      "q": "Two volatile liquids A and B (p_A⁰ < p_B⁰) form an ideal solution. Explain why the vapour in equilibrium with the solution contains a larger mole fraction of B than the liquid does.",
+      "marks": 3,
+      "answer": "1. By Raoult's law, p_B = x_B p_B⁰ and p_A = x_A p_A⁰.\\n2. By Dalton's law, y_B = p_B/p_total = x_B p_B⁰/(x_A p_A⁰ + x_B p_B⁰).\\n3. Since p_B⁰ > p_A⁰, the denominator is less than p_B⁰, so y_B > x_B. Hence the vapour is richer in the more volatile component B.",
+      "whyTier": "It explains a highlighted NCERT conclusion.",
+      "id": "NB94-66"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.1",
+      "type": "short",
+      "q": "Pure liquids A and B have vapour pressures of 300 mm Hg and 800 mm Hg respectively at 330 K. Calculate the total vapour pressure of an ideal solution in which the mole fraction of A is 0.4.",
+      "marks": 3,
+      "answer": "Given: p_A⁰ = 300 mm Hg, p_B⁰ = 800 mm Hg, x_A = 0.4, x_B = 0.6.\\nFormula: p_total = x_A p_A⁰ + x_B p_B⁰.\\nSubstitution: p_total = 0.4 × 300 + 0.6 × 800 = 120 + 480 mm Hg.\\nAnswer: p_total = 600 mm Hg.",
+      "whyTier": "It applies Raoult's and Dalton's laws with new values.",
+      "isNumerical": true,
+      "id": "NB94-67"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "long",
+      "q": "At 350 K, the vapour pressures of pure benzene and pure toluene are 700 mm Hg and 280 mm Hg respectively. A solution is made from 39 g of benzene and 46 g of toluene. Assuming ideal behaviour, calculate (a) the partial pressures of both components, (b) the total vapour pressure and (c) the mole fraction of benzene in the vapour phase.",
+      "marks": 5,
+      "answer": "Given: p_B⁰ = 700 mm Hg, p_T⁰ = 280 mm Hg; M(C₆H₆) = 78 g mol⁻¹, M(C₇H₈) = 92 g mol⁻¹.\\nMoles: benzene = 39/78 = 0.50 mol; toluene = 46/92 = 0.50 mol; so x_B = x_T = 0.50.\\n(a) p_B = x_B p_B⁰ = 0.50 × 700 = 350 mm Hg; p_T = 0.50 × 280 = 140 mm Hg.\\n(b) p_total = 350 + 140 = 490 mm Hg.\\n(c) y_B = p_B/p_total = 350/490 = 0.714.\\nAnswer: 350 mm Hg and 140 mm Hg; 490 mm Hg; y(benzene) = 0.714, showing the vapour is richer in the more volatile benzene.",
+      "whyTier": "It is an NCERT-style multi-step numerical modelled on Example 1.5.",
+      "keyPoints": [
+        "x_B = x_T = 0.50",
+        "p_B = 350 mm Hg, p_T = 140 mm Hg",
+        "p_total = 490 mm Hg",
+        "y_B = 0.714"
+      ],
+      "isNumerical": true,
+      "id": "NB94-68"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "long",
+      "q": "Starting from Raoult's law and Dalton's law of partial pressures, derive the expression p_total = p₁⁰ + (p₂⁰ − p₁⁰) x₂ for an ideal binary solution of volatile liquids, and state the conclusions that follow from it.",
+      "marks": 5,
+      "answer": "1. Raoult's law for component 1: p₁ = x₁ p₁⁰.\\n2. Raoult's law for component 2: p₂ = x₂ p₂⁰.\\n3. Dalton's law: p_total = p₁ + p₂ = x₁ p₁⁰ + x₂ p₂⁰.\\n4. For a binary solution x₁ = 1 − x₂, so p_total = (1 − x₂) p₁⁰ + x₂ p₂⁰.\\n5. Rearranging: p_total = p₁⁰ + (p₂⁰ − p₁⁰) x₂.\\nConclusions: (i) total vapour pressure can be related to the mole fraction of any one component; (ii) it varies linearly with x₂; (iii) depending on p₁⁰ and p₂⁰ it increases or decreases with the mole fraction of component 1. Condition: valid only for ideal solutions obeying Raoult's law.",
+      "whyTier": "This derivation (equations 1.14–1.16) is in the NCERT text and syllabus.",
+      "keyPoints": [
+        "p₁ = x₁ p₁⁰ and p₂ = x₂ p₂⁰",
+        "p_total = p₁ + p₂",
+        "Substitute x₁ = 1 − x₂",
+        "p_total = p₁⁰ + (p₂⁰ − p₁⁰) x₂",
+        "Linear in x₂; valid for ideal solutions"
+      ],
+      "isDerivation": true,
+      "id": "NB94-69"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "short",
+      "q": "Sketch a graph of p₁, p₂ and p_total against mole fraction (x₁ from 1 to 0, x₂ from 0 to 1) for an ideal solution, and label the intercepts.",
+      "marks": 3,
+      "answer": "p₁ is a straight line falling from p₁⁰ (at x₁ = 1) to zero (at x₁ = 0). p₂ is a straight line rising from zero (at x₂ = 0) to p₂⁰ (at x₂ = 1). p_total is a straight line joining p₁⁰ and p₂⁰; its minimum is p₁⁰ and maximum is p₂⁰ when component 1 is less volatile.",
+      "whyTier": "It reproduces NCERT Fig. 1.3, a commonly examined diagram.",
+      "isDiagram": true,
+      "id": "NB94-70"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.1",
+      "type": "case",
+      "q": "Case Study: Separating a solvent mixture",
+      "marks": 4,
+      "passage": "A paint factory recovers a used mixture of benzene and toluene, which behaves almost ideally. Engineers heat the mixture in a closed still and collect the vapour above the liquid. They notice that the condensed vapour contains a larger share of benzene than the original liquid. Repeating the process several times gives almost pure benzene.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Which law gives the partial vapour pressure of each component in the still?",
+          "answer": "Raoult's law (pᵢ = xᵢ pᵢ⁰)."
+        },
+        {
+          "label": "(b)",
+          "q": "If x(benzene) = 0.6 in the liquid and p⁰(benzene) = 0.30 bar, what is the partial pressure of benzene?",
+          "answer": "0.6 × 0.30 bar = 0.18 bar."
+        },
+        {
+          "label": "(c)",
+          "q": "Why is the condensed vapour richer in benzene?",
+          "answer": "Benzene is more volatile (higher p⁰), so its partial pressure, and hence its mole fraction in the vapour (y = p/p_total), is greater than in the liquid."
+        },
+        {
+          "label": "(d)",
+          "q": "Would this process work as well if the two liquids had equal vapour pressures? Evaluate.",
+          "answer": "No. With equal p⁰ values, the vapour would have the same composition as the liquid, so repeated evaporation and condensation would give no enrichment."
+        }
+      ],
+      "id": "NB94-71"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.2",
+      "type": "mcq",
+      "q": "Raoult's law becomes a special case of Henry's law when:",
+      "marks": 1,
+      "ans": "A",
+      "hint": "Both laws have the form p = constant × x; they coincide when K_H equals the vapour pressure of the pure component.",
+      "whyTier": "It is stated directly in NCERT section 1.4.2.",
+      "opts": [
+        "A. K_H = p₁⁰",
+        "B. K_H = 0",
+        "C. K_H = 1",
+        "D. K_H = p_total"
+      ],
+      "id": "NB94-72"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.2",
+      "type": "fill",
+      "q": "In Henry's law the proportionality constant is K_H, whereas in Raoult's law it is the ________ of the pure component.",
+      "marks": 1,
+      "answer": "vapour pressure",
+      "whyTier": "It completes the NCERT comparison of the two laws.",
+      "id": "NB94-73"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.2",
+      "type": "tf",
+      "q": "Henry's law and Raoult's law both state that the partial pressure of a volatile component is directly proportional to its mole fraction in the solution.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "They differ only in the proportionality constant (K_H versus p⁰).",
+      "whyTier": "It tests the central NCERT idea of this section.",
+      "id": "NB94-74"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.2",
+      "type": "match",
+      "q": "Match the items related to Raoult's and Henry's laws.",
+      "marks": 1,
+      "whyTier": "All points come from NCERT section 1.4.2.",
+      "pairs": [
+        {
+          "L": "Constant in Raoult's law",
+          "R": "p₁⁰"
+        },
+        {
+          "L": "Constant in Henry's law",
+          "R": "K_H"
+        },
+        {
+          "L": "Component so volatile it exists as a gas",
+          "R": "Described by Henry's law"
+        },
+        {
+          "L": "K_H = p₁⁰",
+          "R": "Raoult's law becomes a special case of Henry's law"
+        }
+      ],
+      "id": "NB94-75"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.2",
+      "type": "odd",
+      "q": "Pick the relation that is NOT of the form 'partial pressure ∝ mole fraction'.",
+      "marks": 1,
+      "answer": "ΔT_b = K_b m",
+      "hint": "It relates boiling-point elevation to molality, not partial pressure to mole fraction.",
+      "whyTier": "It requires comparing laws across sections.",
+      "opts": [
+        "p = K_H x",
+        "p₁ = x₁ p₁⁰",
+        "pᵢ = xᵢ pᵢ⁰",
+        "ΔT_b = K_b m"
+      ],
+      "id": "NB94-76"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.2",
+      "type": "short",
+      "q": "Under what condition does Raoult's law become a special case of Henry's law?",
+      "marks": 1,
+      "answer": "When the Henry's law constant K_H becomes equal to the vapour pressure of the pure component, p₁⁰.",
+      "whyTier": "It is a direct NCERT statement.",
+      "id": "NB94-77"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.2",
+      "type": "short",
+      "q": "Give one similarity and one difference between Raoult's law and Henry's law.",
+      "marks": 2,
+      "answer": "Similarity: both state that the partial pressure of a volatile component is directly proportional to its mole fraction in solution. Difference: the proportionality constant is the pure-component vapour pressure p⁰ in Raoult's law but K_H (which depends on the gas and solvent) in Henry's law.",
+      "whyTier": "Comparing two laws is a reasoning task of moderate exam likelihood.",
+      "id": "NB94-78"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.2",
+      "type": "short",
+      "q": "A volatile liquid behaves so that its K_H equals its pure vapour pressure, 0.40 bar, at a given temperature. Calculate (a) its partial pressure when its mole fraction is 0.25 and (b) its mole fraction when its partial pressure is 0.30 bar.",
+      "marks": 3,
+      "answer": "Given: K_H = p⁰ = 0.40 bar.\\nFormula: p = K_H x (= x p⁰).\\n(a) p = 0.40 bar × 0.25 = 0.10 bar.\\n(b) x = p/K_H = 0.30 bar / 0.40 bar = 0.75.\\nAnswer: 0.10 bar; 0.75.",
+      "whyTier": "It is a student-constructed application of the two laws.",
+      "isNumerical": true,
+      "id": "NB94-79"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.2",
+      "type": "short",
+      "q": "Both Raoult's law and Henry's law give straight-line graphs of partial pressure versus mole fraction. What does the slope represent in each case?",
+      "marks": 2,
+      "answer": "For Raoult's law the slope is the vapour pressure of the pure component (p⁰); for Henry's law the slope is the Henry's law constant K_H. Both lines pass through the origin.",
+      "whyTier": "It requires interpreting graphs of both laws together.",
+      "isDiagram": true,
+      "id": "NB94-80"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.2",
+      "type": "case",
+      "q": "Case Study: One law or two?",
+      "marks": 4,
+      "passage": "A student studies two systems at the same temperature: carbon dioxide dissolved in water under pressure, and ethanol dissolved in water. In both, she finds that the partial pressure of the dissolved component rises in proportion to its mole fraction. For CO₂ the proportionality constant is far larger than for ethanol. Her teacher says both observations are really described by the same type of law.",
+      "whyTier": "It applies the comparison to a new scenario, an open-ended Tier 2 task.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Which law is normally used for CO₂ in water?",
+          "answer": "Henry's law."
+        },
+        {
+          "label": "(b)",
+          "q": "If K_H for CO₂ is 1.67 kbar, what partial pressure of CO₂ gives a mole fraction of 6.0 × 10⁻⁴?",
+          "answer": "p = K_H x = 1670 bar × 6.0 × 10⁻⁴ ≈ 1.0 bar."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does the teacher say both systems follow the same type of law?",
+          "answer": "In both, partial pressure is directly proportional to mole fraction (p = constant × x); only the constant differs."
+        },
+        {
+          "label": "(d)",
+          "q": "When would ethanol's constant match the Raoult's law constant? Explain.",
+          "answer": "When the proportionality constant equals the vapour pressure of pure ethanol, p⁰; then Henry's law reduces to Raoult's law."
+        }
+      ],
+      "id": "NB94-81"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "mcq",
+      "q": "The vapour pressure of a solvent is lowered on adding a non-volatile solute mainly because:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "Solute particles occupy part of the surface, so fewer solvent molecules can escape.",
+      "whyTier": "It is the NCERT explanation of vapour-pressure lowering (Fig. 1.4).",
+      "opts": [
+        "A. The solute reacts chemically with the solvent",
+        "B. The fraction of the surface covered by solvent molecules is reduced",
+        "C. The boiling point of the solvent decreases",
+        "D. The temperature of the solution falls"
+      ],
+      "id": "NB94-82"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "fill",
+      "q": "For a solution of a non-volatile solute, p₁ = x₁ p₁⁰, i.e. the vapour pressure of the solution is proportional to the mole fraction of the ________.",
+      "marks": 1,
+      "answer": "solvent",
+      "whyTier": "It completes NCERT equation 1.20.",
+      "id": "NB94-83"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "tf",
+      "q": "Adding 1.0 mol of sucrose to 1 kg of water lowers its vapour pressure by nearly the same amount as adding 1.0 mol of urea at the same temperature.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "The lowering depends on the quantity of solute particles, not their nature.",
+      "whyTier": "It is a direct NCERT statement.",
+      "id": "NB94-84"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "match",
+      "q": "Match each item about a solution of a non-volatile solute with its description.",
+      "marks": 1,
+      "whyTier": "All points come from NCERT Figs. 1.4 and 1.5.",
+      "pairs": [
+        {
+          "L": "Pure solvent surface",
+          "R": "Entirely occupied by solvent molecules"
+        },
+        {
+          "L": "Solution surface",
+          "R": "Shared between solute and solvent particles"
+        },
+        {
+          "L": "Non-volatile solute",
+          "R": "Does not contribute to vapour pressure"
+        },
+        {
+          "L": "p₁ = x₁ p₁⁰",
+          "R": "Raoult's law for the solvent"
+        }
+      ],
+      "id": "NB94-85"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.3",
+      "type": "odd",
+      "q": "Which solute, when added to water, is the odd one out in this group?",
+      "marks": 1,
+      "answer": "Ethanol",
+      "hint": "Ethanol is volatile and contributes to vapour pressure; the others are non-volatile solids.",
+      "whyTier": "It is a classification task.",
+      "opts": [
+        "Glucose",
+        "Urea",
+        "Sucrose",
+        "Ethanol"
+      ],
+      "id": "NB94-86"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "short",
+      "q": "Why is the vapour pressure of an aqueous glucose solution lower than that of pure water at the same temperature?",
+      "marks": 1,
+      "answer": "Glucose particles occupy part of the surface, so fewer water molecules escape into the vapour phase.",
+      "whyTier": "It is an NCERT 'explain why' question.",
+      "id": "NB94-87"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "short",
+      "q": "Explain, at the molecular level, why the vapour pressure of a solvent decreases when a non-volatile solute is dissolved in it.",
+      "marks": 3,
+      "answer": "1. In a pure liquid, the entire surface is occupied by solvent molecules, which escape into the vapour and set up vapour pressure.\\n2. In a solution, non-volatile solute particles also occupy part of the surface, reducing the fraction of surface covered by solvent molecules.\\n3. Hence fewer solvent molecules escape per unit time, and the vapour pressure at equilibrium is lower than that of the pure solvent.",
+      "whyTier": "The explanation with Fig. 1.4 is standard NCERT content.",
+      "id": "NB94-88"
+    },
+    {
+      "tier": 2,
+      "topic": "1.4.3",
+      "type": "short",
+      "q": "The vapour pressure of pure water at 298 K is 23.8 mm Hg. Calculate the vapour pressure of a solution containing 0.5 mol of a non-volatile solute in 9.5 mol of water at this temperature.",
+      "marks": 3,
+      "answer": "Given: p₁⁰ = 23.8 mm Hg; n₂ = 0.5 mol, n₁ = 9.5 mol.\\nFormula: p₁ = x₁ p₁⁰, with x₁ = n₁/(n₁ + n₂).\\nSubstitution: x₁ = 9.5/10.0 = 0.95; p₁ = 0.95 × 23.8 mm Hg.\\nAnswer: p₁ = 22.61 mm Hg.",
+      "whyTier": "It applies equation 1.20 with new values.",
+      "isNumerical": true,
+      "id": "NB94-89"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "short",
+      "q": "Sketch how the vapour pressure of a solution of a non-volatile solute varies with the mole fraction of the solvent, and state what the graph shows.",
+      "marks": 2,
+      "answer": "The graph is a straight line from zero (at x₁ = 0) to p₁⁰ (at x₁ = 1). It shows that the vapour pressure is directly proportional to the mole fraction of the solvent, as Raoult's law predicts.",
+      "whyTier": "It reproduces NCERT Fig. 1.5.",
+      "isDiagram": true,
+      "id": "NB94-90"
+    },
+    {
+      "tier": 1,
+      "topic": "1.4.3",
+      "type": "case",
+      "q": "Case Study: Why sea water evaporates slowly",
+      "marks": 4,
+      "passage": "Two identical open trays, one filled with fresh water and the other with sea water, are left in the sun at a salt pan. After a day, the level of fresh water has fallen more than that of sea water. Sea water contains dissolved salts that do not evaporate. The workers say the salts 'hold back' the water.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Which liquid has the lower vapour pressure at the same temperature?",
+          "answer": "Sea water."
+        },
+        {
+          "label": "(b)",
+          "q": "If the mole fraction of water in sea water is 0.98 and p⁰(water) is 30 mm Hg, what is the vapour pressure of sea water?",
+          "answer": "p = 0.98 × 30 mm Hg = 29.4 mm Hg."
+        },
+        {
+          "label": "(c)",
+          "q": "Explain the workers' idea that salts 'hold back' the water.",
+          "answer": "Dissolved salt particles occupy part of the surface, reducing the number of water molecules that can escape, so evaporation is slower."
+        },
+        {
+          "label": "(d)",
+          "q": "What would happen to the evaporation rate as the sea water becomes more concentrated over the day?",
+          "answer": "It would decrease further, because the mole fraction of water falls, lowering its vapour pressure even more."
+        }
+      ],
+      "id": "NB94-91"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5",
+      "type": "mcq",
+      "q": "Liquid–liquid solutions are classified as ideal or non-ideal on the basis of:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "Ideal solutions obey Raoult's law over the entire range of concentration.",
+      "whyTier": "It is a direct NCERT statement.",
+      "opts": [
+        "A. Henry's law",
+        "B. Raoult's law",
+        "C. Dalton's law",
+        "D. van't Hoff's law"
+      ],
+      "id": "NB94-92"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5",
+      "type": "fill",
+      "q": "Solutions that obey Raoult's law over the entire range of concentration are called ________ solutions.",
+      "marks": 1,
+      "answer": "ideal",
+      "whyTier": "It is an examinable NCERT definition.",
+      "id": "NB94-93"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5",
+      "type": "tf",
+      "q": "All liquid–liquid solutions obey Raoult's law at every composition.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "Only ideal solutions do; non-ideal solutions show positive or negative deviations.",
+      "whyTier": "It targets a basic misconception.",
+      "id": "NB94-94"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5",
+      "type": "match",
+      "q": "Match each term with its meaning.",
+      "marks": 1,
+      "whyTier": "All definitions are from NCERT section 1.5.",
+      "pairs": [
+        {
+          "L": "Ideal solution",
+          "R": "Obeys Raoult's law at all compositions"
+        },
+        {
+          "L": "Positive deviation",
+          "R": "Vapour pressure higher than predicted by Raoult's law"
+        },
+        {
+          "L": "Negative deviation",
+          "R": "Vapour pressure lower than predicted by Raoult's law"
+        },
+        {
+          "L": "Basis of classification",
+          "R": "Raoult's law"
+        }
+      ],
+      "id": "NB94-95"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5",
+      "type": "odd",
+      "q": "Identify the pair that does not behave nearly ideally.",
+      "marks": 1,
+      "answer": "Phenol + aniline",
+      "hint": "Phenol and aniline form strong A–B hydrogen bonds and show negative deviation.",
+      "whyTier": "It is a sorting task based on NCERT examples.",
+      "opts": [
+        "n-hexane + n-heptane",
+        "Benzene + toluene",
+        "Bromoethane + chloroethane",
+        "Phenol + aniline"
+      ],
+      "id": "NB94-96"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5",
+      "type": "short",
+      "q": "On what basis are liquid–liquid solutions classified as ideal or non-ideal?",
+      "marks": 1,
+      "answer": "On the basis of whether or not they obey Raoult's law over the entire range of concentration.",
+      "whyTier": "It is a direct NCERT statement.",
+      "id": "NB94-97"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5",
+      "type": "short",
+      "q": "Distinguish between an ideal and a non-ideal solution in terms of Raoult's law, giving one example of each.",
+      "marks": 2,
+      "answer": "An ideal solution obeys Raoult's law over the entire range of concentration, e.g. benzene and toluene. A non-ideal solution does not obey Raoult's law over the entire range; its vapour pressure is higher or lower than predicted, e.g. chloroform and acetone.",
+      "whyTier": "It is a standard 2-mark CBSE comparison.",
+      "id": "NB94-98"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5",
+      "type": "short",
+      "q": "On the same axes, sketch the total vapour pressure against composition for (i) an ideal solution and (ii) a solution showing positive deviation from Raoult's law. Explain the difference.",
+      "marks": 3,
+      "answer": "(i) For the ideal solution, p_total is a straight line joining p₁⁰ and p₂⁰. (ii) For positive deviation, the curve lies above this straight line at intermediate compositions. The difference arises because weaker A–B interactions let molecules escape more easily, raising the vapour pressure above the Raoult's law value.",
+      "whyTier": "It requires comparing two graphs, an extended reasoning task.",
+      "isDiagram": true,
+      "id": "NB94-99"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5",
+      "type": "case",
+      "q": "Case Study: Mixing solvents in the laboratory",
+      "marks": 4,
+      "passage": "A technician mixes n-hexane with n-heptane and notices no temperature change, and the total volume equals the sum of the volumes taken. She then mixes chloroform with acetone and finds that the mixture warms up and its vapour pressure is lower than expected. She records both results for the lab manual.",
+      "whyTier": "It applies the classification to a new laboratory scenario.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Which mixture behaves as an ideal solution?",
+          "answer": "n-hexane and n-heptane."
+        },
+        {
+          "label": "(b)",
+          "q": "If equimolar chloroform–acetone is predicted by Raoult's law to have a vapour pressure of 300 mm Hg, is the observed value higher or lower than 300 mm Hg?",
+          "answer": "Lower than 300 mm Hg (negative deviation)."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does the chloroform–acetone mixture warm up?",
+          "answer": "New, stronger A–B interactions (hydrogen bonding) form, so heat is released (Δ_mix H < 0)."
+        },
+        {
+          "label": "(d)",
+          "q": "Would you expect the hexane–heptane mixture to change temperature if mixed in different proportions? Explain.",
+          "answer": "No. It is nearly ideal at all compositions, with Δ_mix H = 0 because A–A, B–B and A–B interactions are similar."
+        }
+      ],
+      "id": "NB94-100"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.1",
+      "type": "mcq",
+      "q": "For an ideal solution, which of the following is correct?",
+      "marks": 1,
+      "ans": "A",
+      "hint": "No heat is absorbed or evolved and there is no volume change on mixing.",
+      "whyTier": "It tests NCERT equation 1.21 directly.",
+      "opts": [
+        "A. Δ_mix H = 0 and Δ_mix V = 0",
+        "B. Δ_mix H > 0 and Δ_mix V > 0",
+        "C. Δ_mix H < 0 and Δ_mix V < 0",
+        "D. Δ_mix H = 0 and Δ_mix V > 0"
+      ],
+      "id": "NB94-101"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.1",
+      "type": "fill",
+      "q": "An ideal solution forms when the A–A and B–B intermolecular attractive forces are nearly equal to the ________ interactions.",
+      "marks": 1,
+      "answer": "A–B",
+      "whyTier": "It is the NCERT molecular-level condition for ideality.",
+      "id": "NB94-102"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.1",
+      "type": "tf",
+      "q": "When two liquids forming an ideal solution are mixed, the volume of the solution equals the sum of the volumes of the two components.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "Δ_mix V = 0 for an ideal solution.",
+      "whyTier": "It is a stated NCERT property of ideal solutions.",
+      "id": "NB94-103"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.1",
+      "type": "match",
+      "q": "Match each property with its value or example for an ideal solution.",
+      "marks": 1,
+      "whyTier": "All points come directly from NCERT section 1.5.1.",
+      "pairs": [
+        {
+          "L": "Enthalpy of mixing",
+          "R": "Zero"
+        },
+        {
+          "L": "Volume of mixing",
+          "R": "Zero"
+        },
+        {
+          "L": "Example",
+          "R": "Benzene and toluene"
+        },
+        {
+          "L": "Intermolecular forces",
+          "R": "A–A ≈ B–B ≈ A–B"
+        }
+      ],
+      "id": "NB94-104"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5.1",
+      "type": "odd",
+      "q": "Identify the pair that does NOT form a nearly ideal solution.",
+      "marks": 1,
+      "answer": "Ethanol and acetone",
+      "hint": "Ethanol–acetone shows positive deviation because acetone breaks the hydrogen bonds of ethanol.",
+      "whyTier": "It requires sorting examples across subsections.",
+      "opts": [
+        "n-hexane and n-heptane",
+        "Bromoethane and chloroethane",
+        "Benzene and toluene",
+        "Ethanol and acetone"
+      ],
+      "id": "NB94-105"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.1",
+      "type": "short",
+      "q": "What is the value of the enthalpy of mixing for an ideal solution?",
+      "marks": 1,
+      "answer": "Zero (Δ_mix H = 0); no heat is absorbed or evolved on mixing.",
+      "whyTier": "It recalls an NCERT property.",
+      "id": "NB94-106"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.1",
+      "type": "short",
+      "q": "Explain the ideal behaviour of a solution of two components A and B at the molecular level.",
+      "marks": 3,
+      "answer": "1. In pure A and pure B, the intermolecular attractions are of types A–A and B–B.\\n2. In the solution, A–B interactions are also present.\\n3. If the A–B attractions are nearly equal to the A–A and B–B attractions, mixing causes no change in energy or volume (Δ_mix H = 0, Δ_mix V = 0), and each component obeys Raoult's law, so the solution is ideal.",
+      "whyTier": "It is the NCERT molecular explanation and a common 3-mark question.",
+      "id": "NB94-107"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5.1",
+      "type": "short",
+      "q": "Liquids X (p⁰ = 120 mm Hg) and Y (p⁰ = 80 mm Hg) form an ideal solution with a total vapour pressure of 100 mm Hg at a certain temperature. Find the mole fraction of X in the liquid and in the vapour.",
+      "marks": 3,
+      "answer": "Given: p_X⁰ = 120 mm Hg, p_Y⁰ = 80 mm Hg, p_total = 100 mm Hg.\\nFormula: p_total = p_Y⁰ + (p_X⁰ − p_Y⁰) x_X; y_X = x_X p_X⁰/p_total.\\nSubstitution: 100 = 80 + 40 x_X, so x_X = 0.50; p_X = 0.50 × 120 = 60 mm Hg; y_X = 60/100 = 0.60.\\nAnswer: x_X = 0.50 in the liquid; y_X = 0.60 in the vapour.",
+      "whyTier": "It requires an extra step (finding x from p_total) beyond the NCERT examples.",
+      "isNumerical": true,
+      "id": "NB94-108"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5.1",
+      "type": "case",
+      "q": "Case Study: Blending petrol fractions",
+      "marks": 4,
+      "passage": "In a refinery, n-hexane and n-heptane obtained from crude oil are blended to make a fuel component. Engineers find that blending them neither warms nor cools the tank, and 600 L of hexane mixed with 400 L of heptane gives exactly 1000 L. The vapour pressure of every blend matches the value calculated from Raoult's law.",
+      "whyTier": "It applies the concept to an industrial scenario.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "What type of solution do these two hydrocarbons form?",
+          "answer": "An (almost) ideal solution."
+        },
+        {
+          "label": "(b)",
+          "q": "What is Δ_mix V for this blend? Use the data given.",
+          "answer": "Δ_mix V = 1000 L − (600 L + 400 L) = 0."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does mixing produce no temperature change?",
+          "answer": "The A–B interactions are nearly equal to A–A and B–B interactions, so Δ_mix H = 0."
+        },
+        {
+          "label": "(d)",
+          "q": "Would you expect the same behaviour if ethanol were blended with the hexane? Explain.",
+          "answer": "No. Ethanol is hydrogen bonded; hexane would break these bonds, weakening interactions, so the mixture would deviate positively from Raoult's law with Δ_mix H > 0."
+        }
+      ],
+      "id": "NB94-109"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "mcq",
+      "q": "A mixture of chloroform and acetone shows:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "Chloroform forms a hydrogen bond with acetone, so A–B interactions are stronger.",
+      "whyTier": "It is a standard NCERT example.",
+      "opts": [
+        "A. Positive deviation from Raoult's law",
+        "B. Negative deviation from Raoult's law",
+        "C. Ideal behaviour",
+        "D. No vapour pressure at all"
+      ],
+      "id": "NB94-110"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "fill",
+      "q": "Solutions showing a large positive deviation from Raoult's law form ________ boiling azeotropes.",
+      "marks": 1,
+      "answer": "minimum",
+      "whyTier": "It completes an NCERT statement.",
+      "id": "NB94-111"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "tf",
+      "q": "An azeotrope can be separated into its pure components by fractional distillation.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "An azeotrope has the same composition in liquid and vapour, so distillation cannot separate it.",
+      "whyTier": "It targets a frequently tested misconception.",
+      "id": "NB94-112"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "match",
+      "q": "Match each mixture with its behaviour.",
+      "marks": 1,
+      "whyTier": "All examples appear in NCERT section 1.5.2.",
+      "pairs": [
+        {
+          "L": "Ethanol + acetone",
+          "R": "Positive deviation"
+        },
+        {
+          "L": "Phenol + aniline",
+          "R": "Negative deviation"
+        },
+        {
+          "L": "Ethanol–water (about 95% ethanol)",
+          "R": "Minimum boiling azeotrope"
+        },
+        {
+          "L": "Nitric acid–water (68% HNO₃)",
+          "R": "Maximum boiling azeotrope"
+        }
+      ],
+      "id": "NB94-113"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5.2",
+      "type": "odd",
+      "q": "Which mixture is the odd one out with respect to the type of deviation from Raoult's law?",
+      "marks": 1,
+      "answer": "Chloroform + acetone",
+      "hint": "It shows negative deviation; the other three show positive deviation.",
+      "whyTier": "It is a classification task requiring reasoning about interactions.",
+      "opts": [
+        "Ethanol + acetone",
+        "Carbon disulphide + acetone",
+        "Ethanol + water",
+        "Chloroform + acetone"
+      ],
+      "id": "NB94-114"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "short",
+      "q": "What is an azeotrope?",
+      "marks": 1,
+      "answer": "An azeotrope is a binary mixture having the same composition in the liquid and vapour phases, which boils at a constant temperature.",
+      "whyTier": "It is an NCERT definition.",
+      "id": "NB94-115"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "short",
+      "q": "Explain why a mixture of chloroform and acetone shows negative deviation from Raoult's law.",
+      "marks": 3,
+      "answer": "1. In the mixture, the hydrogen of chloroform forms a hydrogen bond with the oxygen of acetone.\\n2. These A–B interactions are stronger than the A–A and B–B interactions in the pure liquids.\\n3. Molecules therefore escape less easily, the escaping tendency falls, and the vapour pressure is lower than predicted by Raoult's law: a negative deviation.",
+      "whyTier": "It is a standard NCERT explanation.",
+      "id": "NB94-116"
+    },
+    {
+      "tier": 2,
+      "topic": "1.5.2",
+      "type": "short",
+      "q": "Pure liquids A and B have vapour pressures of 400 mm Hg and 600 mm Hg. An equimolar solution of A and B has an observed total vapour pressure of 560 mm Hg. Predict the ideal value, identify the type of deviation and state the sign of Δ_mix H.",
+      "marks": 3,
+      "answer": "Given: p_A⁰ = 400 mm Hg, p_B⁰ = 600 mm Hg, x_A = x_B = 0.5, observed p = 560 mm Hg.\\nFormula: p_ideal = x_A p_A⁰ + x_B p_B⁰.\\nSubstitution: p_ideal = 0.5 × 400 + 0.5 × 600 = 500 mm Hg.\\nAnswer: Observed 560 mm Hg > 500 mm Hg, so the solution shows positive deviation; A–B interactions are weaker, so mixing is endothermic (Δ_mix H > 0).",
+      "whyTier": "It combines Raoult's law with deviation analysis, a two-concept problem.",
+      "isNumerical": true,
+      "id": "NB94-117"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "short",
+      "q": "Draw labelled vapour pressure–composition diagrams for a solution showing (a) positive deviation and (b) negative deviation from Raoult's law.",
+      "marks": 3,
+      "answer": "(a) Positive deviation: the p₁, p₂ and p_total curves all lie above the straight Raoult's law lines, with p_total bulging upward at intermediate compositions. (b) Negative deviation: the curves lie below the Raoult's law lines, with p_total sagging downward. Axes: vapour pressure on the y-axis; x₁ (1→0) and x₂ (0→1) on the x-axis.",
+      "whyTier": "It reproduces NCERT Fig. 1.6, a frequently examined diagram.",
+      "isDiagram": true,
+      "id": "NB94-118"
+    },
+    {
+      "tier": 1,
+      "topic": "1.5.2",
+      "type": "case",
+      "q": "Case Study: Why fuel ethanol needs extra drying",
+      "marks": 4,
+      "passage": "A distillery ferments sugar and distils the ethanol–water mixture to make fuel ethanol. However hard they try, the distillate never goes beyond about 95% ethanol by volume. At this composition, the liquid and the vapour have the same composition. The company must use other methods to remove the last 5% of water.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "What name is given to a mixture whose liquid and vapour have the same composition?",
+          "answer": "An azeotrope."
+        },
+        {
+          "label": "(b)",
+          "q": "Is this a minimum or a maximum boiling azeotrope?",
+          "answer": "A minimum boiling azeotrope."
+        },
+        {
+          "label": "(c)",
+          "q": "Why can't simple fractional distillation take the ethanol beyond 95%?",
+          "answer": "At the azeotropic composition the vapour has the same composition as the liquid, so further distillation produces no enrichment."
+        },
+        {
+          "label": "(d)",
+          "q": "What type of deviation from Raoult's law causes this azeotrope, and why?",
+          "answer": "A large positive deviation, because ethanol–water A–B interactions are weaker than the hydrogen-bonded interactions in the pure liquids."
+        }
+      ],
+      "id": "NB94-119"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6",
+      "type": "mcq",
+      "q": "Which of the following is NOT a colligative property?",
+      "marks": 1,
+      "ans": "C",
+      "hint": "The relative lowering of vapour pressure is colligative; the vapour pressure itself depends on the nature of the solvent.",
+      "whyTier": "Identifying colligative properties is a frequently asked NCERT-based question.",
+      "opts": [
+        "A. Osmotic pressure",
+        "B. Elevation of boiling point",
+        "C. Vapour pressure of the solution",
+        "D. Depression of freezing point"
+      ],
+      "id": "NB94-120"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6",
+      "type": "fill",
+      "q": "Colligative properties depend on the ________ of solute particles, irrespective of their nature, relative to the total number of particles in the solution.",
+      "marks": 1,
+      "answer": "number",
+      "whyTier": "It completes the NCERT definition highlighted in bold.",
+      "id": "NB94-121"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6",
+      "type": "tf",
+      "q": "A 0.1 m aqueous solution of glucose and a 0.1 m aqueous solution of urea show nearly the same depression in freezing point.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "Both are non-electrolytes giving the same number of solute particles per kg of solvent.",
+      "whyTier": "It tests the core idea of colligative properties.",
+      "id": "NB94-122"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6",
+      "type": "match",
+      "q": "Match each colligative property with its mathematical expression.",
+      "marks": 1,
+      "whyTier": "All four formulas appear directly in the NCERT text.",
+      "pairs": [
+        {
+          "L": "Relative lowering of vapour pressure",
+          "R": "Δp₁/p₁⁰ = x₂"
+        },
+        {
+          "L": "Elevation of boiling point",
+          "R": "ΔT_b = K_b m"
+        },
+        {
+          "L": "Depression of freezing point",
+          "R": "ΔT_f = K_f m"
+        },
+        {
+          "L": "Osmotic pressure",
+          "R": "π = CRT"
+        }
+      ],
+      "id": "NB94-123"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6",
+      "type": "odd",
+      "q": "Identify the property that does NOT belong to the group.",
+      "marks": 1,
+      "answer": "Colour of the solution",
+      "hint": "Colour depends on the nature of the solute; the others depend only on the number of solute particles.",
+      "whyTier": "It is a classification task.",
+      "opts": [
+        "Elevation of boiling point",
+        "Osmotic pressure",
+        "Depression of freezing point",
+        "Colour of the solution"
+      ],
+      "id": "NB94-124"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6",
+      "type": "short",
+      "q": "What is the origin of the word 'colligative'?",
+      "marks": 1,
+      "answer": "From Latin: 'co' means together and 'ligare' means to bind.",
+      "whyTier": "It tests background information, a Tier 2 feature.",
+      "id": "NB94-125"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6",
+      "type": "short",
+      "q": "List the four colligative properties of a solution and state on what they depend.",
+      "marks": 2,
+      "answer": "(1) Relative lowering of vapour pressure, (2) elevation of boiling point, (3) depression of freezing point and (4) osmotic pressure. They depend only on the number of solute particles relative to the total number of particles, not on the nature of the solute.",
+      "whyTier": "It recalls a central NCERT list.",
+      "id": "NB94-126"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6",
+      "type": "case",
+      "q": "Case Study: Salt on icy roads",
+      "marks": 4,
+      "passage": "In cold countries, road workers spread salt on icy roads; the ice melts even below 0 °C. In summer, cooks notice that salted water boils a little above 100 °C. Doctors use isotonic saline for drips so that blood cells keep their normal shape. All three effects depend on how many particles are dissolved, not on what they are.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Name the colligative property used by the road workers.",
+          "answer": "Depression of freezing point."
+        },
+        {
+          "label": "(b)",
+          "q": "If 1 mol of glucose or 1 mol of urea were dissolved in 1 kg of water, which would lower the freezing point more?",
+          "answer": "Neither; both give the same number of particles and hence about the same depression."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does salted water boil above 100 °C?",
+          "answer": "The dissolved salt lowers the vapour pressure of water, so a higher temperature is needed for it to reach atmospheric pressure (elevation of boiling point)."
+        },
+        {
+          "label": "(d)",
+          "q": "What would happen to blood cells if pure water were given in a drip instead of saline? Explain.",
+          "answer": "Water would enter the cells by osmosis and they would swell and may burst, because pure water is hypotonic to the cell fluid."
+        }
+      ],
+      "id": "NB94-127"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.1",
+      "type": "mcq",
+      "q": "The relative lowering of vapour pressure of a solution containing a non-volatile solute is equal to:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "(p₁⁰ − p₁)/p₁⁰ = x₂.",
+      "whyTier": "It is an NCERT result highlighted in bold.",
+      "opts": [
+        "A. The mole fraction of the solvent",
+        "B. The mole fraction of the solute",
+        "C. The molality of the solution",
+        "D. The molarity of the solution"
+      ],
+      "id": "NB94-128"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.1",
+      "type": "fill",
+      "q": "(p₁⁰ − p₁)/p₁⁰ = ________, where the symbol is the mole fraction of the solute.",
+      "marks": 1,
+      "answer": "x₂",
+      "whyTier": "It completes NCERT equation 1.25.",
+      "id": "NB94-129"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.1",
+      "type": "tf",
+      "q": "The relative lowering of vapour pressure depends on the chemical nature of the non-volatile solute.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "It depends only on the concentration (number) of solute particles.",
+      "whyTier": "It targets a misconception about colligative properties.",
+      "id": "NB94-130"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.1",
+      "type": "match",
+      "q": "Match each quantity with its expression.",
+      "marks": 1,
+      "whyTier": "All relations are NCERT equations 1.23–1.28.",
+      "pairs": [
+        {
+          "L": "Δp₁",
+          "R": "p₁⁰ − p₁"
+        },
+        {
+          "L": "Δp₁/p₁⁰",
+          "R": "x₂"
+        },
+        {
+          "L": "x₂ for a dilute solution",
+          "R": "≈ n₂/n₁"
+        },
+        {
+          "L": "(p₁⁰ − p₁)/p₁⁰ in terms of masses",
+          "R": "(w₂ × M₁)/(M₂ × w₁)"
+        }
+      ],
+      "id": "NB94-131"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.1",
+      "type": "odd",
+      "q": "Identify the expression that is NOT equal to the relative lowering of vapour pressure.",
+      "marks": 1,
+      "answer": "K_H",
+      "hint": "K_H is Henry's law constant; the others all equal the relative lowering of vapour pressure.",
+      "whyTier": "It requires recognising equivalent forms.",
+      "opts": [
+        "x₂",
+        "n₂/(n₁ + n₂)",
+        "(p₁⁰ − p₁)/p₁⁰",
+        "K_H"
+      ],
+      "id": "NB94-132"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.1",
+      "type": "short",
+      "q": "Why is the relative lowering of vapour pressure a colligative property?",
+      "marks": 1,
+      "answer": "Because it is equal to the mole fraction of the solute, which depends only on the number of solute particles and not on their nature.",
+      "whyTier": "It is a direct conceptual question from NCERT.",
+      "id": "NB94-133"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.1",
+      "type": "long",
+      "q": "Derive an expression for the molar mass of a non-volatile solute from the relative lowering of vapour pressure of its dilute solution.",
+      "marks": 5,
+      "answer": "1. By Raoult's law for the solvent, p₁ = x₁ p₁⁰, so Δp₁ = p₁⁰ − p₁ = p₁⁰(1 − x₁) = x₂ p₁⁰.\\n2. Hence the relative lowering is (p₁⁰ − p₁)/p₁⁰ = x₂ = n₂/(n₁ + n₂).\\n3. For a dilute solution n₂ << n₁, so (p₁⁰ − p₁)/p₁⁰ ≈ n₂/n₁.\\n4. Substitute n₂ = w₂/M₂ and n₁ = w₁/M₁: (p₁⁰ − p₁)/p₁⁰ = (w₂ × M₁)/(M₂ × w₁).\\n5. Rearranging: M₂ = (w₂ × M₁ × p₁⁰)/(w₁ × (p₁⁰ − p₁)).\\nConditions: valid for dilute solutions of non-volatile, non-electrolyte solutes that neither associate nor dissociate.",
+      "whyTier": "This derivation (equations 1.22–1.28) is part of the NCERT text.",
+      "keyPoints": [
+        "Δp₁ = x₂ p₁⁰",
+        "Relative lowering = x₂",
+        "Dilute: x₂ ≈ n₂/n₁",
+        "n = w/M substitution",
+        "M₂ = w₂ M₁ p₁⁰ / (w₁ Δp₁)"
+      ],
+      "isDerivation": true,
+      "id": "NB94-134"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.1",
+      "type": "short",
+      "q": "The vapour pressure of pure water at 293 K is 17.5 mm Hg. Calculate the vapour pressure of a solution made by dissolving 18 g of glucose (M = 180 g mol⁻¹) in 178.2 g of water at this temperature.",
+      "marks": 3,
+      "answer": "Given: p₁⁰ = 17.5 mm Hg; w₂ = 18 g, M₂ = 180 g mol⁻¹; w₁ = 178.2 g, M₁ = 18 g mol⁻¹.\\nFormula: (p₁⁰ − p₁)/p₁⁰ = x₂.\\nSubstitution: n₂ = 18/180 = 0.10 mol; n₁ = 178.2/18 = 9.90 mol; x₂ = 0.10/10.00 = 0.010.\\np₁ = p₁⁰(1 − x₂) = 17.5 × 0.990 = 17.325 mm Hg.\\nAnswer: p₁ ≈ 17.33 mm Hg.",
+      "whyTier": "It applies the RLVP formula with new values.",
+      "isNumerical": true,
+      "id": "NB94-135"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.1",
+      "type": "long",
+      "q": "2.0 g of a non-volatile, non-electrolyte solute is dissolved in 50 g of benzene (M = 78 g mol⁻¹). The vapour pressure of benzene falls from 0.650 bar to 0.640 bar at the same temperature. Calculate the molar mass of the solute.",
+      "marks": 5,
+      "answer": "Given: w₂ = 2.0 g, w₁ = 50 g, M₁ = 78 g mol⁻¹, p₁⁰ = 0.650 bar, p₁ = 0.640 bar.\\nStep 1: Relative lowering = (0.650 − 0.640)/0.650 = 0.010/0.650 = 0.01538.\\nStep 2: Formula: (p₁⁰ − p₁)/p₁⁰ = (w₂ × M₁)/(M₂ × w₁).\\nStep 3: M₂ = (w₂ × M₁)/(w₁ × 0.01538) = (2.0 g × 78 g mol⁻¹)/(50 g × 0.01538).\\nStep 4: M₂ = 156/0.769 g mol⁻¹ = 202.8 g mol⁻¹.\\nAnswer: Molar mass of the solute ≈ 203 g mol⁻¹.",
+      "whyTier": "It is an NCERT-style molar-mass numerical (like Example 1.6) with new values.",
+      "keyPoints": [
+        "Δp/p⁰ = 0.01538",
+        "Use (w₂ M₁)/(M₂ w₁)",
+        "M₂ ≈ 203 g mol⁻¹"
+      ],
+      "isNumerical": true,
+      "id": "NB94-136"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.1",
+      "type": "short",
+      "q": "Sketch a graph of relative lowering of vapour pressure (y-axis) against mole fraction of a non-volatile solute (x-axis) for dilute solutions. What is its slope?",
+      "marks": 2,
+      "answer": "The graph is a straight line through the origin with slope equal to 1, because the relative lowering of vapour pressure equals x₂.",
+      "whyTier": "It interprets the RLVP relation graphically, beyond the NCERT figures.",
+      "isDiagram": true,
+      "id": "NB94-137"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.1",
+      "type": "case",
+      "q": "Case Study: Sugar syrup in the kitchen",
+      "marks": 4,
+      "passage": "A confectioner keeps two open bowls in a warm kitchen: one with plain water and one with thick sugar syrup. After a few hours, the water bowl has lost noticeably more liquid than the syrup bowl. Sugar is non-volatile and does not evaporate. The confectioner measures that the syrup's vapour pressure is 10% lower than that of water at the same temperature.",
+      "whyTier": "It applies the concept to a new everyday scenario.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Name the colligative property shown by the syrup.",
+          "answer": "Relative lowering of vapour pressure."
+        },
+        {
+          "label": "(b)",
+          "q": "From the data, what is the mole fraction of sugar in the syrup?",
+          "answer": "Relative lowering = 0.10, so x(sugar) = 0.10."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does the syrup lose water more slowly?",
+          "answer": "Its vapour pressure is lower because sugar particles reduce the fraction of the surface covered by water molecules, so fewer water molecules escape."
+        },
+        {
+          "label": "(d)",
+          "q": "If the confectioner used an equal number of moles of salt (NaCl) instead of sugar, would the lowering be the same? Evaluate.",
+          "answer": "No, it would be larger, because NaCl dissociates into two ions, roughly doubling the number of solute particles."
+        }
+      ],
+      "id": "NB94-138"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "mcq",
+      "q": "The SI-based unit of the molal elevation constant K_b is:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "ΔT_b = K_b m, so K_b = ΔT_b/m has units K ÷ (mol kg⁻¹) = K kg mol⁻¹.",
+      "whyTier": "The unit of K_b is stated in NCERT and often asked.",
+      "opts": [
+        "A. K mol kg⁻¹",
+        "B. K kg mol⁻¹",
+        "C. mol kg K⁻¹",
+        "D. kg K⁻¹"
+      ],
+      "id": "NB94-139"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "fill",
+      "q": "K_b is called the boiling point elevation constant, molal elevation constant or ________ constant.",
+      "marks": 1,
+      "answer": "ebullioscopic",
+      "whyTier": "It completes an NCERT definition.",
+      "id": "NB94-140"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "tf",
+      "q": "A solution of a non-volatile solute boils at a lower temperature than the pure solvent.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "Its vapour pressure is lower, so it must be heated to a higher temperature to boil.",
+      "whyTier": "It targets a common misconception.",
+      "id": "NB94-141"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "match",
+      "q": "Match each boiling-point-elevation quantity with its expression.",
+      "marks": 1,
+      "whyTier": "All relations are NCERT equations 1.29–1.38.",
+      "pairs": [
+        {
+          "L": "ΔT_b",
+          "R": "T_b − T_b⁰"
+        },
+        {
+          "L": "K_b",
+          "R": "R × M₁ × T_b² / (1000 × Δ_vap H)"
+        },
+        {
+          "L": "M₂",
+          "R": "1000 × w₂ × K_b / (ΔT_b × w₁)"
+        },
+        {
+          "L": "m",
+          "R": "1000 × w₂ / (M₂ × w₁)"
+        }
+      ],
+      "id": "NB94-142"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.2",
+      "type": "odd",
+      "q": "From Table 1.3, identify the value that does NOT belong to the group.",
+      "marks": 1,
+      "answer": "1.86 K kg mol⁻¹ (water)",
+      "hint": "It is the K_f of water; the other three are K_b values.",
+      "whyTier": "It requires reading and classifying table data.",
+      "opts": [
+        "0.52 K kg mol⁻¹ (water)",
+        "2.53 K kg mol⁻¹ (benzene)",
+        "5.03 K kg mol⁻¹ (carbon tetrachloride)",
+        "1.86 K kg mol⁻¹ (water)"
+      ],
+      "id": "NB94-143"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "short",
+      "q": "Why does the boiling point of water rise when a non-volatile solute is dissolved in it?",
+      "marks": 1,
+      "answer": "The solute lowers the vapour pressure of water, so a higher temperature is needed for the vapour pressure to equal the atmospheric pressure.",
+      "whyTier": "It is a standard NCERT 'explain why' question.",
+      "id": "NB94-144"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "short",
+      "q": "Starting from ΔT_b = K_b m, derive an expression for the molar mass M₂ of a non-volatile solute.",
+      "marks": 3,
+      "answer": "Step 1: ΔT_b = K_b m (for dilute solutions).\\nStep 2: If w₂ g of solute of molar mass M₂ is dissolved in w₁ g of solvent, m = (w₂/M₂)/(w₁/1000) = (1000 × w₂)/(M₂ × w₁).\\nStep 3: Substituting, ΔT_b = (K_b × 1000 × w₂)/(M₂ × w₁), so M₂ = (1000 × w₂ × K_b)/(ΔT_b × w₁).\\nCondition: valid for dilute solutions of non-volatile solutes that do not associate or dissociate.",
+      "whyTier": "This derivation is given in NCERT (equations 1.31–1.33).",
+      "isDerivation": true,
+      "id": "NB94-145"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.2",
+      "type": "short",
+      "q": "Calculate the boiling point of a solution containing 9.0 g of glucose (M = 180 g mol⁻¹) in 250 g of water. (K_b for water = 0.52 K kg mol⁻¹; boiling point of water = 373.15 K)",
+      "marks": 3,
+      "answer": "Given: w₂ = 9.0 g, M₂ = 180 g mol⁻¹, w₁ = 250 g = 0.250 kg, K_b = 0.52 K kg mol⁻¹.\\nFormula: ΔT_b = K_b m.\\nSubstitution: n = 9.0/180 = 0.050 mol; m = 0.050/0.250 = 0.20 mol kg⁻¹; ΔT_b = 0.52 × 0.20 = 0.104 K.\\nAnswer: T_b = 373.15 + 0.104 = 373.25 K.",
+      "whyTier": "It is a direct formula application with new values.",
+      "isNumerical": true,
+      "id": "NB94-146"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "long",
+      "q": "3.0 g of a non-volatile solute dissolved in 60 g of benzene raises its boiling point by 0.62 K. Given K_b for benzene = 2.53 K kg mol⁻¹ and the boiling point of benzene = 353.3 K, calculate (a) the molality of the solution, (b) the molar mass of the solute and (c) the boiling point of the solution.",
+      "marks": 5,
+      "answer": "Given: w₂ = 3.0 g, w₁ = 60 g, ΔT_b = 0.62 K, K_b = 2.53 K kg mol⁻¹, T_b⁰ = 353.3 K.\\n(a) m = ΔT_b/K_b = 0.62 K / 2.53 K kg mol⁻¹ = 0.245 mol kg⁻¹.\\n(b) M₂ = (1000 × w₂ × K_b)/(ΔT_b × w₁) = (1000 × 3.0 × 2.53)/(0.62 × 60) g mol⁻¹ = 7590/37.2 = 204 g mol⁻¹.\\n(c) T_b = T_b⁰ + ΔT_b = 353.3 K + 0.62 K = 353.92 K.\\nAnswer: 0.245 mol kg⁻¹; 204 g mol⁻¹; 353.92 K.",
+      "whyTier": "It is an NCERT-style multi-step molar mass numerical (like Example 1.8).",
+      "keyPoints": [
+        "m = ΔT_b/K_b = 0.245 mol kg⁻¹",
+        "M₂ = 1000 w₂ K_b/(ΔT_b w₁) = 204 g mol⁻¹",
+        "T_b = 353.92 K"
+      ],
+      "isNumerical": true,
+      "id": "NB94-147"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.2",
+      "type": "short",
+      "q": "Sketch the vapour pressure against temperature curves for a pure solvent and its solution with a non-volatile solute, and mark ΔT_b on the graph.",
+      "marks": 3,
+      "answer": "Both curves rise with temperature, and the solution curve lies below the solvent curve at every temperature. A horizontal line at 1.013 bar (atmospheric pressure) meets the solvent curve at T_b⁰ and the solution curve at a higher T_b. The gap T_b − T_b⁰ on the temperature axis is ΔT_b.",
+      "whyTier": "It reproduces NCERT Fig. 1.7.",
+      "isDiagram": true,
+      "id": "NB94-148"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.2",
+      "type": "case",
+      "q": "Case Study: Cooking with salted water",
+      "marks": 4,
+      "passage": "A cook adds a spoonful of salt to a large pot of water before boiling pasta. A thermometer shows that the salted water boils at about 100.2 °C instead of 100 °C. The cook believes salt makes the water 'hotter'. A chemistry student explains the real reason using colligative properties.",
+      "whyTier": "It applies the concept to an open-ended daily-life scenario.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Name the colligative property shown here.",
+          "answer": "Elevation of boiling point."
+        },
+        {
+          "label": "(b)",
+          "q": "Taking K_b of water as 0.52 K kg mol⁻¹ and the observed ΔT_b as 0.2 K, what is the effective molality of solute particles?",
+          "answer": "m = ΔT_b/K_b = 0.2/0.52 ≈ 0.38 mol kg⁻¹ of particles."
+        },
+        {
+          "label": "(c)",
+          "q": "Why does the salted water need a higher temperature to boil?",
+          "answer": "Dissolved salt lowers the vapour pressure of water, so it must be heated more for its vapour pressure to reach atmospheric pressure."
+        },
+        {
+          "label": "(d)",
+          "q": "Evaluate the cook's claim that salt makes the water 'hotter' and speeds up cooking.",
+          "answer": "The rise in boiling point (about 0.2 K) is very small, so the effect on cooking speed is negligible; salt mainly adds flavour."
+        }
+      ],
+      "id": "NB94-149"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "mcq",
+      "q": "At the freezing point of a substance, the vapour pressure of its liquid phase is equal to the vapour pressure of its:",
+      "marks": 1,
+      "ans": "B",
+      "hint": "At the freezing point, solid and liquid are in dynamic equilibrium, so their vapour pressures are equal.",
+      "whyTier": "It is the NCERT definition of freezing point in terms of vapour pressure.",
+      "opts": [
+        "A. Solution",
+        "B. Solid phase",
+        "C. Gaseous phase at the boiling point",
+        "D. Pure solvent at 373 K"
+      ],
+      "id": "NB94-150"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "fill",
+      "q": "K_f is called the freezing point depression constant, molal depression constant or ________ constant.",
+      "marks": 1,
+      "answer": "cryoscopic",
+      "whyTier": "It completes an NCERT definition.",
+      "id": "NB94-151"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "tf",
+      "q": "The freezing point of a solution of a non-volatile solute is lower than that of the pure solvent.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "ΔT_f = T_f⁰ − T_f is positive.",
+      "whyTier": "It is a central NCERT fact.",
+      "id": "NB94-152"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "match",
+      "q": "Match each solvent with its K_f value (K kg mol⁻¹) from Table 1.3.",
+      "marks": 1,
+      "whyTier": "It uses NCERT Table 1.3 data.",
+      "pairs": [
+        {
+          "L": "Water",
+          "R": "1.86"
+        },
+        {
+          "L": "Benzene",
+          "R": "5.12"
+        },
+        {
+          "L": "Acetic acid",
+          "R": "3.90"
+        },
+        {
+          "L": "Cyclohexane",
+          "R": "20.00"
+        }
+      ],
+      "id": "NB94-153"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.3",
+      "type": "odd",
+      "q": "Which relation does NOT belong with the others?",
+      "marks": 1,
+      "answer": "p = K_H x",
+      "hint": "It is Henry's law; the others concern depression of freezing point.",
+      "whyTier": "It is a classification task across topics.",
+      "opts": [
+        "ΔT_f = K_f m",
+        "K_f = R × M₁ × T_f² / (1000 × Δ_fus H)",
+        "M₂ = K_f × w₂ × 1000 / (ΔT_f × w₁)",
+        "p = K_H x"
+      ],
+      "id": "NB94-154"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "short",
+      "q": "Define depression in freezing point.",
+      "marks": 1,
+      "answer": "It is the decrease in the freezing point of a solvent when a non-volatile solute is dissolved in it: ΔT_f = T_f⁰ − T_f.",
+      "whyTier": "It is an NCERT definition.",
+      "id": "NB94-155"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "short",
+      "q": "Starting from ΔT_f = K_f m, derive the expression for the molar mass of a solute from freezing point depression data.",
+      "marks": 3,
+      "answer": "Step 1: ΔT_f = K_f m.\\nStep 2: Molality m = (w₂/M₂)/(w₁/1000), so ΔT_f = (K_f × w₂/M₂)/(w₁/1000).\\nStep 3: ΔT_f = (K_f × w₂ × 1000)/(M₂ × w₁), giving M₂ = (K_f × w₂ × 1000)/(ΔT_f × w₁).\\nCondition: valid for dilute solutions; association or dissociation of the solute gives abnormal results.",
+      "whyTier": "This derivation (equations 1.35–1.36) is in NCERT.",
+      "isDerivation": true,
+      "id": "NB94-156"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.3",
+      "type": "short",
+      "q": "Calculate the freezing point of a solution made by dissolving 31 g of ethylene glycol (C₂H₆O₂, M = 62 g mol⁻¹) in 500 g of water. (K_f for water = 1.86 K kg mol⁻¹; freezing point of water = 273.15 K)",
+      "marks": 3,
+      "answer": "Given: w₂ = 31 g, M₂ = 62 g mol⁻¹, w₁ = 500 g = 0.500 kg, K_f = 1.86 K kg mol⁻¹.\\nFormula: ΔT_f = K_f m.\\nSubstitution: n = 31/62 = 0.50 mol; m = 0.50/0.500 = 1.00 mol kg⁻¹; ΔT_f = 1.86 × 1.00 = 1.86 K.\\nAnswer: T_f = 273.15 − 1.86 = 271.29 K.",
+      "whyTier": "It is an antifreeze numerical with values different from Example 1.9.",
+      "isNumerical": true,
+      "id": "NB94-157"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.3",
+      "type": "long",
+      "q": "Using K_f = R × M₁ × T_f² / (1000 × Δ_fus H), calculate the cryoscopic constant of water. Given: Δ_fus H = 6.01 kJ mol⁻¹, T_f = 273.15 K, M₁ = 18 g mol⁻¹, R = 8.314 J K⁻¹ mol⁻¹. Compare the result with the value in Table 1.3.",
+      "marks": 5,
+      "answer": "Given: R = 8.314 J K⁻¹ mol⁻¹, M₁ = 18 g mol⁻¹, T_f = 273.15 K, Δ_fus H = 6.01 kJ mol⁻¹ = 6010 J mol⁻¹.\\nStep 1: T_f² = (273.15)² = 7.461 × 10⁴ K².\\nStep 2: Numerator = 8.314 × 18 × 7.461 × 10⁴ = 1.117 × 10⁷.\\nStep 3: Denominator = 1000 × 6010 = 6.010 × 10⁶.\\nStep 4: K_f = 1.117 × 10⁷ / 6.010 × 10⁶ = 1.86 K kg mol⁻¹.\\nAnswer: K_f ≈ 1.86 K kg mol⁻¹, which matches the value for water in Table 1.3.",
+      "whyTier": "It uses an NCERT formula (1.37) in a way not worked out in the text.",
+      "keyPoints": [
+        "Convert Δ_fus H to J mol⁻¹",
+        "T_f² = 7.461 × 10⁴ K²",
+        "K_f = 1.117 × 10⁷ / 6.010 × 10⁶",
+        "K_f ≈ 1.86 K kg mol⁻¹"
+      ],
+      "isNumerical": true,
+      "id": "NB94-158"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "short",
+      "q": "Draw a labelled diagram showing how the vapour pressure curves of a pure solvent (liquid), the solid solvent and a solution intersect, and mark ΔT_f.",
+      "marks": 3,
+      "answer": "The solid solvent curve is steep. The pure liquid solvent curve meets it at T_f⁰. The solution curve lies below the liquid solvent curve and meets the solid curve at a lower temperature T_f. The gap T_f⁰ − T_f on the temperature axis is ΔT_f.",
+      "whyTier": "It reproduces NCERT Fig. 1.8.",
+      "isDiagram": true,
+      "id": "NB94-159"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.3",
+      "type": "case",
+      "q": "Case Study: Antifreeze in car radiators",
+      "marks": 4,
+      "passage": "In Ladakh, winter temperatures fall well below 0 °C, and water in car radiators can freeze and crack the engine. Mechanics add ethylene glycol to the radiator water before winter. A 1 molal ethylene glycol solution freezes at about −1.86 °C, and higher concentrations protect against even colder nights. Ethylene glycol is chosen because it is non-volatile and mixes well with water.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "Name the colligative property that makes antifreeze work.",
+          "answer": "Depression of freezing point."
+        },
+        {
+          "label": "(b)",
+          "q": "What molality of ethylene glycol is needed to lower the freezing point of water by 5.58 K (K_f = 1.86 K kg mol⁻¹)?",
+          "answer": "m = ΔT_f/K_f = 5.58/1.86 = 3.0 mol kg⁻¹."
+        },
+        {
+          "label": "(c)",
+          "q": "Why is a non-volatile solute preferred as antifreeze?",
+          "answer": "It does not evaporate from the hot radiator, so its concentration (and the freezing point lowering) is maintained."
+        },
+        {
+          "label": "(d)",
+          "q": "What would happen if methanol, which is volatile, were used instead during a long drive? Evaluate.",
+          "answer": "Methanol would gradually evaporate from the hot engine, lowering its concentration, so the freezing point would rise and protection would be lost."
+        }
+      ],
+      "id": "NB94-160"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "mcq",
+      "q": "The osmotic pressure π of a dilute solution of molarity C at temperature T is given by:",
+      "marks": 1,
+      "ans": "A",
+      "hint": "Osmotic pressure is proportional to molarity and temperature (equation 1.39).",
+      "whyTier": "It is an NCERT formula commonly examined.",
+      "opts": [
+        "A. π = CRT",
+        "B. π = K_H x",
+        "C. π = K_b m",
+        "D. π = x₂ p₁⁰"
+      ],
+      "id": "NB94-161"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "fill",
+      "q": "Two solutions having the same osmotic pressure at a given temperature are called ________ solutions.",
+      "marks": 1,
+      "answer": "isotonic",
+      "whyTier": "It is an NCERT definition in bold.",
+      "id": "NB94-162"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "tf",
+      "q": "During osmosis, solvent molecules flow through the semipermeable membrane from the more concentrated solution to the less concentrated solution.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "Solvent always flows from lower concentration (dilute) to higher concentration of solution.",
+      "whyTier": "It targets the most common misconception about osmosis.",
+      "id": "NB94-163"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "match",
+      "q": "Match each term with its description.",
+      "marks": 1,
+      "whyTier": "All terms are defined in NCERT section 1.6.4.",
+      "pairs": [
+        {
+          "L": "Isotonic solution",
+          "R": "Same osmotic pressure as cell fluid (0.9% NaCl)"
+        },
+        {
+          "L": "Hypertonic solution",
+          "R": "More than 0.9% NaCl; cells shrink"
+        },
+        {
+          "L": "Hypotonic solution",
+          "R": "Less than 0.9% NaCl; cells swell"
+        },
+        {
+          "L": "Semipermeable membrane",
+          "R": "Allows only solvent molecules to pass"
+        }
+      ],
+      "id": "NB94-164"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.4",
+      "type": "odd",
+      "q": "Identify the material that cannot act as a semipermeable membrane.",
+      "marks": 1,
+      "answer": "Glass sheet",
+      "hint": "Glass has no submicroscopic pores for solvent to pass through; the others are natural or synthetic semipermeable membranes.",
+      "whyTier": "It is a classification task based on NCERT examples.",
+      "opts": [
+        "Pig's bladder",
+        "Parchment",
+        "Cellophane",
+        "Glass sheet"
+      ],
+      "id": "NB94-165"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "short",
+      "q": "Why is osmotic pressure measurement preferred for determining the molar masses of proteins?",
+      "marks": 1,
+      "answer": "It is done at room temperature, uses molarity, and gives a large measurable value even for very dilute solutions; proteins are not stable at higher temperatures.",
+      "whyTier": "It is an NCERT 'explain why' point.",
+      "id": "NB94-166"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "short",
+      "q": "Explain, with three everyday examples, how osmosis affects living and preserved materials.",
+      "marks": 3,
+      "answer": "1. A raw mango placed in concentrated brine loses water by osmosis and shrivels into pickle.\\n2. Wilted flowers or a limp carrot become firm again in fresh water because water enters their cells by osmosis.\\n3. Salting meat or adding sugar to fruit preserves them: bacteria on them lose water by osmosis, shrivel and die.",
+      "whyTier": "These applications are discussed directly in NCERT.",
+      "id": "NB94-167"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "short",
+      "q": "Starting from π = CRT, derive the expression for the molar mass M₂ of a solute from osmotic pressure data.",
+      "marks": 3,
+      "answer": "Step 1: π = CRT, where C = n₂/V (V in litres).\\nStep 2: So π = (n₂/V) RT, i.e. πV = n₂ RT.\\nStep 3: With n₂ = w₂/M₂, πV = w₂RT/M₂, giving M₂ = w₂RT/(πV).\\nCondition: valid for dilute solutions; the solute must neither associate nor dissociate.",
+      "whyTier": "This derivation (equations 1.39–1.42) is in NCERT.",
+      "isDerivation": true,
+      "id": "NB94-168"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.4",
+      "type": "short",
+      "q": "Calculate the osmotic pressure of a 0.05 M aqueous glucose solution at 300 K. (R = 0.083 L bar mol⁻¹ K⁻¹)",
+      "marks": 3,
+      "answer": "Given: C = 0.05 mol L⁻¹, T = 300 K, R = 0.083 L bar mol⁻¹ K⁻¹.\\nFormula: π = CRT.\\nSubstitution: π = 0.05 × 0.083 × 300.\\nAnswer: π = 1.245 bar ≈ 1.25 bar.",
+      "whyTier": "It is a direct formula application with new values.",
+      "isNumerical": true,
+      "id": "NB94-169"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "long",
+      "q": "500 mL of an aqueous solution contains 2.0 g of a polymer. Its osmotic pressure at 27 °C is 1.0 × 10⁻³ bar. Calculate (a) the osmotic pressure in pascal and (b) the molar mass of the polymer. (R = 0.083 L bar mol⁻¹ K⁻¹)",
+      "marks": 5,
+      "answer": "Given: w₂ = 2.0 g, V = 500 mL = 0.500 L, π = 1.0 × 10⁻³ bar, T = 27 + 273 = 300 K.\\n(a) 1 bar = 10⁵ Pa, so π = 1.0 × 10⁻³ × 10⁵ Pa = 100 Pa.\\n(b) Formula: M₂ = w₂RT/(πV).\\nSubstitution: M₂ = (2.0 g × 0.083 L bar mol⁻¹ K⁻¹ × 300 K)/(1.0 × 10⁻³ bar × 0.500 L) = 49.8/(5.0 × 10⁻⁴) g mol⁻¹.\\nAnswer: M₂ = 9.96 × 10⁴ g mol⁻¹ (about 99,600 g mol⁻¹).",
+      "whyTier": "It is an NCERT-style polymer molar-mass numerical (like Example 1.11) with new values.",
+      "keyPoints": [
+        "T = 300 K, V = 0.500 L",
+        "π = 100 Pa",
+        "M₂ = w₂RT/(πV)",
+        "M₂ ≈ 9.96 × 10⁴ g mol⁻¹"
+      ],
+      "isNumerical": true,
+      "id": "NB94-170"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.4",
+      "type": "short",
+      "q": "Sketch how the osmotic pressure of a dilute solution varies with its molarity at constant temperature. What is the slope of the graph?",
+      "marks": 2,
+      "answer": "The graph is a straight line through the origin, since π = CRT. Its slope equals RT.",
+      "whyTier": "It interprets the osmotic pressure formula graphically, beyond NCERT figures.",
+      "isDiagram": true,
+      "id": "NB94-171"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.4",
+      "type": "case",
+      "q": "Case Study: Choosing the right drip",
+      "marks": 4,
+      "passage": "A patient needs fluids through an intravenous drip. The nurse uses 0.9% (mass/volume) sodium chloride solution, called normal saline. A trainee asks why plain distilled water or a strong 5% salt solution cannot be used. The doctor explains using the behaviour of red blood cells in different solutions.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "What is the term for a solution like normal saline relative to blood-cell fluid?",
+          "answer": "Isotonic."
+        },
+        {
+          "label": "(b)",
+          "q": "Normal saline contains 9 g NaCl per litre. What mass of NaCl is in a 250 mL drip?",
+          "answer": "9 g L⁻¹ × 0.250 L = 2.25 g."
+        },
+        {
+          "label": "(c)",
+          "q": "Why would a 5% salt solution harm the red blood cells?",
+          "answer": "It is hypertonic; water flows out of the cells by osmosis, so the cells shrink."
+        },
+        {
+          "label": "(d)",
+          "q": "What would happen if distilled water were injected? Evaluate the risk.",
+          "answer": "Distilled water is hypotonic; water would enter the cells by osmosis, making them swell and possibly burst, which is dangerous."
+        }
+      ],
+      "id": "NB94-172"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.5",
+      "type": "mcq",
+      "q": "Reverse osmosis occurs when the pressure applied on the solution side is:",
+      "marks": 1,
+      "ans": "C",
+      "hint": "A pressure larger than the osmotic pressure reverses the direction of solvent flow.",
+      "whyTier": "It is the NCERT definition of reverse osmosis.",
+      "opts": [
+        "A. Less than the osmotic pressure",
+        "B. Equal to the osmotic pressure",
+        "C. Greater than the osmotic pressure",
+        "D. Zero"
+      ],
+      "id": "NB94-173"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.5",
+      "type": "fill",
+      "q": "A workable porous membrane for reverse osmosis is a film of cellulose ________ placed over a suitable support.",
+      "marks": 1,
+      "answer": "acetate",
+      "whyTier": "It completes an NCERT statement.",
+      "id": "NB94-174"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.5",
+      "type": "tf",
+      "q": "Cellulose acetate membranes are permeable to the ions present in sea water.",
+      "marks": 1,
+      "answer": "False",
+      "hint": "They are permeable to water but impermeable to impurities and ions.",
+      "whyTier": "It tests a detail stated in NCERT.",
+      "id": "NB94-175"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.5",
+      "type": "match",
+      "q": "Match each item with its description in reverse osmosis.",
+      "marks": 1,
+      "whyTier": "All points come from NCERT section 1.6.5.",
+      "pairs": [
+        {
+          "L": "Reverse osmosis",
+          "R": "Pure solvent flows out of the solution"
+        },
+        {
+          "L": "Applied pressure",
+          "R": "Greater than the osmotic pressure"
+        },
+        {
+          "L": "Cellulose acetate",
+          "R": "Permeable to water, impermeable to ions"
+        },
+        {
+          "L": "Desalination",
+          "R": "Potable water from sea water"
+        }
+      ],
+      "id": "NB94-176"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.5",
+      "type": "odd",
+      "q": "Identify the process that does NOT use reverse osmosis.",
+      "marks": 1,
+      "answer": "Distillation of water",
+      "hint": "Distillation separates water by boiling and condensing, not by pressure through a membrane.",
+      "whyTier": "It is an application-sorting task.",
+      "opts": [
+        "Desalination of sea water",
+        "Household RO water purifiers",
+        "Concentrating fruit juices without heating",
+        "Distillation of water"
+      ],
+      "id": "NB94-177"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.5",
+      "type": "short",
+      "q": "What is reverse osmosis?",
+      "marks": 1,
+      "answer": "It is the flow of pure solvent out of a solution through a semipermeable membrane when a pressure greater than the osmotic pressure is applied to the solution side.",
+      "whyTier": "It is an NCERT definition.",
+      "id": "NB94-178"
+    },
+    {
+      "tier": 1,
+      "topic": "1.6.5",
+      "type": "short",
+      "q": "Explain how sea water is desalinated by reverse osmosis.",
+      "marks": 3,
+      "answer": "1. Sea water is separated from pure water by a semipermeable membrane such as cellulose acetate.\\n2. A pressure greater than the osmotic pressure of sea water is applied on the sea-water side.\\n3. Water molecules are squeezed through the membrane to the pure-water side, while ions and impurities are held back, giving potable water.",
+      "whyTier": "It is a standard NCERT application (Fig. 1.11).",
+      "id": "NB94-179"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.5",
+      "type": "short",
+      "q": "Treat sea water as 0.60 M NaCl that is completely dissociated (i = 2). Estimate the minimum pressure needed for reverse osmosis at 300 K. (R = 0.083 L bar mol⁻¹ K⁻¹)",
+      "marks": 3,
+      "answer": "Given: C = 0.60 mol L⁻¹, i = 2, T = 300 K, R = 0.083 L bar mol⁻¹ K⁻¹.\\nFormula: π = i C R T.\\nSubstitution: π = 2 × 0.60 × 0.083 × 300 bar.\\nAnswer: π ≈ 29.9 bar, so a pressure greater than about 30 bar must be applied.",
+      "whyTier": "It combines reverse osmosis with the van't Hoff factor, two concepts not combined in NCERT.",
+      "isNumerical": true,
+      "id": "NB94-180"
+    },
+    {
+      "tier": 2,
+      "topic": "1.6.5",
+      "type": "case",
+      "q": "Case Study: The household RO purifier",
+      "marks": 4,
+      "passage": "A family in a coastal town installs an RO water purifier because their tap water is salty. The purifier pumps water at high pressure against a thin membrane. Clean water collects in one tank while a stream of concentrated reject water drains away. The technician warns that the pump must work harder if the tap water becomes saltier.",
+      "whyTier": "It applies the concept to a new household scenario.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "What does 'RO' stand for?",
+          "answer": "Reverse osmosis."
+        },
+        {
+          "label": "(b)",
+          "q": "If the osmotic pressure of the tap water is 3 bar, what is the least pressure the pump must apply?",
+          "answer": "More than 3 bar."
+        },
+        {
+          "label": "(c)",
+          "q": "Why is the reject water more concentrated than the tap water?",
+          "answer": "Water passes through the membrane but the dissolved salts do not, so the salts stay behind in a smaller volume."
+        },
+        {
+          "label": "(d)",
+          "q": "Explain the technician's warning about saltier tap water.",
+          "answer": "Saltier water has a higher osmotic pressure (π = iCRT), so the pump must apply a higher pressure to exceed it and drive reverse osmosis."
+        }
+      ],
+      "id": "NB94-181"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "mcq",
+      "q": "The van't Hoff factor for complete dissociation of K₂SO₄ in water is:",
+      "marks": 1,
+      "ans": "C",
+      "hint": "K₂SO₄ → 2K⁺ + SO₄²⁻ gives 3 ions.",
+      "whyTier": "It uses NCERT Table 1.4 directly.",
+      "opts": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "id": "NB94-182"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "fill",
+      "q": "When a solute associates in solution, the experimentally determined molar mass is ________ than the true molar mass.",
+      "marks": 1,
+      "answer": "higher",
+      "whyTier": "It completes an NCERT rule on abnormal molar masses.",
+      "id": "NB94-183"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "tf",
+      "q": "For ethanoic acid that dimerises in benzene, the van't Hoff factor is nearly 0.5.",
+      "marks": 1,
+      "answer": "True",
+      "hint": "Dimerisation halves the number of particles.",
+      "whyTier": "It is a stated NCERT value.",
+      "id": "NB94-184"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "match",
+      "q": "Match each solute with its van't Hoff factor (complete dissociation or association).",
+      "marks": 1,
+      "whyTier": "Values come from NCERT text and Table 1.4.",
+      "pairs": [
+        {
+          "L": "KCl in water",
+          "R": "i = 2"
+        },
+        {
+          "L": "K₂SO₄ in water",
+          "R": "i = 3"
+        },
+        {
+          "L": "Ethanoic acid in benzene (complete dimerisation)",
+          "R": "i = 0.5"
+        },
+        {
+          "L": "Glucose in water",
+          "R": "i = 1"
+        }
+      ],
+      "id": "NB94-185"
+    },
+    {
+      "tier": 2,
+      "topic": "1.7",
+      "type": "odd",
+      "q": "Which solute is the odd one out with respect to its van't Hoff factor in water?",
+      "marks": 1,
+      "answer": "Urea",
+      "hint": "Urea is a non-electrolyte (i = 1); the others dissociate into two ions (i ≈ 2).",
+      "whyTier": "It requires classifying solutes by dissociation behaviour.",
+      "opts": [
+        "NaCl",
+        "MgSO₄",
+        "KCl",
+        "Urea"
+      ],
+      "id": "NB94-186"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "short",
+      "q": "Define the van't Hoff factor.",
+      "marks": 1,
+      "answer": "It is the ratio of normal molar mass to abnormal (experimentally determined) molar mass, or of observed to calculated colligative property.",
+      "whyTier": "It is an NCERT definition.",
+      "id": "NB94-187"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "short",
+      "q": "Explain why ethanoic acid shows an abnormal molar mass when its freezing point depression is measured in benzene.",
+      "marks": 3,
+      "answer": "1. In benzene, a solvent of low dielectric constant, ethanoic acid molecules dimerise through hydrogen bonding: 2CH₃COOH ⇌ (CH₃COOH)₂.\\n2. Dimerisation reduces the number of solute particles, so ΔT_f (a colligative property) is smaller than expected, ideally half.\\n3. Since M₂ is inversely proportional to ΔT_f, the calculated molar mass comes out higher, about twice the true value (120 instead of 60 g mol⁻¹).",
+      "whyTier": "It is a standard NCERT explanation.",
+      "id": "NB94-188"
+    },
+    {
+      "tier": 2,
+      "topic": "1.7",
+      "type": "long",
+      "q": "Derive the relation between the van't Hoff factor i and (a) the degree of dissociation α of a solute that gives n ions, and (b) the degree of association α of a solute that forms an aggregate of n molecules.",
+      "marks": 5,
+      "answer": "(a) Dissociation:\\n1. Start with 1 mol of solute; α mol dissociates, each giving n particles.\\n2. Undissociated solute = (1 − α) mol; ions formed = nα mol.\\n3. Total particles = 1 − α + nα = 1 + (n − 1)α.\\n4. i = (particles after)/(particles before) = 1 + (n − 1)α, so α = (i − 1)/(n − 1).\\n(b) Association:\\n5. Start with 1 mol; α mol associates into aggregates of n molecules, giving α/n mol of aggregate and (1 − α) mol unassociated. Total = 1 − α + α/n, so i = 1 − α(1 − 1/n) and α = (1 − i)/(1 − 1/n).\\nCheck: for complete dimerisation (n = 2, α = 1), i = 0.5; for KCl fully dissociated (n = 2, α = 1), i = 2.",
+      "whyTier": "It extends Examples 1.12–1.13 into a general derivation, a step beyond NCERT.",
+      "keyPoints": [
+        "i = particles after / particles before",
+        "Dissociation: i = 1 + (n − 1)α",
+        "Association: i = 1 − α(1 − 1/n)",
+        "Dimer: i = 1 − α/2",
+        "Checks: i = 2 for KCl, 0.5 for dimer"
+      ],
+      "isDerivation": true,
+      "id": "NB94-189"
+    },
+    {
+      "tier": 2,
+      "topic": "1.7",
+      "type": "short",
+      "q": "Calculate the freezing point of a solution containing 5.85 g of NaCl in 500 g of water, assuming complete dissociation. (K_f = 1.86 K kg mol⁻¹; freezing point of water = 273.15 K)",
+      "marks": 3,
+      "answer": "Given: w₂ = 5.85 g, M(NaCl) = 58.5 g mol⁻¹, w₁ = 0.500 kg, i = 2, K_f = 1.86 K kg mol⁻¹.\\nFormula: ΔT_f = i K_f m.\\nSubstitution: n = 5.85/58.5 = 0.100 mol; m = 0.100/0.500 = 0.200 mol kg⁻¹; ΔT_f = 2 × 1.86 × 0.200 = 0.744 K.\\nAnswer: T_f = 273.15 − 0.744 = 272.41 K.",
+      "whyTier": "It applies the modified colligative equation with new values.",
+      "isNumerical": true,
+      "id": "NB94-190"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "long",
+      "q": "3.0 g of benzoic acid (C₆H₅COOH, M = 122 g mol⁻¹) dissolved in 30 g of benzene lowers its freezing point by 2.36 K. K_f for benzene is 5.12 K kg mol⁻¹. Calculate (a) the experimental molar mass, (b) the van't Hoff factor and (c) the percentage association of benzoic acid if it forms dimers.",
+      "marks": 5,
+      "answer": "Given: w₂ = 3.0 g, w₁ = 30 g, ΔT_f = 2.36 K, K_f = 5.12 K kg mol⁻¹, normal M = 122 g mol⁻¹.\\n(a) M₂ = (1000 × w₂ × K_f)/(ΔT_f × w₁) = (1000 × 3.0 × 5.12)/(2.36 × 30) = 15360/70.8 = 217 g mol⁻¹.\\n(b) i = normal molar mass / abnormal molar mass = 122/217 = 0.562.\\n(c) For dimerisation 2C₆H₅COOH ⇌ (C₆H₅COOH)₂: i = 1 − x/2, so x/2 = 1 − 0.562 = 0.438 and x = 0.875.\\nAnswer: 217 g mol⁻¹; i = 0.562; degree of association = 87.5%.",
+      "whyTier": "It is an NCERT-style multi-step numerical modelled on Example 1.12 with new data.",
+      "keyPoints": [
+        "M_obs = 1000 w₂ K_f/(ΔT_f w₁) = 217 g mol⁻¹",
+        "i = 122/217 = 0.562",
+        "i = 1 − x/2 for dimers",
+        "Association = 87.5%"
+      ],
+      "isNumerical": true,
+      "id": "NB94-191"
+    },
+    {
+      "tier": 2,
+      "topic": "1.7",
+      "type": "short",
+      "q": "A 0.10 m aqueous solution of a weak monobasic acid HA freezes at −0.205 °C. Calculate the van't Hoff factor and the degree of dissociation of the acid. (K_f = 1.86 K kg mol⁻¹)",
+      "marks": 3,
+      "answer": "Given: m = 0.10 mol kg⁻¹, ΔT_f = 0.205 K, K_f = 1.86 K kg mol⁻¹.\\nFormula: ΔT_f = i K_f m; for HA ⇌ H⁺ + A⁻, i = 1 + α.\\nSubstitution: i = 0.205/(1.86 × 0.10) = 0.205/0.186 = 1.10; α = i − 1 = 0.10.\\nAnswer: i ≈ 1.10; degree of dissociation ≈ 0.10 (10%).",
+      "whyTier": "It combines i with degree of dissociation, as in Example 1.13 but with new values.",
+      "isNumerical": true,
+      "id": "NB94-192"
+    },
+    {
+      "tier": 2,
+      "topic": "1.7",
+      "type": "short",
+      "q": "On the same axes, sketch ΔT_f against molality for aqueous solutions of urea, NaCl and K₂SO₄ (assume complete dissociation). Compare the slopes.",
+      "marks": 3,
+      "answer": "All three are straight lines through the origin, since ΔT_f = i K_f m. The slope is K_f for urea (i = 1), 2K_f for NaCl (i = 2) and 3K_f for K₂SO₄ (i = 3), so the K₂SO₄ line is steepest and the urea line least steep.",
+      "whyTier": "It applies the van't Hoff factor graphically, beyond NCERT.",
+      "isDiagram": true,
+      "id": "NB94-193"
+    },
+    {
+      "tier": 1,
+      "topic": "1.7",
+      "type": "case",
+      "q": "Case Study: When the molar mass comes out wrong",
+      "marks": 4,
+      "passage": "Two students determine molar masses by freezing point depression. One dissolves KCl (true molar mass 74.5 g mol⁻¹) in water and gets a value close to 37 g mol⁻¹. The other dissolves ethanoic acid (true molar mass 60 g mol⁻¹) in benzene and gets nearly 120 g mol⁻¹. Their teacher says neither student made an error in the experiment.",
+      "whyTier": "Case studies are a compulsory CBSE format.",
+      "subqs": [
+        {
+          "label": "(a)",
+          "q": "What name is given to molar masses that differ from the expected values?",
+          "answer": "Abnormal molar masses."
+        },
+        {
+          "label": "(b)",
+          "q": "Calculate the van't Hoff factor for the KCl result.",
+          "answer": "i = 74.5/37 ≈ 2."
+        },
+        {
+          "label": "(c)",
+          "q": "Why did the ethanoic acid result come out about twice the true value?",
+          "answer": "Ethanoic acid dimerises in benzene through hydrogen bonding, halving the number of particles and the freezing point depression, so the calculated molar mass doubles."
+        },
+        {
+          "label": "(d)",
+          "q": "Would the KCl result be closer to 74.5 g mol⁻¹ in a more concentrated solution? Evaluate.",
+          "answer": "Slightly, yes. Interionic attractions increase with concentration, so i falls below 2 (e.g. 1.85 at 0.1 m), making the experimental molar mass somewhat larger, but still well below 74.5 g mol⁻¹."
+        }
+      ],
+      "id": "NB94-194"
+    }
+  ]
+}

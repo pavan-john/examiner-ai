@@ -1,0 +1,180 @@
+{
+  "chapter": "Class 12 Chemistry - Unit 1: Solutions",
+  "source_pdf": "ncert-books-class-12-chemistry-chapter-1.pdf",
+  "engine": "pdfplumber",
+  "tier_used": "Hybrid: PDF Plumber + Gemini",
+  "detected_chapter_no": 1,
+  "page_count": 30,
+  "base_font_size": 10.5,
+  "heading_candidate_count": 98,
+  "toc": [
+    {
+      "title": "Chapter 1: Solutions",
+      "level": 1,
+      "page_index": 0,
+      "children": [
+        {
+          "title": "1.1 Types of Solutions",
+          "level": 2,
+          "page_index": 0,
+          "children": []
+        },
+        {
+          "title": "1.2 Expressing Concentration of Solutions",
+          "level": 2,
+          "page_index": 1,
+          "children": [
+            {
+              "title": "1.2.1 Intext Questions",
+              "level": 3,
+              "page_index": 4,
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "1.3 Solubility",
+          "level": 2,
+          "page_index": 4,
+          "children": [
+            {
+              "title": "1.3.1 Solubility of a Solid in a Liquid",
+              "level": 3,
+              "page_index": 5,
+              "children": []
+            },
+            {
+              "title": "1.3.2 Solubility of a Gas in a Liquid",
+              "level": 3,
+              "page_index": 5,
+              "children": []
+            },
+            {
+              "title": "1.3.3 Intext Questions",
+              "level": 3,
+              "page_index": 8,
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "1.4 Vapour Pressure of Liquid Solutions",
+          "level": 2,
+          "page_index": 8,
+          "children": [
+            {
+              "title": "1.4.1 Vapour Pressure of Liquid-Liquid Solutions",
+              "level": 3,
+              "page_index": 8,
+              "children": []
+            },
+            {
+              "title": "1.4.2 Raoult's Law as a Special Case of Henry's Law",
+              "level": 3,
+              "page_index": 11,
+              "children": []
+            },
+            {
+              "title": "1.4.3 Vapour Pressure of Solutions of Solids in Liquids",
+              "level": 3,
+              "page_index": 11,
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "1.5 Ideal and Non-ideal Solutions",
+          "level": 2,
+          "page_index": 12,
+          "children": [
+            {
+              "title": "1.5.1 Ideal Solutions",
+              "level": 3,
+              "page_index": 12,
+              "children": []
+            },
+            {
+              "title": "1.5.2 Non-ideal Solutions",
+              "level": 3,
+              "page_index": 12,
+              "children": []
+            },
+            {
+              "title": "1.5.3 Intext Question",
+              "level": 3,
+              "page_index": 14,
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "1.6 Colligative Properties and Determination of Molar Mass",
+          "level": 2,
+          "page_index": 14,
+          "children": [
+            {
+              "title": "1.6.1 Relative Lowering of Vapour Pressure",
+              "level": 3,
+              "page_index": 14,
+              "children": []
+            },
+            {
+              "title": "1.6.2 Elevation of Boiling Point",
+              "level": 3,
+              "page_index": 15,
+              "children": []
+            },
+            {
+              "title": "1.6.3 Depression of Freezing Point",
+              "level": 3,
+              "page_index": 17,
+              "children": []
+            },
+            {
+              "title": "1.6.4 Osmosis and Osmotic Pressure",
+              "level": 3,
+              "page_index": 19,
+              "children": []
+            },
+            {
+              "title": "1.6.5 Reverse Osmosis and Water Purification",
+              "level": 3,
+              "page_index": 22,
+              "children": []
+            },
+            {
+              "title": "1.6.6 Intext Questions",
+              "level": 3,
+              "page_index": 22,
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "1.7 Abnormal Molar Masses",
+          "level": 2,
+          "page_index": 22,
+          "children": []
+        },
+        {
+          "title": "Summary",
+          "level": 2,
+          "page_index": 26,
+          "children": []
+        },
+        {
+          "title": "Exercises",
+          "level": 2,
+          "page_index": 26,
+          "children": []
+        },
+        {
+          "title": "1.10 Answers to Some Intext Questions",
+          "level": 2,
+          "page_index": 29,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

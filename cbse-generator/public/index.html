@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBSE Question Generator — Topic-Wise LaTeX Pipeline</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- KaTeX for LaTeX Math Typesetting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans min-h-screen flex flex-col antialiased">
+
+  <!-- Navigation Bar -->
+  <header class="bg-indigo-900 text-white shadow-md sticky top-0 z-30 border-b border-indigo-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-indigo-500 flex items-center justify-center font-black text-xl shadow-inner text-indigo-950">
+          CB
+        </div>
+        <div>
+          <h1 class="text-lg font-bold tracking-tight flex items-center gap-2">
+            CBSE Question Generator
+            <span class="text-xs bg-indigo-700 text-indigo-200 px-2 py-0.5 rounded-full font-medium border border-indigo-500">Topic LaTeX Pipeline</span>
+          </h1>
+          <p class="text-xs text-indigo-300">NCERT Senior Secondary (Classes 10, 11 & 12) Paper Setter</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <!-- Live/Mock Mode Indicator -->
+        <button id="modeToggleBtn" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-950 text-emerald-300 border border-emerald-700 hover:bg-emerald-900 transition">
+          <span id="modeDot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="modeText">Demo / Mock Mode</span>
+        </button>
+
+        <!-- API Key Modal Button -->
+        <button id="apiKeyBtn" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-800 hover:bg-indigo-700 text-white border border-indigo-600 transition">
+          <i data-lucide="key" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span id="apiKeyLabel">Gemini API Key</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+    <!-- Left Column: Input Contract & LaTeX Chunk Manager (5 cols) -->
+    <section class="lg:col-span-5 flex flex-col space-y-5">
+      
+      <!-- Metadata Card -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="sliders" class="w-4 h-4 text-indigo-600"></i>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-slate-700">Topic & Syllabus Contract</h2>
+          </div>
+          <button id="quickSampleBtn" class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Load Sample
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mb-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Subject</label>
+            <input type="text" id="subjectInput" value="Physics" class="w-full px-3 py-1.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Grade / Class</label>
+            <select id="gradeInput" class="w-full px-3 py-1.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white">
+              <option value="12" selected>Class 12</option>
+              <option value="11">Class 11</option>
+              <option value="10">Class 10</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Chapter Title</label>
+            <input type="text" id="chapterInput" value="Ray Optics and Optical Instruments" class="w-full px-3 py-1.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Specific Topic / Section Name</label>
+            <input type="text" id="topicInput" value="Refraction through a Prism" class="w-full px-3 py-1.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+          </div>
+        </div>
+      </div>
+
+      <!-- LaTeX Chunk Ingestion Card -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex-1 flex flex-col">
+        <div class="flex items-center justify-between mb-3 pb-2 border-b border-slate-100">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="file-code-2" class="w-4 h-4 text-indigo-600"></i>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-slate-700">LaTeX Textbook Chunk</h2>
+          </div>
+          <div class="flex items-center space-x-2">
+            <input type="file" id="texFileInput" accept=".tex,.txt,.latex" class="hidden">
+            <button id="uploadTexBtn" class="text-xs px-2.5 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-md font-medium border border-slate-300 flex items-center gap-1 transition">
+              <i data-lucide="upload" class="w-3.5 h-3.5"></i> Upload .tex
+            </button>
+          </div>
+        </div>
+
+        <!-- Detected Topics Dropdown (Appears if multi-section file uploaded) -->
+        <div id="sectionPickerContainer" class="hidden mb-3 p-2.5 bg-indigo-50 border border-indigo-200 rounded-lg">
+          <label class="block text-xs font-bold text-indigo-900 mb-1">Detected Sections in Document:</label>
+          <select id="sectionPicker" class="w-full text-xs px-2.5 py-1.5 border border-indigo-300 rounded bg-white font-medium text-slate-800">
+          </select>
+        </div>
+
+        <!-- Chunk Editor -->
+        <div class="relative flex-1 min-h-[220px]">
+          <textarea id="latexChunkInput" placeholder="Paste your raw LaTeX section chunk here (e.g. \section{...}, equations, definitions, figures)..." class="w-full h-full p-3 font-mono text-xs bg-slate-900 text-emerald-400 rounded-lg border border-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none resize-none leading-relaxed" spellcheck="false"></textarea>
+          <div class="absolute bottom-2 right-3 text-[10px] text-slate-400 font-mono bg-slate-800/80 px-2 py-0.5 rounded">
+            <span id="chunkCharCount">0</span> chars
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Right Column: Question Selection & Generation Hub (7 cols) -->
+    <section class="lg:col-span-7 flex flex-col space-y-5">
+      
+      <!-- CBSE Question Taxonomy Selection Card -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="check-square" class="w-4 h-4 text-indigo-600"></i>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-slate-700">CBSE Question Blueprint Selection</h2>
+          </div>
+          <div class="text-xs font-medium text-slate-500">
+            Total Marks: <span id="totalMarksDisplay" class="font-bold text-indigo-600">0 M</span>
+          </div>
+        </div>
+
+        <!-- Total Question Count Dual Mode: Dynamic vs Manual (10 to 50) -->
+        <div class="mb-4 p-3 bg-slate-50 border border-slate-200 rounded-xl">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center space-x-1.5">
+              <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5 text-indigo-600"></i>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Question Count Mode</span>
+            </div>
+            <span id="questionCountBadge" class="text-[11px] px-2 py-0.5 rounded-full font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
+              Auto (Dynamic)
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 mb-2.5">
+            <button type="button" id="modeDynamicBtn" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg border-2 border-indigo-600 bg-indigo-600 text-white shadow-sm flex items-center justify-center space-x-1.5 transition">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-300"></i>
+              <span>Auto (Dynamic)</span>
+            </button>
+            <button type="button" id="modeManualBtn" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center space-x-1.5 transition">
+              <i data-lucide="settings-2" class="w-3.5 h-3.5 text-indigo-500"></i>
+              <span>Manual (10–50 Qs)</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Info View -->
+          <div id="dynamicModeNotice" class="text-[11px] text-slate-500 bg-white p-2 rounded-lg border border-slate-200 flex items-center space-x-1.5">
+            <i data-lucide="info" class="w-3.5 h-3.5 text-indigo-500 shrink-0"></i>
+            <span>Default: Total questions & topic quotas are dynamically calculated from chapter weights and content density.</span>
+          </div>
+
+          <!-- Manual Controls View (Hidden initially) -->
+          <div id="manualModeControls" class="hidden space-y-2.5 bg-white p-2.5 rounded-lg border border-indigo-200">
+            <div class="flex items-center justify-between">
+              <label for="manualQuestionInput" class="text-xs font-semibold text-slate-700">Target Total Questions:</label>
+              <div class="flex items-center space-x-1">
+                <input type="number" id="manualQuestionInput" min="10" max="50" step="1" value="25" class="w-16 px-2 py-1 text-xs font-bold text-center border border-indigo-300 rounded focus:ring-2 focus:ring-indigo-500 text-indigo-900 bg-slate-50">
+                <span class="text-xs text-slate-500 font-medium">Questions</span>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-[10px] font-bold text-slate-400">10</span>
+              <input type="range" id="manualQuestionSlider" min="10" max="50" step="1" value="25" class="w-full accent-indigo-600 cursor-pointer h-1.5 bg-slate-200 rounded-lg">
+              <span class="text-[10px] font-bold text-slate-400">50</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
+              <span class="text-[10px] text-slate-400 font-medium mr-0.5">Quick Totals:</span>
+              <button type="button" class="quick-target-btn px-2 py-0.5 text-[10px] font-semibold rounded bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 border border-slate-200 text-slate-700 transition" data-target="10">10</button>
+              <button type="button" class="quick-target-btn px-2 py-0.5 text-[10px] font-semibold rounded bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 border border-slate-200 text-slate-700 transition" data-target="15">15</button>
+              <button type="button" class="quick-target-btn px-2 py-0.5 text-[10px] font-semibold rounded bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 border border-slate-200 text-slate-700 transition" data-target="20">20</button>
+              <button type="button" class="quick-target-btn px-2 py-0.5 text-[10px] font-semibold rounded bg-indigo-50 border border-indigo-300 text-indigo-700 transition" data-target="25">25</button>
+              <button type="button" class="quick-target-btn px-2 py-0.5 text-[10px] font-semibold rounded bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 border border-slate-200 text-slate-700 transition" data-target="30">30</button>
+              <button type="button" class="quick-target-btn px-2 py-0.5 text-[10px] font-semibold rounded bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 border border-slate-200 text-slate-700 transition" data-target="40">40</button>
+              <button type="button" class="quick-target-btn px-2 py-0.5 text-[10px] font-semibold rounded bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 border border-slate-200 text-slate-700 transition" data-target="50">50</button>
+            </div>
+            <div class="text-[10.5px] text-slate-500 italic">
+              Exact total fixed to <span id="manualDisplayCount" class="font-bold text-indigo-700">25</span> questions; topic allocation quotas remain fully dynamic.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question Category Blueprint Mode (Dynamic vs Custom Manual) -->
+        <div class="mb-4 p-3 rounded-xl bg-gradient-to-r from-indigo-50/70 via-purple-50/40 to-slate-50 border border-indigo-100">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center space-x-1.5">
+              <i data-lucide="layers" class="w-4 h-4 text-indigo-600"></i>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Question Category Blueprint</span>
+            </div>
+            <span id="blueprintModeBadge" class="text-[11px] px-2 py-0.5 rounded-full font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
+              Auto (Dynamic)
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 mb-2.5">
+            <button type="button" id="blueprintModeDynamicBtn" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg border-2 border-indigo-600 bg-indigo-600 text-white shadow-sm flex items-center justify-center space-x-1.5 transition">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-300"></i>
+              <span>Auto by Weight & Rigor</span>
+            </button>
+            <button type="button" id="blueprintModeManualBtn" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center space-x-1.5 transition">
+              <i data-lucide="sliders" class="w-3.5 h-3.5 text-indigo-500"></i>
+              <span>Custom Format</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Mode Notice -->
+          <div id="dynamicBlueprintNotice" class="text-[11px] text-slate-600 bg-white p-2.5 rounded-lg border border-indigo-100 flex items-start space-x-2">
+            <i data-lucide="cpu" class="w-4 h-4 text-indigo-600 shrink-0 mt-0.5"></i>
+            <div>
+              <span class="font-semibold text-slate-800">Dynamic Question Taxonomy Active:</span>
+              <span class="text-slate-500"> Question types (Derivations, Case Studies, Numericals, MCQs, A-R) are automatically determined from syllabus importance and content rigor. No manual category selection needed.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manual Blueprint Section (Hidden in Dynamic Mode) -->
+        <div id="manualBlueprintSection" class="hidden space-y-4">
+          <!-- Quick Presets -->
+          <div class="mb-2">
+            <div class="text-xs font-semibold text-slate-500 mb-2">Quick Exam Blueprints:</div>
+            <div class="flex flex-wrap gap-2">
+              <button class="preset-btn px-2.5 py-1 text-xs rounded-md bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 border border-slate-200 text-slate-700 font-medium transition" data-preset="standard">
+                🎓 Standard Board Slice (11M)
+              </button>
+              <button class="preset-btn px-2.5 py-1 text-xs rounded-md bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 border border-slate-200 text-slate-700 font-medium transition" data-preset="numerical_derivation">
+                📐 Numericals & Derivations (16M)
+              </button>
+              <button class="preset-btn px-2.5 py-1 text-xs rounded-md bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 border border-slate-200 text-slate-700 font-medium transition" data-preset="case_study">
+                📖 Case Studies Only (8M)
+              </button>
+              <button class="preset-btn px-2.5 py-1 text-xs rounded-md bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 border border-slate-200 text-slate-700 font-medium transition" data-preset="objective">
+                ⚡ 1M Objective Drill (6M)
+              </button>
+              <button id="clearSelectionBtn" class="px-2.5 py-1 text-xs rounded-md bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-medium transition ml-auto">
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <!-- Taxonomy Question Counter Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          
+          <!-- 1M MCQ -->
+          <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 hover:bg-slate-50 transition flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs font-bold text-slate-800">Objective — MCQ</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-700">1 Mark</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">4 options (A-D) with authentic distractors</p>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <button class="counter-btn-dec w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="mcq">-</button>
+              <span id="count_mcq" class="w-6 text-center font-bold text-sm text-indigo-900">0</span>
+              <button class="counter-btn-inc w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="mcq">+</button>
+            </div>
+          </div>
+
+          <!-- 1M Assertion-Reason -->
+          <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 hover:bg-slate-50 transition flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs font-bold text-slate-800">Assertion-Reason (A-R)</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-700">1 Mark</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">CBSE 4-code reasoning format (a,b,c,d)</p>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <button class="counter-btn-dec w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="ar">-</button>
+              <span id="count_ar" class="w-6 text-center font-bold text-sm text-indigo-900">0</span>
+              <button class="counter-btn-inc w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="ar">+</button>
+            </div>
+          </div>
+
+          <!-- 2M Very Short Answer -->
+          <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 hover:bg-slate-50 transition flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs font-bold text-slate-800">Very Short Answer (VSA)</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-700">2 Marks</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">2-3 sentences: Law, definition, SI unit</p>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <button class="counter-btn-dec w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="vsa">-</button>
+              <span id="count_vsa" class="w-6 text-center font-bold text-sm text-indigo-900">0</span>
+              <button class="counter-btn-inc w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="vsa">+</button>
+            </div>
+          </div>
+
+          <!-- 3M Short Answer -->
+          <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 hover:bg-slate-50 transition flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs font-bold text-slate-800">Short Answer (SA)</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-700">3 Marks</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">4-6 sentences: Principle, graph, 2-step numerical</p>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <button class="counter-btn-dec w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="sa">-</button>
+              <span id="count_sa" class="w-6 text-center font-bold text-sm text-indigo-900">0</span>
+              <button class="counter-btn-inc w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="sa">+</button>
+            </div>
+          </div>
+
+          <!-- 4M Case-Based -->
+          <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 hover:bg-slate-50 transition flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs font-bold text-slate-800">Case-Based / Source-Based</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-700">4 Marks</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">Context passage + sub-parts (a, b, c with OR)</p>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <button class="counter-btn-dec w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="case">-</button>
+              <span id="count_case" class="w-6 text-center font-bold text-sm text-indigo-900">0</span>
+              <button class="counter-btn-inc w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="case">+</button>
+            </div>
+          </div>
+
+          <!-- 5M Long Answer / Derivation -->
+          <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 hover:bg-slate-50 transition flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs font-bold text-slate-800">Long Answer (LA) / Derivation</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700">5 Marks</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">Numbered multi-step proof or 3+ step numerical</p>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <button class="counter-btn-dec w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="la">-</button>
+              <span id="count_la" class="w-6 text-center font-bold text-sm text-indigo-900">0</span>
+              <button class="counter-btn-inc w-7 h-7 rounded bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-100 transition flex items-center justify-center text-sm" data-target="la">+</button>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <!-- Compiled requested_selection string preview -->
+        <div class="mt-4 p-2.5 bg-slate-100 rounded-lg border border-slate-200 flex items-center justify-between text-xs">
+          <div class="flex items-center space-x-2 truncate">
+            <span class="font-bold text-slate-600">Contract Selection:</span>
+            <span id="requestedSelectionDisplay" class="font-mono text-indigo-700 font-semibold truncate">Select at least one question type above</span>
+          </div>
+          <span id="totalQuestionsBadge" class="px-2 py-0.5 rounded-full font-bold bg-slate-200 text-slate-700 text-[11px] whitespace-nowrap">0 Questions</span>
+        </div>
+
+        <!-- Generate Button -->
+        <button id="generateBtn" class="mt-4 w-full py-3 px-4 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white font-bold shadow-md hover:shadow-lg transition flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed">
+          <i data-lucide="zap" class="w-4 h-4 text-amber-300"></i>
+          <span>Generate CBSE Questions with Gemini Flash</span>
+        </button>
+
+      </div>
+
+      <!-- Generated Questions Viewport -->
+      <div id="resultsCard" class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex-1 flex flex-col">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-200">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="award" class="w-4 h-4 text-amber-500"></i>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-slate-700">CBSE Examination Output</h2>
+            <span id="generationModeBadge" class="hidden text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wider"></span>
+          </div>
+
+          <!-- Output Toolbar -->
+          <div class="flex items-center space-x-2">
+            <!-- Student / Teacher Mode Toggle -->
+            <button id="viewModeToggle" class="px-2.5 py-1 text-xs font-semibold rounded-md border border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center gap-1.5 transition">
+              <i data-lucide="eye" class="w-3.5 h-3.5 text-indigo-600"></i>
+              <span id="viewModeText">Teacher View (Solutions Visible)</span>
+            </button>
+            <!-- Print / PDF -->
+            <button id="printBtn" class="px-2.5 py-1 text-xs font-semibold rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 flex items-center gap-1 transition">
+              <i data-lucide="printer" class="w-3.5 h-3.5"></i> Print Exam
+            </button>
+            <!-- Copy Markdown -->
+            <button id="copyMdBtn" class="px-2.5 py-1 text-xs font-semibold rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 flex items-center gap-1 transition">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Markdown
+            </button>
+          </div>
+        </div>
+
+        <!-- Placeholder State -->
+        <div id="emptyState" class="flex-1 flex flex-col items-center justify-center py-12 text-center text-slate-400">
+          <div class="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-400 mb-3 border border-indigo-100">
+            <i data-lucide="book-open" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-sm font-bold text-slate-700 mb-1">No Questions Generated Yet</h3>
+          <p class="text-xs text-slate-500 max-w-sm">Load a topic-wise LaTeX chunk, configure your CBSE blueprint selection, and click generate.</p>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loadingState" class="hidden flex-1 flex flex-col items-center justify-center py-16 text-center">
+          <div class="w-12 h-12 rounded-full border-4 border-indigo-200 border-t-indigo-600 animate-spin mb-4"></div>
+          <h3 class="text-sm font-bold text-slate-800 mb-1">Generating Questions via Gemini Flash...</h3>
+          <p class="text-xs text-slate-500 max-w-sm">Applying CBSE Senior Secondary Paper Setter system context, checking chunk feasibility, and formulating step-wise marking schemes.</p>
+        </div>
+
+        <!-- Rendered Output Container -->
+        <div id="questionsContainer" class="hidden space-y-6">
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Gemini API Key Modal -->
+  <div id="apiKeyModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 overflow-hidden border border-slate-200 animate-in fade-in zoom-in duration-150">
+      <div class="bg-gradient-to-r from-indigo-900 to-indigo-800 text-white p-5 flex items-center justify-between">
+        <div class="flex items-center space-x-2.5">
+          <div class="w-8 h-8 rounded-lg bg-indigo-700 flex items-center justify-center text-amber-400">
+            <i data-lucide="key" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold">Google Gemini API Key</h3>
+            <p class="text-xs text-indigo-200">Used for live Gemini 2.5 Flash calls</p>
+          </div>
+        </div>
+        <button id="closeApiKeyModal" class="text-indigo-300 hover:text-white transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Your Gemini API Key</label>
+          <input type="password" id="geminiApiKeyInput" placeholder="AIzaSy..." class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none font-mono">
+          <p class="text-[11px] text-slate-500 mt-1">Key is stored in your browser's local storage and used directly for generation.</p>
+        </div>
+
+        <div id="keyStatusAlert" class="hidden p-3 rounded-lg text-xs font-medium"></div>
+
+        <div class="flex items-center justify-between pt-2">
+          <button id="testApiKeyBtn" class="px-3 py-1.5 text-xs font-semibold rounded-lg border border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1.5">
+            <i data-lucide="activity" class="w-3.5 h-3.5"></i> Test Key
+          </button>
+          <div class="space-x-2">
+            <button id="saveApiKeyBtn" class="px-4 py-1.5 text-xs font-bold rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition">
+              Save Key
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Printable CBSE Exam Sheet Header (Hidden on screen, rendered in print) -->
+  <div id="printableHeader" class="hidden">
+    <div class="text-center border-b-2 border-black pb-4 mb-4">
+      <div class="font-bold text-lg tracking-widest uppercase">Central Board of Secondary Education</div>
+      <div class="font-bold text-sm uppercase" id="printExamTitle">Senior School Certificate Examination</div>
+      <div class="flex justify-between text-xs mt-2 font-medium">
+        <span id="printSubjectGrade">Subject: Physics | Class XII</span>
+        <span id="printTopic">Topic: Refraction through a Prism</span>
+        <span id="printTotalMarks">Maximum Marks: 15 M</span>
+      </div>
+      <div class="flex justify-between text-xs mt-1 italic text-slate-600">
+        <span>Time Allowed: 45 Minutes</span>
+        <span>General Instructions: All questions are compulsory.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2133 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[table,dvipsnames,svgnames,x11names]{xcolor}
+\definecolor{aliceblue}{HTML}{F0F8FF}
+\definecolor{antiquewhite}{HTML}{FAEBD7}
+\definecolor{aqua}{HTML}{00FFFF}
+\definecolor{aquamarine}{HTML}{7FFFD4}
+\definecolor{azure}{HTML}{F0FFFF}
+\definecolor{beige}{HTML}{F5F5DC}
+\definecolor{bisque}{HTML}{FFE4C4}
+\definecolor{black}{HTML}{000000}
+\definecolor{blanchedalmond}{HTML}{FFEBCD}
+\definecolor{blue}{HTML}{0000FF}
+\definecolor{blueviolet}{HTML}{8A2BE2}
+\definecolor{brown}{HTML}{A52A2A}
+\definecolor{burlywood}{HTML}{DEB887}
+\definecolor{cadetblue}{HTML}{5F9EA0}
+\definecolor{chartreuse}{HTML}{7FFF00}
+\definecolor{chocolate}{HTML}{D2691E}
+\definecolor{coral}{HTML}{FF7F50}
+\definecolor{cornflowerblue}{HTML}{6495ED}
+\definecolor{cornsilk}{HTML}{FFF8DC}
+\definecolor{crimson}{HTML}{DC143C}
+\definecolor{cyan}{HTML}{00FFFF}
+\definecolor{darkblue}{HTML}{00008B}
+\definecolor{darkcyan}{HTML}{008B8B}
+\definecolor{darkgoldenrod}{HTML}{B8860B}
+\definecolor{darkgray}{HTML}{A9A9A9}
+\definecolor{darkgreen}{HTML}{006400}
+\definecolor{darkgrey}{HTML}{A9A9A9}
+\definecolor{darkkhaki}{HTML}{BDB76B}
+\definecolor{darkmagenta}{HTML}{8B008B}
+\definecolor{darkolivegreen}{HTML}{556B2F}
+\definecolor{darkorange}{HTML}{FF8C00}
+\definecolor{darkorchid}{HTML}{9932CC}
+\definecolor{darkred}{HTML}{8B0000}
+\definecolor{darksalmon}{HTML}{E9967A}
+\definecolor{darkseagreen}{HTML}{8FBC8F}
+\definecolor{darkslateblue}{HTML}{483D8B}
+\definecolor{darkslategray}{HTML}{2F4F4F}
+\definecolor{darkslategrey}{HTML}{2F4F4F}
+\definecolor{darkturquoise}{HTML}{00CED1}
+\definecolor{darkviolet}{HTML}{9400D3}
+\definecolor{deeppink}{HTML}{FF1493}
+\definecolor{deepskyblue}{HTML}{00BFFF}
+\definecolor{dimgray}{HTML}{696969}
+\definecolor{dimgrey}{HTML}{696969}
+\definecolor{dodgerblue}{HTML}{1E90FF}
+\definecolor{firebrick}{HTML}{B22222}
+\definecolor{floralwhite}{HTML}{FFFAF0}
+\definecolor{forestgreen}{HTML}{228B22}
+\definecolor{fuchsia}{HTML}{FF00FF}
+\definecolor{gainsboro}{HTML}{DCDCDC}
+\definecolor{ghostwhite}{HTML}{F8F8FF}
+\definecolor{gold}{HTML}{FFD700}
+\definecolor{goldenrod}{HTML}{DAA520}
+\definecolor{gray}{HTML}{808080}
+\definecolor{green}{HTML}{008000}
+\definecolor{greenyellow}{HTML}{ADFF2F}
+\definecolor{grey}{HTML}{808080}
+\definecolor{honeydew}{HTML}{F0FFF0}
+\definecolor{hotpink}{HTML}{FF69B4}
+\definecolor{indianred}{HTML}{CD5C5C}
+\definecolor{indigo}{HTML}{4B0082}
+\definecolor{ivory}{HTML}{FFFFF0}
+\definecolor{khaki}{HTML}{F0E68C}
+\definecolor{lavender}{HTML}{E6E6FA}
+\definecolor{lavenderblush}{HTML}{FFF0F5}
+\definecolor{lawngreen}{HTML}{7CFC00}
+\definecolor{lemonchiffon}{HTML}{FFFACD}
+\definecolor{lightblue}{HTML}{ADD8E6}
+\definecolor{lightcoral}{HTML}{F08080}
+\definecolor{lightcyan}{HTML}{E0FFFF}
+\definecolor{lightgoldenrodyellow}{HTML}{FAFAD2}
+\definecolor{lightgray}{HTML}{D3D3D3}
+\definecolor{lightgreen}{HTML}{90EE90}
+\definecolor{lightgrey}{HTML}{D3D3D3}
+\definecolor{lightpink}{HTML}{FFB6C1}
+\definecolor{lightsalmon}{HTML}{FFA07A}
+\definecolor{lightseagreen}{HTML}{20B2AA}
+\definecolor{lightskyblue}{HTML}{87CEFA}
+\definecolor{lightslategray}{HTML}{778899}
+\definecolor{lightslategrey}{HTML}{778899}
+\definecolor{lightsteelblue}{HTML}{B0C4DE}
+\definecolor{lightyellow}{HTML}{FFFFE0}
+\definecolor{lime}{HTML}{00FF00}
+\definecolor{limegreen}{HTML}{32CD32}
+\definecolor{linen}{HTML}{FAF0E6}
+\definecolor{magenta}{HTML}{FF00FF}
+\definecolor{maroon}{HTML}{800000}
+\definecolor{mediumaquamarine}{HTML}{66CDAA}
+\definecolor{mediumblue}{HTML}{0000CD}
+\definecolor{mediumorchid}{HTML}{BA55D3}
+\definecolor{mediumpurple}{HTML}{9370DB}
+\definecolor{mediumseagreen}{HTML}{3CB371}
+\definecolor{mediumslateblue}{HTML}{7B68EE}
+\definecolor{mediumspringgreen}{HTML}{00FA9A}
+\definecolor{mediumturquoise}{HTML}{48D1CC}
+\definecolor{mediumvioletred}{HTML}{C71585}
+\definecolor{midnightblue}{HTML}{191970}
+\definecolor{mintcream}{HTML}{F5FFFA}
+\definecolor{mistyrose}{HTML}{FFE4E1}
+\definecolor{moccasin}{HTML}{FFE4B5}
+\definecolor{navajowhite}{HTML}{FFDEAD}
+\definecolor{navy}{HTML}{000080}
+\definecolor{oldlace}{HTML}{FDF5E6}
+\definecolor{olive}{HTML}{808000}
+\definecolor{olivedrab}{HTML}{6B8E23}
+\definecolor{orange}{HTML}{FFA500}
+\definecolor{orangered}{HTML}{FF4500}
+\definecolor{orchid}{HTML}{DA70D6}
+\definecolor{palegoldenrod}{HTML}{EEE8AA}
+\definecolor{palegreen}{HTML}{98FB98}
+\definecolor{paleturquoise}{HTML}{AFEEEE}
+\definecolor{palevioletred}{HTML}{DB7093}
+\definecolor{papayawhip}{HTML}{FFEFD5}
+\definecolor{peachpuff}{HTML}{FFDAB9}
+\definecolor{peru}{HTML}{CD853F}
+\definecolor{pink}{HTML}{FFC0CB}
+\definecolor{plum}{HTML}{DDA0DD}
+\definecolor{powderblue}{HTML}{B0E0E6}
+\definecolor{purple}{HTML}{800080}
+\definecolor{red}{HTML}{FF0000}
+\definecolor{rosybrown}{HTML}{BC8F8F}
+\definecolor{royalblue}{HTML}{4169E1}
+\definecolor{saddlebrown}{HTML}{8B4513}
+\definecolor{salmon}{HTML}{FA8072}
+\definecolor{sandybrown}{HTML}{F4A460}
+\definecolor{seagreen}{HTML}{2E8B57}
+\definecolor{seashell}{HTML}{FFF5EE}
+\definecolor{sienna}{HTML}{A0522D}
+\definecolor{silver}{HTML}{C0C0C0}
+\definecolor{skyblue}{HTML}{87CEEB}
+\definecolor{slateblue}{HTML}{6A5ACD}
+\definecolor{slategray}{HTML}{708090}
+\definecolor{slategrey}{HTML}{708090}
+\definecolor{snow}{HTML}{FFFAFA}
+\definecolor{springgreen}{HTML}{00FF7F}
+\definecolor{steelblue}{HTML}{4682B4}
+\definecolor{tan}{HTML}{D2B48C}
+\definecolor{teal}{HTML}{008080}
+\definecolor{thistle}{HTML}{D8BFD8}
+\definecolor{tomato}{HTML}{FF6347}
+\definecolor{turquoise}{HTML}{40E0D0}
+\definecolor{violet}{HTML}{EE82EE}
+\definecolor{wheat}{HTML}{F5DEB3}
+\definecolor{whitesmoke}{HTML}{F5F5F5}
+\definecolor{yellowgreen}{HTML}{9ACD32}
+\usepackage[most]{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{geometry}
+% Gemini's headings occasionally use \texorpdfstring{...}{...} (normally
+% provided by hyperref, for a PDF-bookmark-safe alt text); load hyperref so
+% that's defined instead of a fatal "Undefined control sequence".
+\usepackage[hidelinks]{hyperref}
+% Chemistry chapters get skeletal-formula shorthand like \chemfig{-CH_3}.
+\usepackage{chemfig}
+\geometry{paperwidth=612.0bp, paperheight=784.01bp, left=38.59bp, right=77.52bp, top=55.18bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+
+% Style definitions for NCERT boxes
+\newtcolorbox{ncertbox}[2][]{
+    colback=blue!5!white,
+    colframe=blue!65!black,
+    fonttitle=\bfseries,
+    title=#2,
+    arc=2mm,
+    #1
+}
+
+% Botanical symbols for floral formulas
+\newcommand{\maleFlower}{\ensuremath{\tikz[baseline=-0.5ex,line width=0.6pt]{
+  \draw (0,0) circle (0.7ex);
+  \draw[->,>=stealth] (0.5ex,0.5ex) -- (1.2ex,1.2ex);
+}}}
+\newcommand{\femaleFlower}{\ensuremath{\tikz[baseline=-0.5ex,line width=0.6pt]{
+  \draw (0,0.2ex) circle (0.7ex);
+  \draw (0,-0.5ex) -- (0,-1.35ex);
+  \draw (-0.45ex,-0.9ex) -- (0.45ex,-0.9ex);
+}}}
+\newcommand{\bisexualFlower}{\ensuremath{\tikz[baseline=-0.5ex,line width=0.6pt]{
+  \draw (0,0) circle (0.7ex);
+  \draw[->,>=stealth] (0.5ex,0.5ex) -- (1.2ex,1.2ex);
+  \draw (0,-0.7ex) -- (0,-1.5ex);
+  \draw (-0.4ex,-1.1ex) -- (0.4ex,-1.1ex);
+}}}
+\newcommand{\lto}{\bisexualFlower}
+\usepackage[T1]{fontenc}\usepackage{tgbonum}
+\pagestyle{empty}
+\renewcommand{\normalsize}{\fontsize{10.5bp}{12.7bp}\selectfont\abovedisplayskip=4pt plus 2pt\belowdisplayskip=4pt plus 2pt\abovedisplayshortskip=2pt\belowdisplayshortskip=2pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt plus 1pt minus 1pt}
+\setlength{\emergencystretch}{3em}
+\setlist{itemsep=2pt, parsep=0pt, topsep=3pt, partopsep=0pt}
+\setlength{\intextsep}{5pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{5pt plus 2pt minus 2pt}
+\captionsetup{skip=2pt}
+\begin{document}
+\normalsize
+
+% ====================================================================
+% PAGE 1
+% ====================================================================
+
+\noindent\begin{minipage}[t]{0.40\textwidth}
+\vspace{0pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=73.9bp, max width=\linewidth, keepaspectratio]{figures/fig_p1_2.png}
+\end{figure}
+\vspace{34pt}
+{\color{salmon}\fontsize{24bp}{26bp}\selectfont\itshape Objectives}\\[-3pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\begin{tcolorbox}[enhanced,frame hidden,colback=white,borderline west={7pt}{-2pt}{salmon},left=12pt,right=0pt,top=2pt,bottom=2pt,boxsep=0pt,arc=0pt]
+After studying this Unit, you will be able to
+\begin{itemize}[leftmargin=14pt,itemsep=2pt,topsep=2pt,label=\textbullet]
+\item describe the formation of different types of solutions;
+\item express concentration of solution in different units;
+\item state and explain Henry's law and Raoult's law;
+\item distinguish between ideal and non-ideal solutions;
+\item explain deviations of real solutions from Raoult's law;
+\item describe colligative properties of solutions and correlate these with molar masses of the solutes;
+\item explain abnormal colligative properties exhibited by some solutes in solutions.
+\end{itemize}
+\end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.57\textwidth}
+\vspace{0pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=352.5bp, max width=\linewidth, keepaspectratio]{figures/fig_p1_almost_all_processes_in_body.png}
+\caption*{\textcolor{magenta}{\itshape Almost all processes in body occur in some kind of liquid solutions.}}
+\end{figure}
+\vspace{6pt}
+In normal life we rarely come across pure substances. Most of these are mixtures containing two or more pure substances. Their utility or importance in life depends on their composition. For example, the properties of brass (mixture of copper and zinc) are quite different from those of German silver (mixture of copper, zinc and nickel) or bronze (mixture of copper and tin); 1 part per million (ppm) of fluoride ions in water prevents tooth decay, while 1.5 ppm causes the tooth to become mottled and high concentrations of fluoride ions can be poisonous (for example, sodium fluoride is used in rat poison); intravenous injections are always dissolved in water containing salts at particular ionic concentrations that match with blood plasma concentrations and so on.
+
+\hspace*{1.5em}In this Unit, we will consider mostly liquid solutions and their formation. This will be followed by studying the properties of the solutions, like vapour pressure and colligative properties. We will begin with types of solutions and then various alternatives in which concentrations of a solute can be expressed in liquid solution.
+\end{minipage}
+
+\vspace{24pt}
+\noindent\begin{minipage}[t]{0.25\textwidth}
+\vspace{0pt}
+\raggedleft{\large\itshape 1.1\hspace{6pt}Types of\\ Solutions}\\[-2pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.72\textwidth}
+\vspace{0pt}
+Solutions are \textbf{homogeneous} mixtures of two or more than two components. By homogenous mixture we mean that its composition and properties are uniform throughout the mixture. Generally, the component that is present in the largest quantity is known as \textbf{solvent}. Solvent determines the physical state in which solution exists. One or more components present in the solution other than solvent are called \textbf{solutes.} In this Unit we shall consider only \textbf{binary solutions} (i.e.,
+\end{minipage}
+
+\vfill
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=56.91bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 2
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+consisting of two components). Here each component may be solid, liquid or in gaseous state and are summarised in Table 1.1.
+\end{minipage}
+
+\vspace{8pt}
+\begin{center}
+\textbf{Table 1.1: Types of Solutions}
+\end{center}
+\vspace{-4pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!45,boxrule=0.8pt,arc=2mm,left=0pt,right=0pt,top=0pt,bottom=4pt,boxsep=0pt,drop fuzzy shadow=gray!40]
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{@{\hspace{8pt}}p{0.22\linewidth}!{\color{salmon}\vrule}p{0.13\linewidth}!{\color{salmon}\vrule}p{0.13\linewidth}!{\color{salmon}\vrule}p{0.43\linewidth}@{}}
+\rowcolor{salmon}\textcolor{white}{\textbf{Type of Solution}} & \textcolor{white}{\textbf{Solute}} & \textcolor{white}{\textbf{Solvent}} & \textcolor{white}{\textbf{\hspace{1.5em}Common Examples}}\\[4pt]
+\textit{Gaseous Solutions} & Gas & Gas & Mixture of oxygen and nitrogen gases\\
+ & Liquid & Gas & Chloroform mixed with nitrogen gas\\
+ & Solid & Gas & Camphor in nitrogen gas\\[6pt]
+\textit{Liquid Solutions} & Gas & Liquid & Oxygen dissolved in water\\
+ & Liquid & Liquid & Ethanol dissolved in water\\
+ & Solid & Liquid & Glucose dissolved in water\\[6pt]
+\textit{Solid Solutions} & Gas & Solid & Solution of hydrogen in palladium\\
+ & Liquid & Solid & Amalgam of mercury with sodium\\
+ & Solid & Solid & Copper dissolved in gold\\
+\end{tabular}
+\end{tcolorbox}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.25\textwidth}
+\vspace{0pt}
+\raggedleft{\large\itshape 1.2\hspace{6pt}Expressing\\ Concentration\\ of Solutions}\\[-2pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.735\textwidth}
+\vspace{0pt}
+Composition of a solution can be described by expressing its concentration. The latter can be expressed either qualitatively or quantitatively. For example, qualitatively we can say that the solution is dilute (i.e., relatively very small quantity of solute) or it is concentrated (i.e., relatively very large quantity of solute). But in real life these kinds of description can add to lot of confusion and thus the need for a quantitative description of the solution.
+
+\hspace*{1.5em}There are several ways by which we can describe the concentration of the solution quantitatively.
+\begin{enumerate}[label=(\roman*),leftmargin=24pt,itemsep=4pt,topsep=4pt]
+\item \textit{Mass percentage} (w/w): The mass percentage of a component of a solution is defined as:
+
+Mass \% of a component
+\[ = \frac{\text{Mass of the component in the solution}}{\text{Total mass of the solution}} \times 100 \tag{1.1} \]
+For example, if a solution is described by 10\% glucose in water by mass, it means that 10 g of glucose is dissolved in 90 g of water resulting in a 100 g solution. Concentration described by mass percentage is commonly used in industrial chemical applications. For example, commercial bleaching solution contains 3.62 mass percentage of sodium hypochlorite in water.
+\item \textit{Volume percentage (V/V)}: The volume percentage is defined as:
+\[ \text{Volume \% of a component} = \frac{\text{Volume of the component}}{\text{Total volume of solution}} \times 100 \tag{1.2} \]
+\end{enumerate}
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,2\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=77.01bp, top=65.78bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 3
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.77\textwidth}
+\begin{enumerate}[label=(\roman*),leftmargin=24pt,itemsep=3pt,topsep=0pt,start=3]
+\item[] For example, 10\% ethanol solution in water means that 10 mL of ethanol is dissolved in water such that the total volume of the solution is 100 mL. Solutions containing liquids are commonly expressed in this unit. For example, a 35\% ($v/v$) solution of ethylene glycol, an antifreeze, is used in cars for cooling the engine. At this concentration the antifreeze lowers the freezing point of water to 255.4K ($-17.6\,^\circ$C).
+\item \textit{Mass by volume percentage (w/V)}: Another unit which is commonly used in medicine and pharmacy is mass by volume percentage. It is the mass of solute dissolved in 100 mL of the solution.
+\item \textit{Parts per million}: When a solute is present in \textbf{trace} quantities, it is convenient to express concentration in \textbf{parts per million (ppm)} and is defined as:
+
+Parts per million =
+\[ \frac{\text{Number of parts of the component}}{\text{Total number of parts of all components of the solution}} \times 10^{6} \tag{1.3} \]
+As in the case of percentage, concentration in parts per million can also be expressed as mass to mass, volume to volume and mass to volume. A litre of sea water (which weighs 1030 g) contains about $6 \times 10^{-3}$ g of dissolved oxygen (O$_2$). Such a small concentration is also expressed as 5.8 g per $10^{6}$ g (5.8 ppm) of sea water. The concentration of pollutants in water or atmosphere is often expressed in terms of $\mu$g mL$^{-1}$ or ppm.
+\item \textit{Mole fraction}: Commonly used symbol for mole fraction is $x$ and subscript used on the right hand side of $x$ denotes the component. It is defined as:
+
+Mole fraction of a component =
+\[ \frac{\text{Number of moles of the component}}{\text{Total number of moles of all the components}} \tag{1.4} \]
+For example, in a binary mixture, if the number of moles of A and B are $n_\text{A}$ and $n_\text{B}$ respectively, the mole fraction of A will be
+\[ x_\text{A} = \frac{n_\text{A}}{n_\text{A} + n_\text{B}} \tag{1.5} \]
+For a solution containing i number of components, we have:
+\[ x_\text{i} = \frac{n_\text{i}}{n_1 + n_2 + \ldots\ldots + n_\text{i}} = \frac{n_\text{i}}{\sum n_\text{i}} \tag{1.6} \]
+It can be shown that in a given solution sum of all the mole fractions is unity, i.e.
+\[ x_1 + x_2 + \ldots\ldots\ldots\ldots\ldots + x_\text{i} = 1 \tag{1.7} \]
+Mole fraction unit is very useful in relating some physical properties of solutions, say vapour pressure with the concentration of the solution and quite useful in describing the calculations involving gas mixtures.
+\end{enumerate}
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,3\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=59.04bp, top=65.26bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 4
+% ====================================================================
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.1}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+Calculate the mole fraction of ethylene glycol (C$_2$H$_6$O$_2$) in a solution containing 20\% of C$_2$H$_6$O$_2$ by mass.
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+Assume that we have 100 g of solution (one can start with any amount of solution because the results obtained will be the same). Solution will contain 20 g of ethylene glycol and 80 g of water.
+
+Molar mass of C$_2$H$_6$O$_2$ = 12 $\times$ 2 + 1 $\times$ 6 + 16 $\times$ 2 = 62 g mol$^{-1}$.
+\[ \text{Moles of C}_2\text{H}_6\text{O}_2 = \frac{20\ \text{g}}{62\ \text{g mol}^{-1}} = 0.322\ \text{mol} \]
+\[ \text{Moles of water} = \frac{80\ \text{g}}{18\ \text{g mol}^{-1}} = 4.444\ \text{mol} \]
+\[ \begin{aligned}
+\text{x}_{\text{glycol}} &= \frac{\text{moles of C}_2\text{H}_6\text{O}_2}{\text{moles of C}_2\text{H}_6\text{O}_2 + \text{moles of H}_2\text{O}}\\[4pt]
+&= \frac{0.322\ \text{mol}}{0.322\ \text{mol} + 4.444\ \text{mol}} = 0.068
+\end{aligned} \]
+\[ \text{Similarly, } x_{\text{water}} = \frac{4.444\ \text{mol}}{0.322\ \text{mol} + 4.444\ \text{mol}} = 0.932 \]
+Mole fraction of water can also be calculated as: 1 -- 0.068 = 0.932
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{4pt}
+\noindent\hfill\begin{minipage}[t]{0.74\textwidth}
+\begin{enumerate}[label=(\roman*),leftmargin=24pt,topsep=0pt,start=6]
+\item \textit{Molarity}: Molarity (\textit{M}) is defined as number of moles of solute dissolved in one litre (or one cubic decimetre) of solution,
+\[ \text{Molarity} = \frac{\text{Moles of solute}}{\text{Volume of solution in litre}} \tag{1.8} \]
+\end{enumerate}
+\hspace*{2.5em}For example, 0.25 mol L$^{-1}$ (or 0.25 M) solution of NaOH means that 0.25 mol of NaOH has been dissolved in one litre (or one cubic decimetre).
+\end{minipage}
+
+\vspace{12pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.2}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+Calculate the molarity of a solution containing 5 g of NaOH in 450 mL solution.
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+\vspace{-8pt}
+\[ \text{Moles of NaOH} = \frac{5\ \text{g}}{40\ \text{g mol}^{-1}} = 0.125\ \text{mol} \]
+Volume of the solution in litres = 450 mL / 1000 mL L$^{-1}$\\
+Using equation (2.8),
+\[ \begin{aligned}
+\text{Molarity} &= \frac{0.125\ \text{mol} \times 1000\ \text{mL L}^{-1}}{450\ \text{mL}} = 0.278\ \text{M}\\[4pt]
+&= 0.278\ \text{mol L}^{-1}\\
+&= 0.278\ \text{mol dm}^{-3}
+\end{aligned} \]
+\end{minipage}
+\end{tcolorbox}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,4\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=60.51bp, right=75.32bp, top=65.9bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 5
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+\begin{enumerate}[label=(\roman*),leftmargin=24pt,topsep=0pt,start=7]
+\item \textit{Molality}: Molality (\textit{m}) is defined as the number of moles of the solute per kilogram (kg) of the solvent and is expressed as:
+\[ \text{Molality (m)} = \frac{\text{Moles of solute}}{\text{Mass of solvent in kg}} \tag{1.9} \]
+For example, 1.00 mol kg$^{-1}$ (or 1.00 m) solution of KCl means that 1 mol (74.5 g) of KCl is dissolved in 1 kg of water.
+
+Each method of expressing concentration of the solutions has its own merits and demerits. Mass \%, ppm, mole fraction and molality are independent of temperature, whereas molarity is a function of temperature. This is because volume depends on temperature and the mass does not.
+\end{enumerate}
+\end{minipage}
+
+\vspace{10pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=8pt,right=24pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\noindent\begin{minipage}[t]{0.80\linewidth}
+Calculate molality of 2.5 g of ethanoic acid (CH$_3$COOH) in 75 g of benzene.
+
+\vspace{6pt}
+Molar mass of C$_2$H$_4$O$_2$: 12 $\times$ 2 + 1 $\times$ 4 + 16 $\times$ 2 = 60 g mol$^{-1}$
+
+\noindent$\displaystyle \text{Moles of C}_2\text{H}_4\text{O}_2 = \frac{2.5\ \text{g}}{60\ \text{g mol}^{-1}} = 0.0417\ \text{mol}$
+
+\vspace{2pt}
+Mass of benzene in kg = 75 g/1000 g kg$^{-1}$ = 75 $\times$ 10$^{-3}$ kg
+
+\noindent$\displaystyle \text{Molality of C}_2\text{H}_4\text{O}_2 = \frac{\text{Moles of C}_2\text{H}_4\text{O}_2}{\text{kg of benzene}} = \frac{0.0417\ \text{mol} \times 1000\ \text{g kg}^{-1}}{75\ \text{g}}$
+
+\hspace*{8.6em}= 0.556 mol kg$^{-1}$
+\end{minipage}\hfill
+\begin{minipage}[t]{0.17\linewidth}
+{\color{DeepSkyBlue3}\large\itshape Example 1.3}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}\\[8pt]
+{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{8pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=14pt,right=34pt,top=4pt,bottom=4pt,boxsep=0pt,width=0.94\textwidth,drop fuzzy shadow=gray!40,overlay={\fill[salmon] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\hfill{\large\itshape Intext Questions}\\[-4pt]
+\mbox{}\hfill{\color{salmon}\rule{0.32\linewidth}{0.8pt}}
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=30pt,itemsep=3pt,topsep=2pt]
+\item Calculate the mass percentage of benzene (C$_6$H$_6$) and carbon tetrachloride (CCl$_4$) if 22 g of benzene is dissolved in 122 g of carbon tetrachloride.
+\item Calculate the mole fraction of benzene in solution containing 30\% by mass in carbon tetrachloride.
+\item Calculate the molarity of each of the following solutions: (a) 30 g of Co(NO$_3$)$_2$. 6H$_2$O in 4.3 L of solution (b) 30 mL of 0.5 M H$_2$SO$_4$ diluted to 500 mL.
+\item Calculate the mass of urea (NH$_2$CONH$_2$) required in making 2.5 kg of 0.25 molal aqueous solution.
+\item Calculate (a) molality (b) molarity and (c) mole fraction of KI if the density of 20\% (mass/mass) aqueous KI is 1.202 g mL$^{-1}$.
+\end{enumerate}
+\end{tcolorbox}
+
+\vspace{4pt}
+\noindent\begin{minipage}[t]{0.25\textwidth}
+\vspace{0pt}
+\raggedleft{\large\itshape 1.3\hspace{6pt}Solubility}\\[-2pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.70\textwidth}
+\vspace{0pt}
+Solubility of a substance is its maximum amount that can be dissolved in a specified amount of solvent at a specified temperature. It depends upon the nature of solute and solvent as well as temperature and pressure. Let us consider the effect of these factors in solution of a solid or a gas in a liquid.
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,5\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=59.28bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 6
+% ====================================================================
+
+\noindent\begin{minipage}[t]{0.24\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.70\linewidth}@{}}
+\textbf{\color{gray}1.3.1} & \textbf{Solubility of a Solid in a Liquid}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.735\textwidth}
+\vspace{0pt}
+Every solid does not dissolve in a given liquid. While sodium chloride and sugar dissolve readily in water, naphthalene and anthracene do not. On the other hand, naphthalene and anthracene dissolve readily in benzene but sodium chloride and sugar do not. It is observed that polar solutes dissolve in polar solvents and non polar solutes in non-polar solvents. In general, a solute dissolves in a solvent if the intermolecular interactions are similar in the two or we may say \textbf{like dissolves like}.
+
+\hspace*{1.5em}When a solid solute is added to the solvent, some solute dissolves and its concentration increases in solution. This process is known as dissolution. Some solute particles in solution collide with the solid solute particles and get separated out of solution. This process is known as crystallisation\textbf{.} A stage is reached when the two processes occur at the same rate. Under such conditions, number of solute particles going into solution will be equal to the solute particles separating out and a state of dynamic equilibrium is reached.
+\[ \text{Solute + Solvent} \rightleftharpoons \text{Solution} \tag{1.10} \]
+\hspace*{1.5em}At this stage the concentration of solute in solution will remain constant under the given conditions, i.e., temperature and pressure. Similar process is followed when gases are dissolved in liquid solvents. Such a solution in which no more solute can be dissolved at the same temperature and pressure is called a \textbf{saturated solution}. An \textit{unsaturated solution} is one in which more solute can be dissolved at the same temperature. The solution which is in dynamic equilibrium with undissolved solute is the saturated solution and contains the maximum amount of solute dissolved in a given amount of solvent. Thus, the concentration of solute in such a solution is its solubility.
+
+\hspace*{1.5em}Earlier we have observed that solubility of one substance into another depends on the nature of the substances. In addition to these variables, two other parameters, i.e., temperature and pressure also control this phenomenon.
+
+{\color{gray}\bfseries\itshape Effect of temperature}
+
+The solubility of a solid in a liquid is significantly affected by temperature changes. Consider the equilibrium represented by equation 1.10. This, being dynamic equilibrium, must follow \textbf{Le Chateliers Principle.} In general, if in a \textit{nearly saturated solution}, the dissolution process is endothermic ($\Delta_{\text{sol}}$ H $>$ 0), the solubility should increase with rise in temperature and if it is exothermic ($\Delta_{\text{sol}}$ H $<$ 0) the solubility should decrease. These trends are also observed experimentally.
+
+{\color{gray}\bfseries\itshape Effect of pressure}
+
+Pressure does not have any significant effect on solubility of solids in liquids. It is so because solids and liquids are highly incompressible and practically remain unaffected by changes in pressure.
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.24\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.70\linewidth}@{}}
+\textbf{\color{gray}1.3.2} & \textbf{Solubility of a Gas in a Liquid}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.735\textwidth}
+\vspace{0pt}
+Many gases dissolve in water. Oxygen dissolves only to a small extent in water. It is this dissolved oxygen which sustains all aquatic life. On the other hand, hydrogen chloride gas (HCl) is highly soluble in water. Solubility of gases in liquids is greatly affected by pressure and
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,6\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=60.24bp, right=77.75bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 7
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.76\textwidth}
+temperature. The solubility of gases increase with increase of pressure. For solution of gases in a solvent, consider a system as shown in Fig. 1.1 (a). The lower part is solution and the upper part is gaseous system at pressure \textit{p} and temperature \textit{T}. Assume this system to be in a state of dynamic equilibrium, i.e., under these conditions rate of gaseous particles entering and leaving the solution phase is the same. Now increase the pressure over the solution phase by compressing the gas to a smaller volume [Fig. 1.1 (b)]. This will increase the number of gaseous particles per unit volume over the solution and also the rate at which the gaseous particles are striking the surface of solution to enter it. The solubility of the gas will increase until a new equilibrium is reached resulting in an increase in the pressure of a gas above the solution and thus its solubility increases.
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.62\textwidth}
+\vspace{4pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=295.8bp, max width=\linewidth, keepaspectratio]{figures/fig_p7_fig_11_effect_of_pressure.png}
+\captionsetup{justification=raggedright,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.1:} Effect of pressure on the solubility of a gas. The concentration of dissolved gas is proportional to the pressure on the gas above the solution.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.35\textwidth}
+\vspace{0pt}
+\hspace*{1.5em}Henry was the first to give a quantitative relation between pressure and solubility of a gas in a solvent which is known as \textbf{Henry's law}. The law states that at a constant temperature, \textbf{the solubility of a gas in a liquid is directly proportional to the partial pressure of the gas present above the surface of liquid or solution.} Dalton, a contemporary of Henry, also concluded independently that the solubility of a gas in a liquid solution is a function of partial
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.39\textwidth}
+\vspace{18pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=183.2bp, max width=\linewidth, keepaspectratio]{figures/fig_p7_fig_12_experimental_results_for.png}
+\captionsetup{justification=raggedright,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.2:} Experimental results for the solubility of HCl gas in cyclohexane at 293 K. The slope of the line is the Henry's Law constant, $K_H$.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.60\textwidth}
+\vspace{0pt}
+pressure of the gas. If we use the mole fraction of a gas in the solution as a measure of its solubility, then it can be said that the \textbf{mole fraction of gas in the solution is proportional to the partial pressure of the gas over the solution.} The most commonly used form of Henry's law states that ``\textbf{the partial pressure of the gas in vapour phase (\textit{p}) is proportional to the mole fraction of the gas (\textit{x}) in the solution}'' and is expressed as:
+\[ p = K_\text{H}\, x \tag{1.11} \]
+\hspace*{1.5em}Here $K_\text{H}$ is the Henry's law constant. If we draw a graph between partial pressure of the gas versus mole fraction of the gas in solution, then we should get a plot of the type as shown in Fig. 1.2.
+
+\hspace*{1.5em}Different gases have different $K_\text{H}$ values at the same temperature (Table 1.2). This suggests that $K_\text{H}$ is a function of the nature of the gas.
+
+\hspace*{1.5em}It is obvious from equation (1.11) that higher the value of $K_\text{H}$ at a given pressure, the lower is the solubility of the gas in the liquid. It can be seen from Table 1.2 that K$_\text{H}$ values for both N$_2$ and O$_2$ increase with increase of temperature indicating that the solubility of gases
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,7\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=57.97bp, top=65.62bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 8
+% ====================================================================
+
+\begin{center}
+\textbf{Table 1.2: Values of Henry's Law Constant for Some Selected Gases in Water}
+\end{center}
+\vspace{-4pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!45,boxrule=0.8pt,arc=2mm,left=0pt,right=0pt,top=0pt,bottom=2pt,boxsep=0pt,drop fuzzy shadow=gray!40]
+\renewcommand{\arraystretch}{1.25}
+\centering
+\begin{tabular}{@{}>{\centering\arraybackslash}p{0.09\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.17\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.11\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.15\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.17\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.13\linewidth}@{}}
+\rowcolor{salmon}\textcolor{white}{\textbf{Gas}} & \textcolor{white}{\textbf{Temperature/K}} & \textcolor{white}{\textbf{$K_\text{H}$ /kbar}} & \textcolor{white}{\textbf{Gas}} & \textcolor{white}{\textbf{Temperature/K}} & \textcolor{white}{\textbf{$K_\text{H}$/kbar}}\\[3pt]
+He & 293 & 144.97 & Argon & 298 & 40.3\\
+H$_2$ & 293 & 69.16 & CO$_2$ & 298 & 1.67\\
+N$_2$ & 293 & 76.48 & \raisebox{-0.55\normalbaselineskip}[0pt][0pt]{Formaldehyde} & \raisebox{-0.55\normalbaselineskip}[0pt][0pt]{298} & \raisebox{-0.55\normalbaselineskip}[0pt][0pt]{1.83$\times$10$^{-5}$}\\
+N$_2$ & 303 & 88.84 & & & \\
+O$_2$ & 293 & 34.86 & Methane & 298 & 0.413\\
+O$_2$ & 303 & 46.82 & Vinyl chloride & 298 & 0.611\\
+\end{tabular}
+\end{tcolorbox}
+
+\vspace{2pt}
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+increases with decrease of temperature. It is due to this reason that aquatic species are more comfortable in cold waters rather than in warm waters.
+\end{minipage}
+
+\vspace{10pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.4}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+If N$_2$ gas is bubbled through water at 293 K, how many millimoles of N$_2$ gas would dissolve in 1 litre of water? Assume that N$_2$ exerts a partial pressure of 0.987 bar. Given that Henry's law constant for N$_2$ at 293 K is 76.48 \textit{k}bar.
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+The solubility of gas is related to the mole fraction in aqueous solution. The mole fraction of the gas in the solution is calculated by applying Henry's law. Thus:
+
+\noindent$\displaystyle x\,\text{(Nitrogen)} \;=\; \frac{p\ \text{(nitrogen)}}{K_\text{H}} = \frac{0.987\text{bar}}{76{,}480\ \text{bar}} = 1.29 \times 10^{-5}$
+
+As 1 litre of water contains 55.5 mol of it, therefore if \textit{n} represents number of moles of N$_2$ in solution,
+
+\noindent$\displaystyle x\,\text{(Nitrogen)} = \frac{n\ \text{mol}}{n\ \text{mol} + 55.5\ \text{mol}} = \frac{n}{55.5} = 1.29 \times 10^{-5}$
+
+(\textit{n} in denominator is neglected as it is $<<$ 55.5)\\
+Thus $n$ = 1.29 $\times$ 10$^{-5}$ $\times$ 55.5 mol = 7.16 $\times$ 10$^{-4}$ mol
+
+\noindent$\displaystyle = \frac{7.16{\times}10^{-4}\ \text{mol} \times 1000\ \text{mmol}}{1\ \text{mol}} = 0.716\ \text{mmol}$
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{10pt}
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+\hspace*{1.5em}Henry's law finds several applications in industry and explains some biological phenomena. Notable among these are:
+\begin{itemize}[leftmargin=14pt,itemsep=3pt,topsep=2pt,label=\textbullet]
+\item To increase the solubility of CO$_2$ in soft drinks and soda water, the bottle is sealed under high pressure.
+\item Scuba divers must cope with high concentrations of dissolved gases while breathing air at high pressure underwater. Increased pressure increases the solubility of atmospheric gases in blood. When the divers come towards surface, the pressure gradually decreases. This releases the dissolved gases and leads to the formation of bubbles of nitrogen in the blood. This blocks capillaries and creates a medical condition known as \textit{bends}, which are painful and dangerous to life.
+\end{itemize}
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,8\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=59.08bp, right=77.75bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 9
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+\begin{itemize}[leftmargin=14pt,itemsep=3pt,topsep=0pt,label=\textbullet]
+\item[] To avoid bends, as well as, the toxic effects of high concentrations of nitrogen in the blood, the tanks used by scuba divers are filled with air diluted with helium (11.7\% helium, 56.2\% nitrogen and 32.1\% oxygen).
+\item At high altitudes the partial pressure of oxygen is less than that at the ground level. This leads to low concentrations of oxygen in the blood and tissues of people living at high altitudes or climbers. Low blood oxygen causes climbers to become weak and unable to think clearly, symptoms of a condition known as \textit{anoxia}.
+\end{itemize}
+
+{\color{gray}\bfseries\itshape Effect of Temperature}
+
+Solubility of gases in liquids decreases with rise in temperature. When dissolved, the gas molecules are present in liquid phase and the process of dissolution can be considered similar to condensation and heat is evolved in this process. We have learnt in the last Section that dissolution process involves dynamic equilibrium and thus must follow \textbf{Le Chatelier's Principle}. As dissolution is an exothermic process, the solubility should decrease with increase of temperature.
+\end{minipage}
+
+\vspace{6pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=14pt,right=34pt,top=4pt,bottom=4pt,boxsep=0pt,width=0.94\textwidth,drop fuzzy shadow=gray!40,overlay={\fill[salmon] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\hfill{\large\itshape Intext Questions}\\[-4pt]
+\mbox{}\hfill{\color{salmon}\rule{0.32\linewidth}{0.8pt}}
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=30pt,itemsep=3pt,topsep=2pt,start=6]
+\item H$_2$S, a toxic gas with rotten egg like smell, is used for the qualitative analysis. If the solubility of H$_2$S in water at STP is 0.195 m, calculate Henry's law constant.
+\item Henry's law constant for CO$_2$ in water is 1.67$\times$10$^{8}$ Pa at 298 K. Calculate the quantity of CO$_2$ in 500 mL of soda water when packed under 2.5 atm CO$_2$ pressure at 298 K.
+\end{enumerate}
+\end{tcolorbox}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{6pt}}p{0.70\linewidth}@{}}
+{\large\itshape 1.4} & {\large\itshape Vapour Pressure of Liquid Solutions}
+\end{tabular}\\[-2pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+Liquid solutions are formed when solvent is a liquid. The solute can be a gas, a liquid or a solid. Solutions of gases in liquids have already been discussed in Section 1.3.2. In this Section, we shall discuss the solutions of liquids and solids in a liquid. Such solutions may contain one or more volatile components. Generally, the liquid solvent is volatile. The solute may or may not be volatile. We shall discuss the properties of only binary solutions, that is, the solutions containing two components, namely, the solutions of (i) liquids in liquids and (ii) solids in liquids.
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.62\linewidth}@{}}
+\textbf{\color{gray}1.4.1} & \textbf{Vapour Pressure of Liquid-Liquid Solutions}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+Let us consider a binary solution of two volatile liquids and denote the two components as 1 and 2. When taken in a closed vessel, both the components would evaporate and eventually an equilibrium would be established between vapour phase and the liquid phase. Let the total vapour pressure at this stage be $p_{\text{total}}$ and $p_1$ and $p_2$ be the partial vapour pressures of the two components 1 and 2 respectively. These partial pressures are related to the mole fractions $x_1$ and $x_2$ of the two components 1 and 2 respectively.
+
+\hspace*{1.5em}The French chemist, Francois Marte Raoult (1886) gave the quantitative relationship between them. The relationship is known as the \textbf{Raoult's law} which states that \textbf{for a solution of volatile liquids,}
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,9\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=60.0bp, top=65.62bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 10
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.74\textwidth}
+\textbf{the partial vapour pressure of each component of the solution is directly proportional to its mole fraction present in solution}.
+
+\hspace*{1.5em}Thus, for component 1
+
+\hspace*{6.5em}$p_1 \propto x_1$
+
+\hspace*{3em}and\hspace{2.2em}$p_1 = \; p_1^0\; x_1$ \hfill (1.12)
+
+\hspace*{1.5em}where $p_1^0$ is the vapour pressure of pure component 1 at the same temperature.
+
+\hspace*{1.5em}Similarly, for component 2
+
+\hspace*{6.5em}$p_2 = p_2^{\,0}\, x_2$ \hfill (1.13)
+
+\hspace*{1.5em}where $p_2^{\,0}$ represents the vapour pressure of the pure component 2.
+
+\hspace*{1.5em}According to \textbf{Dalton's law of partial pressures}, the total pressure ($p_{\text{total}}$) over the solution phase in the container will be the sum of the partial pressures of the components of the solution and is given as:
+
+\hspace*{3em}$p_{\text{total}} = p_1 + p_2$ \hfill (1.14)
+
+\hspace*{1.5em}Substituting the values of $p_1$ and $p_2$, we get
+
+\hspace*{3em}$p_{\text{total}} = x_1\, p_1^{\,0} + x_2\, p_2^{\,0}$
+
+\hspace*{6.6em}$= (1 - x_2)\, p_1^{\,0} + x_2\, p_2^{\,0}$ \hfill (1.15)
+
+\hspace*{6.6em}$= p_1^{\,0} + (p_2^{\,0} - p_1^{\,0})\, x_2$ \hfill (1.16)
+
+\hspace*{1.5em}Following conclusions can be drawn from equation (1.16).
+\begin{enumerate}[label=(\roman*),leftmargin=24pt,itemsep=1pt,topsep=1pt]
+\item Total vapour pressure over the solution can be related to the mole fraction of any one component.
+\item Total vapour pressure over the solution varies linearly with the mole fraction of component 2.
+\end{enumerate}
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.53\textwidth}
+\vspace{0pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=177.1bp, max width=\linewidth, keepaspectratio]{figures/fig_p10_fig_13_the_plot_of.png}
+\captionsetup{justification=justified,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.3:} The plot of vapour pressure and mole fraction of an ideal solution at constant temperature. The dashed lines I and II represent the partial pressure of the components. (It can be seen from the plot that $p_1$ and $p_2$ are directly proportional to $x_1$ and $x_2$, respectively). The total vapour pressure is given by line marked III in the figure.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.445\textwidth}
+\vspace{0pt}
+\begin{enumerate}[label=(\roman*),leftmargin=28pt,topsep=0pt,start=3]
+\item Depending on the vapour pressures of the pure components 1 and 2, total vapour pressure over the solution decreases or increases with the increase of the mole fraction of component 1.
+\end{enumerate}
+\hspace*{1.5em}A plot of $p_1$ or $p_2$ versus the mole fractions $x_1$ and $x_2$ for a solution gives a linear plot as shown in Fig. 1.3. These lines (I and II) pass through the points for which $x_1$ and $x_2$ are equal to unity. Similarly the plot (line III) of $p_{\text{total}}$ versus $x_2$ is also linear (Fig. 1.3). The minimum value of $p_{\text{total}}$ is $p_1^{\,0}$ and the maximum value is $p_2^{\,0}$, assuming that component 1 is less volatile than component 2, i.e., $p_1^{\,0} < p_2^{\,0}$.
+
+\hspace*{1.5em}The composition of vapour phase in equilibrium with the solution is determined by the partial pressures of the components. If $y_1$ and $y_2$ are the mole fractions of the
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,10\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=61.0bp, right=72.79bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 11
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+components 1 and 2 respectively in the vapour phase then, using Dalton's law of partial pressures:
+
+\hspace*{3em}$p_1 = y_1\; p_{\text{total}}$ \hfill (1.17)
+
+\hspace*{3em}$p_2 = y_2\; p_{\text{total}}$ \hfill (1.18)
+
+\hspace*{1.5em}In general
+
+\hspace*{3em}$p_\text{i} = y_\text{i}\;\; p_{\text{total}}$ \hfill (1.19)
+\end{minipage}
+
+\vspace{14pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=8pt,right=24pt,top=6pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\noindent\begin{minipage}[t]{0.78\linewidth}
+Vapour pressure of chloroform (CHCl$_3$) and dichloromethane (CH$_2$Cl$_2$) at 298 K are 200 mm Hg and 415 mm Hg respectively. (i) Calculate the vapour pressure of the solution prepared by mixing 25.5 g of CHCl$_3$ and 40 g of CH$_2$Cl$_2$ at 298 K and, (ii) mole fractions of each component in vapour phase.
+
+\vspace{6pt}
+\begin{enumerate}[label=(\roman*),leftmargin=22pt,itemsep=6pt,topsep=0pt]
+\item Molar mass of CH$_2$Cl$_2$ = 12 $\times$ 1 + 1 $\times$ 2 + 35.5 $\times$ 2 = 85 g mol$^{-1}$\\
+Molar mass of CHCl$_3$ \;= 12 $\times$ 1 + 1 $\times$ 1 + 35.5 $\times$ 3 = 119.5 g mol$^{-1}$
+
+\noindent$\displaystyle \text{Moles of CH}_2\text{Cl}_2 \qquad\;\; = \frac{40\ \text{g}}{85\ \text{g mol}^{-1}} = 0.47\ \text{mol}$
+
+\noindent$\displaystyle \text{Moles of CHCl}_3 \qquad\quad = \frac{25.5\ \text{g}}{119.5\ \text{g mol}^{-1}} = 0.213\ \text{mol}$
+
+Total number of moles = 0.47 + 0.213 = 0.683 mol
+
+\noindent$\displaystyle x_{\text{CH}_2\text{Cl}_2} = \frac{0.47\ \text{mol}}{0.683\ \text{mol}} = 0.688$
+
+\noindent$x_{\text{CHCl}_3} = 1.00 - 0.688 = 0.312$
+
+Using equation (2.16),
+
+\hspace*{1.5em}$p_{\text{total}} = p_1^{\,0} + (p_2^{\,0} - p_1^{\,0})\; x_2 = 200 + (415 - 200) \times 0.688$\\
+\hspace*{3.9em}$= 200 + 147.9 = 347.9$ mm Hg
+\item Using the relation (2.19), $y_\text{i} = p_\text{i}/p_{\text{total}}$, we can calculate the mole fraction of the components in gas phase ($y_\text{i}$).
+
+\hspace*{1.5em}$p_{\text{CH}_2\text{Cl}_2} = 0.688 \times 415$ mm Hg = 285.5 mm Hg\\
+\hspace*{1.5em}$p_{\text{CHCl}_3} \;= 0.312 \times 200$ mm Hg = 62.4 mm Hg\\
+\hspace*{1.5em}$y_{\text{CH}_2\text{Cl}_2} = 285.5$ mm Hg/347.9 mm Hg = 0.82\\
+\hspace*{1.5em}$y_{\text{CHCl}_3} \;= 62.4$ mm Hg/347.9 mm Hg = 0.18
+\end{enumerate}
+
+\vspace{6pt}
+\textbf{Note:} Since, CH$_2$Cl$_2$ is a more volatile component than CHCl$_3$, [$p^{\,o}_{\text{CH}_2\text{Cl}_2}$ = 415 mm Hg and $p^{\,o}_{\text{CHCl}_3}$ = 200 mm Hg] and the vapour phase is also richer in CH$_2$Cl$_2$ [$y_{\text{CH}_2\text{Cl}_2}$ = 0.82 and $y_{\text{CHCl}_3}$ = 0.18], it may thus be concluded that \textbf{at equilibrium, vapour phase will be always rich in the component which is more volatile.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.19\linewidth}
+{\color{DeepSkyBlue3}\large\itshape Example 1.5}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}\\[60pt]
+\mbox{}\hfill{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}
+\end{tcolorbox}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,11\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=59.52bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 12
+% ====================================================================
+
+\noindent\begin{minipage}[t]{0.24\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.64\linewidth}@{}}
+\textbf{\color{gray}1.4.2} & \textbf{Raoult's Law as a special case of Henry's Law}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.735\textwidth}
+\vspace{0pt}
+According to Raoult's law, the vapour pressure of a volatile component in a given solution is given by $p_\text{i} = x_\text{i}\; p_\text{i}^{\,0}$. In the solution of a gas in a liquid, one of the components is so volatile that it exists as a gas and we have already seen that its solubility is given by Henry's law which states that
+
+\hspace*{3em}$p = K_\text{H}\; x$.
+
+\hspace*{1.5em}If we compare the equations for Raoult's law and Henry's law, it can be seen that the partial pressure of the volatile component or gas is directly proportional to its mole fraction in solution. Only the proportionality constant $K_\text{H}$ differs from $p_1^{\,0}$. Thus, Raoult's law becomes a special case of Henry's law in which $K_\text{H}$ becomes equal to $p_1^{\,0}$.
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.24\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.64\linewidth}@{}}
+\textbf{\color{gray}1.4.3} & \textbf{Vapour Pressure of Solutions of Solids in Liquids}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.735\textwidth}
+\vspace{0pt}
+Another important class of solutions consists of solids dissolved in liquid, for example, sodium chloride, glucose, urea and cane sugar in water and iodine and sulphur dissolved in carbon disulphide. Some physical properties of these solutions are quite different from those of pure solvents. For example, vapour pressure. Liquids at a given
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.52\textwidth}
+\vspace{6pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=195.4bp, max width=\linewidth, keepaspectratio]{figures/fig_p12_fig_14_decrease_in_the.png}
+\captionsetup{justification=justified,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.4:} Decrease in the vapour pressure of the solvent on account of the presence of solute in the solvent (a) evaporation of the molecules of the solvent from its surface is denoted by \textcolor{RoyalBlue}{\textbullet}, (b) in a solution, solute particles have been denoted by \textcolor{LimeGreen}{\textbullet} and they also occupy part of the surface area.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.455\textwidth}
+\vspace{0pt}
+temperature vapourise and under equilibrium conditions the pressure exerted by the vapours of the liquid over the liquid phase is called vapour pressure [Fig. 1.4 (a)]. In a pure liquid the entire surface is occupied by the molecules of the liquid. If a non-volatile solute is added to a solvent to give a solution [Fig. 1.4.(b)], the vapour pressure of the solution is solely from the solvent alone. This vapour pressure of the solution at a given temperature is found to be lower than the vapour pressure of the pure solvent at the same temperature. In the solution, the surface has both solute and solvent molecules; thereby the fraction of the surface covered by the solvent molecules gets reduced. Consequently, the number of solvent molecules escaping from the surface is correspondingly reduced, thus, the vapour pressure is also reduced.
+\end{minipage}
+
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+\hspace*{1.5em}The decrease in the vapour pressure of solvent depends on the quantity of non-volatile solute present in the solution, irrespective of its nature. For example, decrease in the vapour pressure of water by adding 1.0 mol of sucrose to one kg of water is nearly similar to that produced by adding 1.0 mol of urea to the same quantity of water at the same temperature.
+
+\hspace*{1.5em}Raoult's law in its general form can be stated as, \textbf{for any solution the partial vapour pressure of each volatile component in the solution is directly proportional to its mole fraction}.
+
+\hspace*{1.5em}In a binary solution, let us denote the solvent by 1 and solute by 2. When the solute is non-volatile, only the solvent molecules are present in vapour phase and contribute to vapour pressure. Let $p_1$ be
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,12\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=59.79bp, right=77.75bp, top=65.42bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 13
+% ====================================================================
+
+\noindent\begin{minipage}[t]{0.21\textwidth}
+\vspace{50pt}
+{\small\itshape\textbf{Fig. 1.5}\\
+If a solution obeys Raoult's law for all concentrations, its vapour pressure would vary linearly from zero to the vapour pressure of the pure solvent.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.29\textwidth}
+\vspace{0pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=133.3bp, max width=\linewidth, keepaspectratio]{figures/fig_p13_1.png}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.465\textwidth}
+\vspace{0pt}
+the vapour pressure of the solvent, $x_1$ be its mole fraction, $p_\text{i}^{\,0}$ be its vapour pressure in the pure state. Then according to Raoult's law
+
+\hspace*{5em}$p_1 \propto x_1$
+
+\hspace*{2em}and\hspace{1.2em}$p_1 = x_1\; p_1^{\,0}$ \hfill (1.20)
+
+\hspace*{1.5em}The proportionality constant is equal to the vapour pressure of pure solvent, $p_1^{\,0}$. A plot between the vapour pressure and the mole fraction of the solvent is linear (Fig. 1.5).
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{6pt}}p{0.74\linewidth}@{}}
+{\large\itshape 1.5} & {\large\itshape Ideal and Non-ideal Solutions}
+\end{tabular}\\[-2pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+Liquid-liquid solutions can be classified into ideal and non-ideal solutions on the basis of Raoult's law.
+\end{minipage}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.62\linewidth}@{}}
+\textbf{\color{gray}1.5.1} & \textbf{Ideal Solutions}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+The solutions which obey Raoult's law over the entire range of concentration are known as \textit{ideal solutions}. The ideal solutions have two other important properties. The enthalpy of mixing of the pure components to form the solution is zero and the volume of mixing is also zero, i.e.,
+
+\hspace*{3em}$\Delta_{\text{mix}}H = 0,$\hspace{6em}$\Delta_{\text{mix}}V = 0$ \hfill (1.21)
+
+\hspace*{1.5em}It means that no heat is absorbed or evolved when the components are mixed. Also, the volume of solution would be equal to the sum of volumes of the two components. At molecular level, ideal behaviour of the solutions can be explained by considering two components A and B. In pure components, the intermolecular attractive interactions will be of types A-A and B-B, whereas in the binary solutions in addition to these two interactions, A-B type of interactions will also be present. If the intermolecular attractive forces between the A-A and B-B are nearly equal to those between A-B, this leads to the formation of ideal solution. A perfectly ideal solution is rare but some solutions are nearly ideal in behaviour. Solution of n-hexane and n-heptane, bromoethane and chloroethane, benzene and toluene, etc. fall into this category.
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.62\linewidth}@{}}
+\textbf{\color{gray}1.5.2} & \textbf{Non-ideal Solutions}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+When a solution does not obey Raoult's law over the entire range of concentration, then it is called \textit{non-ideal solution.} The vapour pressure of such a solution is either higher or lower than that predicted by Raoult's law (equation 1.16). If it is higher, the solution exhibits \textbf{positive deviation} and if it is lower, it exhibits \textbf{negative deviation} from Raoult's law. The plots of vapour pressure as a function of mole fractions for such solutions are shown in Fig. 1.6.
+
+\hspace*{1.5em}The cause for these deviations lie in the nature of interactions at the molecular level. In case of positive deviation from Raoult's law, A-B interactions are weaker than those between A-A or B-B, i.e., in this case the intermolecular attractive forces between the solute-solvent molecules are weaker than those between the solute-solute and solvent-solvent molecules. This means that in such solutions, molecules of A (or B) will find it easier to escape than in pure state. This will increase the vapour
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,13\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=59.76bp, top=105.65bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 14
+% ====================================================================
+
+\noindent\begin{minipage}[t]{0.24\textwidth}
+\vspace{40pt}
+{\small\itshape\textbf{Fig.1.6}\\
+The vapour pressures of two component systems as a function of composition (a) a solution that shows positive deviation from Raoult's law and (b) a solution that shows negative deviation from Raoult's law.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.735\textwidth}
+\vspace{0pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=329.6bp, max width=\linewidth, keepaspectratio]{figures/fig_p14_1.png}
+\end{figure}
+\end{minipage}
+
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+pressure and result in positive deviation. Mixtures of ethanol and acetone behave in this manner. In pure ethanol, molecules are hydrogen bonded. On adding acetone, its molecules get in between the host molecules and break some of the hydrogen bonds between them. Due to weakening of interactions, the solution shows positive deviation from Raoult's law [Fig. 1.6 (a)]. In a solution formed by adding carbon disulphide to acetone, the dipolar interactions between solute-solvent molecules are weaker than the respective interactions among the solute-solute and solvent-solvent molecules. This solution also shows positive deviation.
+
+\hspace*{1.5em}In case of negative deviations from Raoult's law, the intermolecular attractive forces between A-A and B-B are weaker than those between A-B and leads to decrease in vapour pressure resulting in negative deviations. An example of this type is a mixture of phenol and aniline. In this case the intermolecular hydrogen bonding between phenolic proton and lone pair on nitrogen atom of aniline is stronger than the respective intermolecular hydrogen bonding between similar molecules. Similarly, a mixture of chloroform and acetone forms a solution with negative deviation from Raoult's law. This is because chloroform molecule is able to form hydrogen bond with acetone molecule as shown.
+
+\vspace{4pt}
+\hspace*{3em}\setchemfig{atom sep=1.6em}\chemfig{H_3C-[:-30]C(-[:-150]CH_3)=O-[,,,,dash pattern=on 2pt off 2pt]H-C(-[:50]Cl)(-[:-50]Cl)-Cl}
+\vspace{4pt}
+
+\hspace*{1.5em}This decreases the escaping tendency of molecules for each component and consequently the vapour pressure decreases resulting in negative deviation from Raoult's law [Fig. 1.6. (b)].
+
+\hspace*{1.5em}Some liquids on mixing, form \textbf{azeotropes} which are binary mixtures having the same composition in liquid and vapour phase and boil at a constant temperature. In such cases, it is not possible to separate the components by fractional distillation. There are two types of azeotropes called \textbf{minimum boiling azeotrope and maximum boiling azeotrope}. The solutions which show a large positive deviation from Raoult's law form minimum boiling azeotrope at a specific composition.
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,14\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=60.51bp, right=77.28bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 15
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+For example, ethanol-water mixture (obtained by fermentation of sugars) on fractional distillation gives a solution containing approximately 95\% by volume of ethanol. Once this composition, known as azeotrope composition, has been achieved, the liquid and vapour have the same composition, and no further separation occurs.
+
+\hspace*{1.5em}The solutions that show large negative deviation from Raoult's law form maximum boiling azeotrope at a specific composition. Nitric acid and water is an example of this class of azeotrope. This azeotrope has the approximate composition, 68\% nitric acid and 32\% water by mass, with a boiling point of 393.5 K.
+\end{minipage}
+
+\vspace{6pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=14pt,right=34pt,top=4pt,bottom=4pt,boxsep=0pt,width=0.94\textwidth,drop fuzzy shadow=gray!40,overlay={\fill[salmon] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\hfill{\large\itshape Intext Question}\\[-4pt]
+\mbox{}\hfill{\color{salmon}\rule{0.30\linewidth}{0.8pt}}
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=30pt,topsep=2pt,start=8]
+\item The vapour pressure of pure liquids A and B are 450 and 700 mm Hg respectively, at 350 K . Find out the composition of the liquid mixture if total vapour pressure is 600 mm Hg. Also find the composition of the vapour phase.
+\end{enumerate}
+\end{tcolorbox}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{6pt}}p{0.74\linewidth}@{}}
+{\large\itshape 1.6} & {\large\itshape Colligative Properties and Determination of Molar Mass}
+\end{tabular}\\[-2pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+We have learnt in Section 1.4.3 that the vapour pressure of solution decreases when a non-volatile solute is added to a volatile solvent. There are many properties of solutions which are connected with this decrease of vapour pressure. These are: (1) relative lowering of vapour pressure of the solvent (2) depression of freezing point of the solvent (3) elevation of boiling point of the solvent and (4) osmotic pressure of the solution. \textbf{All these properties depend on the number of solute particles irrespective of their nature relative to the total number of particles present in the solution. Such properties are called \textit{colligative properties}} (colligative: from Latin: co means together, ligare means to bind). In the following Sections we will discuss these properties one by one.
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.62\linewidth}@{}}
+\textbf{\color{gray}1.6.1} & \textbf{Relative Lowering of Vapour Pressure}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+We have learnt in Section 1.4.3 that the vapour pressure of a solvent in solution is less than that of the pure solvent. Raoult established that the lowering of vapour pressure depends only on the concentration of the solute particles and it is independent of their identity. The equation (1.20) given in Section 1.4.3 establishes a relation between vapour pressure of the solution, mole fraction and vapour pressure of the solvent, i.e.,
+
+\hspace*{3em}$p_1 \;=\; x_1\; p_1^{\,0}$ \hfill (1.22)
+
+\hspace*{1.5em}The reduction in the vapour pressure of solvent ($\Delta p_1$) is given as:
+
+\hspace*{3em}$\Delta p_1 \;=\; p_1^{\,0} - p_1 = p_1^{\,0} - p_1^{\,0}\, x_1$
+
+\hspace*{5.3em}$=\; p_1^{\,0}\,(1 - x_1)$ \hfill (1.23)
+
+\hspace*{1.5em}Knowing that $x_2 = 1 - x_1$, equation (1.23) reduces to
+
+\hspace*{3em}$\Delta p_1 \;=\; x_2\;\, p_1^{\,0}$ \hfill (1.24)
+
+\hspace*{1.5em}In a solution containing several non-volatile solutes, the lowering of the vapour pressure depends on the sum of the mole fraction of different solutes.
+
+\hspace*{1.5em}Equation (1.24) can be written as
+
+\hspace*{3em}$\displaystyle \frac{\Delta p_1}{p_1^{\,0}} = \frac{p_1^{\,0} - p_1}{p_1^{\,0}} = x_2$ \hfill (1.25)
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,15\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=59.28bp, top=65.81bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 16
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+\hspace*{1.5em}The expression on the left hand side of the equation as mentioned earlier is called \textbf{relative lowering of vapour pressure and is equal to the mole fraction of the solute}. The above equation can be written as:
+\[ \frac{p_1^{\,0} - p_1}{p_1^{\,0}} \;=\; \frac{n_2}{n_1 + n_2} \quad \left(\text{since } x_2 = \frac{n_2}{n_1 + n_2}\right) \tag{1.26} \]
+\hspace*{1.5em}Here $n_1$ and $n_2$ are the number of moles of solvent and solute respectively present in the solution. For dilute solutions $n_2 << n_1$, hence neglecting $n_2$ in the denominator we have
+\[ \frac{p_1^{\,0} - p_1}{p_1^{\,0}} \;=\; \frac{n_2}{n_1} \tag{1.27} \]
+\[ \text{or}\quad \frac{p_1^{\,0} - p_1}{p_1^{\,0}} \;=\; \frac{\text{w}_2 \times M_1}{M_2 \times \text{w}_1} \tag{1.28} \]
+\hspace*{1.5em}Here $w_1$ and $w_2$ are the masses and $M_1$ and $M_2$ are the molar masses of the solvent and solute respectively.
+
+\hspace*{1.5em}From this equation (1.28), knowing all other quantities, the molar mass of solute ($M_2$) can be calculated.
+\end{minipage}
+
+\vspace{10pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.6}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+The vapour pressure of pure benzene at a certain temperature is 0.850 bar. A non-volatile, non-electrolyte solid weighing 0.5 g when added to 39.0 g of benzene (molar mass 78 g mol$^{-1}$). Vapour pressure of the solution, then, is 0.845 bar. What is the molar mass of the solid substance?
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+The various quantities known to us are as follows:\\
+$p_1^{\,0}$ = 0.850 bar;\; $p$ = 0.845 bar;\; $M_1$ = 78 g mol$^{-1}$;\; $w_2$ = 0.5 g;\; $w_1$ = 39 g
+
+Substituting these values in equation (2.28), we get
+
+\noindent$\displaystyle \frac{0.850\ \text{bar} - 0.845\ \text{bar}}{0.850\ \text{bar}} = \frac{0.5\ \text{g} \times 78\ \text{g mol}^{-1}}{M_2 \times 39\ \text{g}}$
+
+Therefore, $M_2$ = 170 g mol$^{-1}$
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.25\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{4pt}}p{0.66\linewidth}@{}}
+\textbf{1.6.2} & \textbf{Elevation of Boiling Point}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.735\textwidth}
+\vspace{0pt}
+The vapour pressure of a liquid increases with increase of temperature. It boils at the temperature at which its vapour pressure is equal to the atmospheric pressure. For example, water boils at 373.15 K (100$^\circ$ C) because at this temperature the vapour pressure of water is 1.013 bar (1 atmosphere). We have also learnt in the last section that vapour pressure of the solvent decreases in the presence of non-volatile solute. Fig. 1.7 depicts the variation of vapour pressure of the pure solvent and solution as a function of temperature. For example, the vapour pressure of an aqueous solution of sucrose is less than 1.013 bar at 373.15 K. In order to make this solution boil, its vapour pressure must be increased to 1.013 bar by raising the temperature above the boiling temperature of the pure solvent (water). Thus, the boiling point of a solution is
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,16\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=58.08bp, right=77.02bp, top=65.81bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 17
+% ====================================================================
+
+\noindent\begin{minipage}[t]{0.43\textwidth}
+\vspace{0pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=192.4bp, max width=\linewidth, keepaspectratio]{figures/fig_p17_fig_17_the_vapour_pressure.png}
+\captionsetup{justification=justified,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.7:} The vapour pressure curve for solution lies below the curve for pure water. The diagram shows that $\Delta T_\text{b}$ denotes the elevation of boiling point of a solvent in solution.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.54\textwidth}
+\vspace{0pt}
+always higher than that of the boiling point of the pure solvent in which the solution is prepared as shown in Fig. 1.7. Similar to lowering of vapour pressure, the elevation of boiling point also depends on the number of solute molecules rather than their nature. A solution of 1 mol of sucrose in 1000 g of water boils at 373.52 K at one atmospheric pressure.
+
+\hspace*{1.5em}Let $T_\text{b}^{\,0}$ be the boiling point of pure solvent and $T_\text{b}$ be the boiling point of solution. The increase in the boiling point $\Delta T_\text{b} = T_\text{b} - T_\text{b}^{\,0}$ is known as \textbf{elevation of boiling point}.
+
+\hspace*{1.5em}Experiments have shown that for \textbf{dilute solutions} the elevation of boiling point ($\Delta T_\text{b}$) is directly proportional to the molal concentration of the solute in a solution. Thus
+
+\hspace*{3.4em}$\Delta T_\text{b} \propto \text{m}$ \hfill (1.29)
+
+\hspace*{1em}or\hspace{1em}$\Delta T_\text{b} = K_\text{b}\ \text{m}$ \hfill (1.30)
+\end{minipage}
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+\hspace*{1.5em}Here \textit{m} (molality) is the number of moles of solute dissolved in 1 kg of solvent and the constant of proportionality, $K_\text{b}$ is called \textbf{Boiling Point Elevation Constant or Molal Elevation Constant (Ebullioscopic Constant)}. The unit of $K_\text{b}$ is K kg mol$^{-1}$. Values of $K_\text{b}$ for some common solvents are given in Table 1.3. If w$_2$ gram of solute of molar mass $M_2$ is dissolved in w$_1$ gram of solvent, then molality, m of the solution is given by the expression:
+\[ \text{m} \;=\; \frac{w_2/\text{M}_2}{w_1/1000} \;=\; \frac{1000 \times w_2}{M_2 \times w_1} \tag{1.31} \]
+\hspace*{1.5em}Substituting the value of molality in equation (1.30) we get
+\[ \Delta T_\text{b} \;=\; \frac{K_\text{b} \times 1000 \times w_2}{M_2 \times w_1} \tag{1.32} \]
+\[ M_2 \;=\; \frac{1000 \times w_2 \times K_\text{b}}{\Delta T_\text{b} \times w_1} \tag{1.33} \]
+\hspace*{1.5em}Thus, in order to determine $M_2$, molar mass of the solute, known mass of solute in a known mass of the solvent is taken and $\Delta T_\text{b}$ is determined experimentally for a known solvent whose $K_\text{b}$ value is known.
+\end{minipage}
+
+\vspace{8pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,bottomrule=0pt,sharp corners=south,arc=2mm,left=8pt,right=24pt,top=4pt,bottom=4pt,boxsep=0pt,overlay={\fill[SkyBlue] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\noindent\begin{minipage}[t]{0.78\linewidth}
+18 g of glucose, C$_6$H$_{12}$O$_6$, is dissolved in 1 kg of water in a saucepan. At what temperature will water boil at 1.013 bar? $K_\text{b}$ for water is 0.52 K kg mol$^{-1}$.
+
+\vspace{6pt}
+Moles of glucose = 18 g/ 180 g mol$^{-1}$ = 0.1 mol\\
+Number of kilograms of solvent = 1 kg\\
+Thus molality of glucose solution = 0.1 mol kg$^{-1}$\\
+For water, change in boiling point
+\end{minipage}\hfill
+\begin{minipage}[t]{0.19\linewidth}
+{\color{DeepSkyBlue3}\large\itshape Example 1.7}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}\\[22pt]
+{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}
+\end{tcolorbox}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,17\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=58.88bp, top=65.08bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 18
+% ====================================================================
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,toprule=0pt,sharp corners=north,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\hfill\begin{minipage}[t]{0.81\linewidth}
+$\Delta T_\text{b} = K_\text{b} \times m = 0.52\ \text{K kg mol}^{-1} \times 0.1\ \text{mol kg}^{-1} = 0.052\ \text{K}$
+
+Since water boils at 373.15 K at 1.013 bar pressure, therefore, the boiling point of solution will be 373.15 + 0.052 = 373.202 K.
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.8}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+The boiling point of benzene is 353.23 K. When 1.80 g of a non-volatile solute was dissolved in 90 g of benzene, the boiling point is raised to 354.11 K. Calculate the molar mass of the solute. $K_\text{b}$ for benzene is 2.53 K kg mol$^{-1}$
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+The elevation ($\Delta T_\text{b}$) in the boiling point = 354.11 K -- 353. 23 K = 0.88 K\\
+Substituting these values in expression (2.33) we get
+
+\noindent$\displaystyle M_2 = \frac{2.53\ \text{K kg mol}^{-1} \times 1.8\ \text{g} \times 1000\ \text{g kg}^{-1}}{0.88\ \text{K} \times 90\ \text{g}} = 58\ \text{g mol}^{-1}$
+
+Therefore, molar mass of the solute, $M_2$ = 58 g mol$^{-1}$
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.25\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{4pt}}p{0.64\linewidth}@{}}
+\textbf{1.6.3} & \textbf{Depression of Freezing Point}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.74\textwidth}
+\vspace{0pt}
+The lowering of vapour pressure of a solution causes a lowering of the freezing point compared to that of the pure solvent (Fig. 1.8). We know that at the freezing point of a substance, the solid phase is in dynamic
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.47\textwidth}
+\vspace{12pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=201.7bp, max width=\linewidth, keepaspectratio]{figures/fig_p18_fig_18_diagram_showing_dtf.png}
+\captionsetup{justification=justified,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.8:} Diagram showing $\Delta T_f$, depression of the freezing point of a solvent in a solution.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.51\textwidth}
+\vspace{0pt}
+equilibrium with the liquid phase. Thus, the freezing point of a substance may be defined as the temperature at which the vapour pressure of the substance in its liquid phase is equal to its vapour pressure in the solid phase. A solution will freeze when its vapour pressure equals the vapour pressure of the pure solid solvent as is clear from Fig. 1.8. According to Raoult's law, when a non-volatile solid is added to the solvent its vapour pressure decreases and now it would become equal to that of solid solvent at lower temperature. Thus, the freezing point of the solvent decreases.
+
+\hspace*{1.5em}Let $T_\text{f}^{\,0}$ be the freezing point of pure solvent and $T_\text{f}$ be its freezing point when non-volatile solute is dissolved in it. The decrease in freezing point.
+
+\hspace*{1.5em}$\Delta T_\text{f} = T_\text{f}^{\,0} - T_\text{f}$\; is known as depression in freezing point.
+\end{minipage}
+
+\noindent\hfill\begin{minipage}[t]{0.74\textwidth}
+\hspace*{1.5em}Similar to elevation of boiling point, depression of freezing point ($\Delta T_\text{f}$) for \textbf{dilute solution} (ideal solution) is directly proportional to molality, m of the solution. Thus,
+
+\hspace*{3.5em}$\Delta T_\text{f} \quad\propto\quad \text{m}$
+
+or\hspace{3.6em}$\Delta T_\text{f} = K_\text{f}\ \text{m}$ \hfill (1.34)
+
+\hspace*{1.5em}The proportionality constant, K$_\text{f}$, which depends on the nature of the solvent is known as \textbf{Freezing Point Depression Constant or Molal}
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,18\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=59.16bp, right=76.79bp, top=66.29bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 19
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+\textbf{Depression Constant or Cryoscopic Constant}. The unit of K$_\text{f}$ is K kg mol$^{-1}$. Values of $K_\text{f}$ for some common solvents are listed in Table 1.3.
+
+\hspace*{1.5em}If w$_2$ gram of the solute having molar mass as $M_2$, present in w$_1$ gram of solvent, produces the depression in freezing point $\Delta T_\text{f}$ of the solvent then molality of the solute is given by the equation (1.31).
+\[ \text{m} \;=\; \frac{w_2\ /\ M_2}{w_1/1000} \tag{1.31} \]
+\hspace*{1.5em}Substituting this value of molality in equation (1.34) we get:
+\begin{align*}
+\Delta T_\text{f} &= \frac{K_\text{f}\ \times\ w_2\,/\,M_2}{w_1\,/1000}\\
+\Delta T_\text{f} &= \frac{K_\text{f} \times w_2 \times 1000}{M_2 \times w_1} \tag{1.35}\\
+M_2 &= \frac{K_\text{f} \times w_2 \times 1000}{\Delta T_\text{f} \times w_1} \tag{1.36}
+\end{align*}
+\hspace*{1.5em}Thus for determining the molar mass of the solute we should know the quantities w$_1$, w$_2$, $\Delta T_\text{f}$, along with the molal freezing point depression constant.
+
+\hspace*{1.5em}The values of $K_\text{f}$ and $K_\text{b}$, which depend upon the nature of the solvent, can be ascertained from the following relations.
+\begin{align*}
+K_\text{f} &= \frac{R \times M_1 \times T_\text{f}^2}{1000 \times \Delta_{\text{fus}}H} \tag{1.37}\\
+K_\text{b} &= \frac{R \times M_1 \times T_\text{b}^2}{1000 \times \Delta_{\text{vap}}H} \tag{1.38}
+\end{align*}
+\hspace*{1.5em}Here the symbols $R$ and $M_1$ stand for the gas constant and molar mass of the solvent, respectively and $T_\text{f}$ and $T_\text{b}$ denote the freezing point and the boiling point of the pure solvent respectively in kelvin. Further, $\Delta_{\text{fus}}H$ and $\Delta_{\text{vap}}H$ represent the enthalpies for the fusion and vapourisation of the solvent, respectively.
+\end{minipage}
+
+\vspace{8pt}
+\begin{center}
+\textbf{Table 1.3: Molal Boiling Point Elevation and Freezing Point\\ Depression Constants for Some Solvents}
+\end{center}
+\vspace{-4pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!45,boxrule=0.8pt,arc=2mm,left=0pt,right=0pt,top=0pt,bottom=2pt,boxsep=0pt,drop fuzzy shadow=gray!40]
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{\hspace{10pt}}p{0.25\linewidth}p{0.15\linewidth}>{\centering\arraybackslash}p{0.17\linewidth}>{\centering\arraybackslash}p{0.13\linewidth}>{\centering\arraybackslash}p{0.17\linewidth}@{}}
+\rowcolor{salmon}\textcolor{white}{\textbf{Solvent}} & \textcolor{white}{\textbf{b. p./K}} & \textcolor{white}{\textbf{$K_\text{b}$/K kg mol$^{-1}$}} & \textcolor{white}{\textbf{f. p./K}} & \textcolor{white}{\textbf{$K_\text{f}$/K kg mol$^{-1}$}}\\[4pt]
+Water & 373.15 & 0.52 & 273.0 & 1.86\\
+Ethanol & 351.5 & 1.20 & 155.7 & 1.99\\
+Cyclohexane & 353.74 & 2.79 & 279.55 & 20.00\\
+Benzene & 353.3 & 2.53 & 278.6 & 5.12\\
+Chloroform & 334.4 & 3.63 & 209.6 & 4.79\\
+Carbon tetrachloride & 350.0 & 5.03 & 250.5 & 31.8\\
+Carbon disulphide & 319.4 & 2.34 & 164.2 & 3.83\\
+Diethyl ether & 307.8 & 2.02 & 156.9 & 1.79\\
+Acetic acid & 391.1 & 2.93 & 290.0 & 3.90\\
+\end{tabular}
+\end{tcolorbox}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,19\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=56.73bp, top=64.99bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 20
+% ====================================================================
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.9}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+45 g of ethylene glycol (C$_2$H$_6$O$_2$) is mixed with 600 g of water. Calculate (a) the freezing point depression and (b) the freezing point of the solution.
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+Depression in freezing point is related to the molality, therefore, the molality
+
+\noindent$\displaystyle \text{of the solution with respect to ethylene glycol} = \frac{\text{moles of ethylene glycol}}{\text{mass of water in kilogram}}$
+
+\noindent$\displaystyle \text{Moles of ethylene glycol} = \frac{45\ \text{g}}{62\ \text{g mol}^{-1}} = 0.73\ \text{mol}$
+
+\noindent$\displaystyle \text{Mass of water in kg} = \frac{600\text{g}}{1000\text{g kg}^{-1}} = 0.6\ \text{kg}$
+
+\noindent$\displaystyle \text{Hence molality of ethylene glycol} = \frac{0.73\ \text{mol}}{0.60\ \text{kg}} = 1.2\ \text{mol kg}^{-1}$
+
+Therefore freezing point depression,
+
+\hspace*{1.5em}\"A$T_\text{f}$ = 1.86 K kg mol$^{-1}$ $\times$ 1.2 mol kg$^{-1}$ = 2.2 K
+
+Freezing point of the aqueous solution = 273.15 K -- 2.2 K = 270.95 K
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.10}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+1.00 g of a non-electrolyte solute dissolved in 50 g of benzene lowered the freezing point of benzene by 0.40 K. The freezing point depression constant of benzene is 5.12 K kg mol$^{-1}$. Find the molar mass of the solute.
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+Substituting the values of various terms involved in equation (1.36) we get,
+
+\noindent$\displaystyle M_2 = \frac{5.12\ \text{K kg mol}^{-1} \times 1.00\ \text{g} \times 1000\ \text{g kg}^{-1}}{0.40 \times 50\ \text{g}} = 256\ \text{g mol}^{-1}$
+
+Thus, molar mass of the solute = 256 g mol$^{-1}$
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.25\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{4pt}}p{0.66\linewidth}@{}}
+\textbf{1.6.4} & \textbf{Osmosis and Osmotic Pressure}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.74\textwidth}
+\vspace{0pt}
+There are many phenomena which we observe in nature or at home. For example, raw mangoes shrivel when pickled in brine (salt water); wilted flowers revive when placed in fresh water, blood cells collapse when suspended in saline water, etc. If we look into these processes we
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.20\textwidth}
+\vspace{150pt}
+{\small\itshape\textbf{Fig. 1.9}\\
+Level of solution rises in the thistle funnel due to osmosis of solvent.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.43\textwidth}
+\vspace{6pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=204.2bp, max width=\linewidth, keepaspectratio]{figures/fig_p20_1.png}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\vspace{0pt}
+find one thing common in all, that is, all these substances are bound by membranes. These membranes can be of animal or vegetable origin and these occur naturally such as pig's bladder or parchment or can be synthetic such as cellophane. These membranes appear to be continuous sheets or films, yet they contain a network of submicroscopic holes or pores. Small solvent
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,20\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=61.2bp, right=77.28bp, top=66.53bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 21
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+molecules, like water, can pass through these holes but the passage of bigger molecules like solute is hindered. Membranes having this kind of properties are known as \textit{semipermeable membranes} (SPM).
+
+\hspace*{1.5em}Assume that only solvent molecules can pass through these semi-permeable membranes. If this membrane is placed between the solvent and solution as shown in Fig. 1.9, the solvent molecules will flow through the membrane from pure solvent to the solution. \textbf{This process of flow of the solvent is called \textit{osmosis}.}
+
+\hspace*{1.5em}The flow will continue till the equilibrium is attained. The flow of the solvent from its side to solution side across a semipermeable membrane can be stopped if some extra pressure is applied on the solution. \textbf{This pressure that just stops the flow of solvent is called \textit{osmotic pressure} of the solution.} The flow of solvent from dilute solution to the concentrated solution across a semipermeable membrane is due to osmosis. The important point to be kept in mind is that solvent molecules always flow from lower concentration to higher concentration of solution. The osmotic pressure has been found to depend on the concentration of the solution.
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.49\textwidth}
+\vspace{4pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=217.6bp, max width=\linewidth, keepaspectratio]{figures/fig_p21_fig_110_the_excess_pressure.png}
+\captionsetup{justification=justified,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.10:} The excess pressure equal to the osmotic pressure must be applied on the solution side to prevent osmosis.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\vspace{0pt}
+\hspace*{1.5em}The osmotic pressure of a solution is the excess pressure that must be applied to a solution to prevent osmosis, i.e., to stop the passage of solvent molecules through a semipermeable membrane into the solution. This is illustrated in Fig. 1.10. Osmotic pressure is a colligative property as it depends on the number of solute molecules and not on their identity. For dilute solutions, it has been found experimentally that \textbf{osmotic pressure is proportional to the molarity, \textit{C} of the solution at a given temperature \textit{T}}. Thus:
+
+\hspace*{2.5em}$\Pi = C\,R\,T$ \hfill (1.39)
+
+\hspace*{1.5em}Here $\Pi$ is the osmotic pressure and R is the gas constant.
+
+\hspace*{2.5em}$\Pi = (n_2\ /V)\ R\ T$ \hfill (1.40)
+\end{minipage}
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+\hspace*{1.5em}Here $V$ is volume of a solution in litres containing n$_2$ moles of solute. If w$_2$ grams of solute, of molar mass, $M_2$ is present in the solution, then $n_2$ = w$_2$ / $M_2$ and we can write,
+\begin{align*}
+\Pi\ V &= \frac{\text{w}_2\ R\,T}{M_2} \tag{1.41}\\
+\text{or}\quad M_2 &= \frac{\text{w}_2\ R\ T}{\Pi\ V} \tag{1.42}
+\end{align*}
+\hspace*{1.5em}Thus, knowing the quantities w$_2$, \textit{T}, $\Pi$ and \textit{V} we can calculate the molar mass of the solute.
+
+\hspace*{1.5em}Measurement of osmotic pressure provides another method of determining molar masses of solutes. This method is widely used to determine molar masses of proteins, polymers and other
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,21\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=59.04bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 22
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+macromolecules. The osmotic pressure method has the advantage over other methods as pressure measurement is around the room temperature and the molarity of the solution is used instead of molality. As compared to other colligative properties, its magnitude is large even for very dilute solutions. The technique of osmotic pressure for determination of molar mass of solutes is particularly useful for biomolecules as they are generally not stable at higher temperatures and polymers have poor solubility.
+
+\hspace*{1.5em}\textbf{Two solutions having same osmotic pressure at a given temperature are called isotonic solutions}. When such solutions are separated by semipermeable membrane no osmosis occurs between them. For example, the osmotic pressure associated with the fluid inside the blood cell is equivalent to that of 0.9\% (mass/volume) sodium chloride solution, called normal saline solution and it is safe to inject intravenously. On the other hand, if we place the cells in a solution containing more than 0.9\% (mass/volume) sodium chloride, water will flow out of the cells and they would shrink. Such a solution is called \textbf{hypertonic}. If the salt concentration is less than 0.9\% (mass/volume), the solution is said to be \textbf{hypotonic}. In this case, water will flow into the cells if placed in this solution and they would swell.
+\end{minipage}
+
+\vspace{12pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.11}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+200 cm$^3$ of an aqueous solution of a protein contains 1.26 g of the protein. The osmotic pressure of such a solution at 300 K is found to be 2.57 $\times$ 10$^{-3}$ bar. Calculate the molar mass of the protein.
+\end{minipage}
+
+\vspace{6pt}
+\noindent\begin{minipage}[t]{0.17\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.81\linewidth}
+The various quantities known to us are as follows: $\Pi$ = 2.57 $\times$ 10$^{-3}$ bar,
+
+\hspace*{1.5em}$V$ = 200 cm$^3$ = 0.200 litre
+
+\hspace*{1.5em}$T$ = 300 K
+
+\hspace*{1.5em}R = 0.083 L bar mol$^{-1}$ K$^{-1}$
+
+Substituting these values in equation (2.42) we get
+
+\hspace*{1.5em}$\displaystyle M_2 = \frac{1.26\ \text{g} \times 0.083\ \text{L bar K}^{-1}\ \text{mol}^{-1} \times 300\ \text{K}}{2.57{\times}10^{-3}\text{bar} \times 0.200\ \text{L}} = 61{,}022\ \text{g mol}^{-1}$
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{14pt}
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+\hspace*{1.5em}The phenomena mentioned in the beginning of this section can be explained on the basis of osmosis. A raw mango placed in concentrated salt solution loses water via osmosis and shrivel into pickle. Wilted flowers revive when placed in fresh water. A carrot that has become limp because of water loss into the atmosphere can be placed into the water making it firm once again. Water will move into its cells through osmosis. When placed in water containing less than 0.9\% (mass/volume) salt, blood cells swell due to flow of water in them by osmosis. People taking a lot of salt or salty food experience water retention in tissue cells and intercellular spaces because of osmosis. The resulting
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,22\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=60.24bp, right=77.75bp, top=66.29bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 23
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+puffiness or swelling is called \textbf{edema}. Water movement from soil into plant roots and subsequently into upper portion of the plant is partly due to osmosis. The preservation of meat by salting and of fruits by adding sugar protects against bacterial action. Through the process of osmosis, a bacterium on salted meat or candid fruit loses water, shrivels and dies.
+\end{minipage}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{5pt}}p{0.64\linewidth}@{}}
+\textbf{1.6.5} & \textbf{Reverse Osmosis and Water Purification}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+The direction of osmosis can be reversed if a pressure larger than the osmotic pressure is applied to the solution side. That is, now the pure solvent flows out of the solution through the semi permeable membrane. This phenomenon is called \textbf{reverse osmosis} and is of great practical utility. Reverse osmosis is used in desalination of sea water. A schematic set up for the process is shown in Fig. 1.11.
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.47\textwidth}
+\vspace{10pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=216.3bp, max width=\linewidth, keepaspectratio]{figures/fig_p23_fig_111_reverse_osmosis_occurs.png}
+\captionsetup{justification=justified,singlelinecheck=false,font=small}
+\caption*{\textit{\textbf{Fig. 1.11:} Reverse osmosis occurs when a pressure larger than the osmotic pressure is applied to the solution.}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.51\textwidth}
+\vspace{0pt}
+When pressure more than osmotic pressure is applied, pure water is squeezed out of the sea water through the membrane. A variety of polymer membranes are available for this purpose.
+
+\hspace*{1.5em}The pressure required for the reverse osmosis is quite high. A workable porous membrane is a film of cellulose acetate placed over a suitable support. Cellulose acetate is permeable to water but impermeable to impurities and ions present in sea water. These days many countries use desalination plants to meet their potable water requirements.
+\end{minipage}
+
+\vspace{6pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=14pt,right=34pt,top=4pt,bottom=4pt,boxsep=0pt,width=0.94\textwidth,drop fuzzy shadow=gray!40,overlay={\fill[salmon] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\hfill{\large\itshape Intext Questions}\\[-4pt]
+\mbox{}\hfill{\color{salmon}\rule{0.32\linewidth}{0.8pt}}
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=34pt,itemsep=3pt,topsep=2pt,start=9]
+\item Vapour pressure of pure water at 298 K is 23.8 mm Hg. 50 g of urea (NH$_2$CONH$_2$) is dissolved in 850 g of water. Calculate the vapour pressure of water for this solution and its relative lowering.
+\item Boiling point of water at 750 mm Hg is 99.63$^\circ$C. How much sucrose is to be added to 500 g of water such that it boils at 100$^\circ$C.
+\item Calculate the mass of ascorbic acid (Vitamin C, C$_6$H$_8$O$_6$) to be dissolved in 75 g of acetic acid to lower its melting point by 1.5$^\circ$C. $K_\text{f}$ = 3.9 K kg mol$^{-1}$.
+\item Calculate the osmotic pressure in pascals exerted by a solution prepared by dissolving 1.0 g of polymer of molar mass 185,000 in 450 mL of water at 37$^\circ$C.
+\end{enumerate}
+\end{tcolorbox}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.22\textwidth}
+\vspace{0pt}
+\begin{tabular}[t]{@{}l@{\hspace{8pt}}p{0.66\linewidth}@{}}
+{\large\itshape 1.7} & {\large\itshape Abnormal Molar Masses}
+\end{tabular}\\[-2pt]
+{\color{salmon}\rule{\linewidth}{1.4pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.765\textwidth}
+\vspace{0pt}
+We know that ionic compounds when dissolved in water dissociate into cations and anions. For example, if we dissolve one mole of KCl (74.5 g) in water, we expect one mole each of K$^+$ and Cl$^-$ ions to be released in the solution. If this happens, there would be two moles of particles in the solution. If we ignore interionic attractions, one mole of KCl in one kg of water would be expected to increase the boiling point by 2 $\times$ 0.52 K = 1.04 K. Now if we did not know about the degree of
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,23\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=59.52bp, top=65.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 24
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+dissociation, we could be led to conclude that the mass of 2 mol particles is 74.5 g and the mass of one mole of KCl would be 37.25 g. This brings into light the rule that, when there is dissociation of solute into ions, the experimentally determined molar mass is always lower than the true value.
+\end{minipage}
+
+\noindent\begin{minipage}[t]{0.335\textwidth}
+\vspace{0pt}
+\begin{figure}[H]
+\centering
+\includegraphics[width=155.7bp, max width=\linewidth, keepaspectratio]{figures/fig_p24_1.png}
+\end{figure}
+% Figure 2 (ncert-books-class-12-chemistry-chapter-1/fig_p24_2.png) is a sub-region of
+% Figure 1 above (the same dimer structure, detected twice), so it is not placed again.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.635\textwidth}
+\vspace{0pt}
+\hspace*{1.5em}Molecules of ethanoic acid (acetic acid) dimerise in benzene due to hydrogen bonding. This normally happens in solvents of low dielectric constant. In this case the number of particles is reduced due to dimerisation. Association of molecules is depicted as follows:
+\end{minipage}
+
+\noindent\hfill\begin{minipage}[t]{0.735\textwidth}
+\hspace*{1.5em}It can be undoubtedly stated here that if all the molecules of ethanoic acid associate in benzene, then $\Delta T_\text{b}$ or $\Delta T_\text{f}$ for ethanoic acid will be half of the normal value. The molar mass calculated on the basis of this $\Delta T_\text{b}$ or $\Delta T_\text{f}$ will, therefore, be twice the expected value. Such a molar mass that is either lower or higher than the expected or normal value is called as \textbf{abnormal molar mass.}
+
+\hspace*{1.5em}In 1880 van't Hoff introduced a factor \textit{i}, known as the van't Hoff factor, to account for the extent of dissociation or association. This factor \textit{i} is defined as:
+
+\noindent$\displaystyle i = \frac{\text{Normal molar mass}}{\text{Abnormal molar mass}}$
+
+\noindent\hspace*{0.6em}$\displaystyle = \frac{\text{Observed colligative property}}{\text{Calculated colligative property}}$
+
+\noindent$\displaystyle i = \frac{\text{Total number of moles of particles after association/dissociation}}{\text{Number of moles of particles before association/dissociation}}$
+
+\vspace{4pt}
+\hspace*{1.5em}Here abnormal molar mass is the experimentally determined molar mass and calculated \textbf{colligative properties} are obtained by assuming that the non-volatile solute is neither associated nor dissociated. In case of association, value of \textit{i} is less than unity while for dissociation it is greater than unity. For example, the value of \textit{i} for aqueous KCl solution is close to 2, while the value for ethanoic acid in benzene is nearly 0.5.
+
+\hspace*{1.5em}Inclusion of van't Hoff factor modifies the equations for colligative properties as follows:
+
+\hspace*{1.5em}Relative lowering of vapour pressure of solvent,
+
+\hspace*{3em}$\displaystyle \frac{p_1^{\,\text{o}} - p_1}{p_1^{\,\text{o}}} = i.\frac{n_2}{n_1}$
+
+\hspace*{1.5em}Elevation of Boiling point, $\Delta T_b = \;i\;\, K_b\;\, \text{m}$\\
+\hspace*{1.5em}Depression of Freezing point, $\Delta T_f \;=\; i\;\, K_f\;\, \text{m}$\\
+\hspace*{1.5em}Osmotic pressure of solution, $\Pi \;\;=\; i\;\, n_2\;\, R\;\, T\;\, /\;\, V$
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,24\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=56.27bp, right=73.01bp, top=65.42bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 25
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.765\textwidth}
+\hspace*{1.5em}Table 1.4 depicts values of the factor, \textit{i} for several strong electrolytes. For KCl, NaCl and MgSO$_4$, \textit{i} values approach 2 as the solution becomes very dilute. As expected, the value of \textit{i} gets close to 3 for K$_2$SO$_4$.
+
+\vspace{8pt}
+\begin{tabular}{@{}l@{\hspace{5pt}}l@{}}
+\textbf{Table 1.4:} & \textbf{Values of van't Hoff factor, \textit{i}, at Various Concentrations}\\
+& \textbf{for NaCl, KCl, MgSO$_4$ and K$_2$SO$_4$.}
+\end{tabular}
+
+\vspace{4pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!45,boxrule=0.8pt,arc=2mm,left=0pt,right=0pt,top=0pt,bottom=2pt,boxsep=0pt,drop fuzzy shadow=gray!40]
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{@{}>{\centering\arraybackslash}p{0.12\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.09\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.12\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.12\linewidth}!{\color{salmon}\vrule}>{\centering\arraybackslash}p{0.40\linewidth}@{}}
+\rowcolor{salmon} & \multicolumn{3}{c!{\color{salmon}\vrule}}{\textcolor{white}{\textbf{$^*$Values of \textit{i}}}} & \textcolor{white}{\textbf{van't Hoff Factor \textit{i} for complete}}\\
+\rowcolor{salmon}\raisebox{0.7\normalbaselineskip}[0pt][0pt]{\textcolor{white}{\textbf{Salt}}} & \textcolor{white}{\textbf{0.1 m}} & \textcolor{white}{\textbf{0.01 m}} & \textcolor{white}{\textbf{0.001 m}} & \raisebox{0.7\normalbaselineskip}[0pt][0pt]{\textcolor{white}{\textbf{dissociation of solute}}}\\[4pt]
+NaCl & 1.87 & 1.94 & 1.97 & 2.00\\
+KCl & 1.85 & 1.94 & 1.98 & 2.00\\
+MgSO$_4$ & 1.21 & 1.53 & 1.82 & 2.00\\
+K$_2$SO$_4$ & 2.32 & 2.70 & 2.84 & 3.00\\
+\end{tabular}
+\end{tcolorbox}
+
+{\small\textcolor{salmon}{$^*$}\;\textit{represent i values for incomplete dissociation.}}
+\end{minipage}
+
+\vspace{8pt}
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,bottomrule=0pt,sharp corners=south,arc=2mm,left=8pt,right=24pt,top=4pt,bottom=4pt,boxsep=0pt,overlay={\fill[SkyBlue] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\noindent\begin{minipage}[t]{0.78\linewidth}
+2 g of benzoic acid (C$_6$H$_5$COOH) dissolved in 25 g of benzene shows a depression in freezing point equal to 1.62 K. Molal depression constant for benzene is 4.9 K kg mol$^{-1}$. What is the percentage association of acid if it forms dimer in solution?
+
+\vspace{6pt}
+The given quantities are: w$_2$ = 2 g; $K_\text{f}$ = 4.9 K kg mol$^{-1}$; w$_1$ = 25 g,\\
+\hspace*{3em}$\Delta T_f$ = 1.62 K
+
+Substituting these values in equation (1.36) we get:
+
+\hspace*{3em}$\displaystyle M_2 = \frac{4.9\ \text{K kg mol}^{-1} \times 2\ \text{g} \times 1000\ \text{g kg}^{-1}}{25\ \text{g} \times 1.62\ \text{K}} = 241.98\ \text{g mol}^{-1}$
+
+Thus, experimental molar mass of benzoic acid in benzene is\\
+\hspace*{3em}= 241.98 g mol$^{-1}$
+
+Now consider the following equilibrium for the acid:
+
+\hspace*{3em}2 C$_6$H$_5$COOH $\rightleftharpoons$ (C$_6$H$_5$COOH)$_2$
+
+If \textit{x} represents the degree of association of the solute then we would have (1 -- \textit{x}) mol of benzoic acid left in unassociated form and correspondingly $\dfrac{x}{2}$ as associated moles of benzoic acid at equilibrium. Therefore, total number of moles of particles at equilibrium is:
+
+\hspace*{3em}$\displaystyle 1 - x + \frac{x}{2} = 1 - \frac{x}{2}$
+
+Thus, total number of moles of particles at equilibrium equals van't Hoff factor \textit{i}.
+
+\hspace*{3em}$\displaystyle \text{But }\ i = \frac{\text{Normal molar mass}}{\text{Abnormal molar mass}}$
+\end{minipage}\hfill
+\begin{minipage}[t]{0.19\linewidth}
+{\color{DeepSkyBlue3}\large\itshape Example 1.12}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}\\[36pt]
+{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}
+\end{tcolorbox}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,25\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=56.07bp, top=71.61bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 26
+% ====================================================================
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,toprule=0pt,sharp corners=north,arc=2mm,left=24pt,right=8pt,top=4pt,bottom=6pt,boxsep=0pt,drop fuzzy shadow=gray!40,overlay={\fill[SkyBlue] (frame.south west) rectangle ([xshift=14pt]frame.north west);}]
+\noindent\hfill\begin{minipage}[t]{0.78\linewidth}
+\hspace*{5em}$\displaystyle = \frac{122\ \text{g mol}^{-1}}{241.98\ \text{g mol}^{-1}}$
+
+\vspace{4pt}
+or\hspace{3em}$\displaystyle \frac{x}{2} = 1 - \frac{122}{241.98} = 1 - 0.504 = 0.496$
+
+or\hspace{3.2em}$x\;\, = 2 \times 0\ .496 = 0.992$
+
+Therefore, degree of association of benzoic acid in benzene is 99.2 \%.
+\end{minipage}
+
+\vspace{8pt}
+\noindent\begin{minipage}[t]{0.19\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape Example 1.13}\\[-3pt]
+{\color{DeepSkyBlue3}\rule{\linewidth}{0.8pt}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.78\linewidth}
+0.6 mL of acetic acid (CH$_3$COOH), having density 1.06 g mL$^{-1}$, is dissolved in 1 litre of water. The depression in freezing point observed for this strength of acid was 0.0205$^\circ$C. Calculate the van't Hoff factor and the dissociation constant of acid.
+\end{minipage}
+
+\vspace{10pt}
+\noindent\begin{minipage}[t]{0.19\linewidth}
+\raggedleft{\color{DeepSkyBlue3}\large\itshape\underline{Solution}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.78\linewidth}
+\noindent$\displaystyle \text{Number of moles of acetic acid} \quad = \frac{0.6\ \text{mL} \;\times\; 1.06\ \text{g mL}^{-1}}{60\ \text{g mol}^{-1}}$\\
+\hspace*{11.6em}= 0.0106 mol = \textit{n}
+
+\noindent$\displaystyle \text{Molality} = \frac{0.0106\ \text{mol}}{1000\ \text{mL} \;\times\; 1\ \text{g mL}^{-1}} = 0.0106\ \text{mol kg}^{-1}$
+
+Using equation (1.35)
+
+$\Delta T_\text{f}$ = 1.86 K kg mol$^{-1}$ $\times$ 0.0106 mol kg$^{-1}$ = 0.0197 K
+
+\noindent$\displaystyle \text{van't Hoff Factor (\textit{i})} = \frac{\text{Observed freezing point}}{\text{Calculated freezing point}} = \frac{0.0205\ \ \text{K}}{0.0197\ \text{K}} = 1.041$
+
+Acetic acid is a weak electrolyte and will dissociate into two ions: acetate and hydrogen ions per molecule of acetic acid. If \textit{x} is the degree of dissociation of acetic acid, then we would have \textit{n} (1 -- \textit{x}) moles of undissociated acetic acid, \textit{nx} moles of CH$_3$COO$^-$ and \textit{nx} moles of H$^+$ ions,
+
+\hspace*{3em}\begin{tabular}{@{}ccc@{}}
+CH$_3$COOH $\rightleftharpoons$ & H$^+$ & + CH$_3$COO$^-$\\
+\textit{n} mol & 0 & 0\\
+$n\,(1 - x)$ & \textit{nx} mol & \textit{nx} mol
+\end{tabular}
+
+Thus total moles of particles are: \textit{n}(1 -- \textit{x} + \textit{x} + \textit{x}) = \textit{n}(1 + \textit{x})
+
+\hspace*{3em}$\displaystyle i = \frac{n\,(1 + x)}{n} = 1 + x = 1.041$
+
+Thus degree of dissociation of acetic acid = \textit{x} = 1.041-- 1.000 = 0.041
+
+Then\hspace{1em}[CH$_3$COOH] = \textit{n}(1 -- \textit{x}) = 0.0106 (1 -- 0.041),\\
+\hspace*{3.2em}[CH$_3$COO$^-$] = \textit{nx} = 0.0106 $\times$ 0.041, [H$^+$] = \textit{nx} = 0.0106 $\times$ 0.041.
+
+\noindent$\displaystyle \text{K}_\text{a} = \frac{[CH_3COO^-][H^+]}{[CH_3COOH]} = \frac{0.0106 \times 0.041 \times 0.0106 \times 0.041}{0.0106\ (1.00\ - 0.041)}$\\
+\hspace*{1.4em}= 1.86 $\times$ 10$^{-5}$
+\end{minipage}
+\end{tcolorbox}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,26\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=57.38bp, right=77.75bp, top=63.57bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 27
+% ====================================================================
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=gray!40,boxrule=0.8pt,arc=2mm,left=14pt,right=34pt,top=4pt,bottom=6pt,boxsep=0pt,width=0.94\textwidth,drop fuzzy shadow=gray!40,overlay={\fill[YellowGreen] ([xshift=-14pt]frame.south east) rectangle (frame.north east);}]
+\hfill{\Large\itshape Summary}\\[-4pt]
+\mbox{}\hfill{\color{YellowGreen}\rule{0.22\linewidth}{0.8pt}}
+
+A solution is a homogeneous mixture of two or more substances. Solutions are classified as solid, liquid and gaseous solutions. The concentration of a solution is expressed in terms of mole fraction, molarity, molality and in percentages. The dissolution of a gas in a liquid is governed by \textbf{Henry's law}, according to which, at a given temperature, the \textbf{solubility of a gas in a liquid is directly proportional to the partial pressure of the gas}. The vapour pressure of the solvent is lowered by the presence of a non-volatile solute in the solution and this lowering of vapour pressure of the solvent is governed by Raoult's law, according to which the \textbf{relative lowering of vapour pressure of the solvent over a solution is equal to the mole fraction of a non-volatile solute present in the solution}. However, in a binary liquid solution, if both the components of the solution are volatile then another form of Raoult's law is used. Mathematically, this form of the Raoult's law is stated as: $p_{\text{total}} = p_1^{\,0}x_1 + p_2^{\,0}x_2$ . \textbf{Solutions which obey Raoult's law over the entire range of concentration are called ideal solutions}. Two types of deviations from Raoult's law, called positive and negative deviations are observed. Azeotropes arise due to very large deviations from Raoult's law.
+
+\hspace*{1.5em}The properties of solutions which depend on the number of solute particles and are independent of their chemical identity are called colligative properties. These are lowering of vapour pressure, elevation of boiling point, depression of freezing point and osmotic pressure. The process of osmosis can be reversed if a pressure higher than the osmotic pressure is applied to the solution. Colligative properties have been used to determine the molar mass of solutes. Solutes which dissociate in solution exhibit molar mass lower than the actual molar mass and those which associate show higher molar mass than their actual values.
+
+\hspace*{1.5em}Quantitatively, the extent to which a solute is dissociated or associated can be expressed by van't Hoff factor \textit{i}. This factor has been defined as ratio of normal molar mass to experimentally determined molar mass or as the ratio of observed colligative property to the calculated colligative property.
+\end{tcolorbox}
+
+\vspace{16pt}
+\noindent\begin{minipage}[t]{0.955\textwidth}
+\hfill{\color{red!80!black}\fontsize{22bp}{24bp}\selectfont\itshape\bfseries Exercises}\\[-6pt]
+\mbox{}\hfill{\color{salmon}\rule{0.2\linewidth}{1.4pt}}
+
+\begin{tcolorbox}[enhanced,frame hidden,colback=white,left=0pt,right=28pt,top=0pt,bottom=40pt,boxsep=0pt,arc=0pt,overlay={\fill[salmon] ([xshift=-10pt]frame.south east) rectangle (frame.north east);}]
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=36pt,itemsep=3pt,topsep=0pt]
+\item Define the term solution. How many types of solutions are formed? Write briefly about each type with an example.
+\item Give an example of a solid solution in which the solute is a gas.
+\item Define the following terms:\\
+\hspace*{0.3em}(i) Mole fraction\hspace{2em}(ii) Molality\hspace{2em}(iii) Molarity\hspace{2em}(iv) Mass percentage.
+\item Concentrated nitric acid used in laboratory work is 68\% nitric acid by mass in aqueous solution. What should be the molarity of such a sample of the acid if the density of the solution is 1.504 g mL$^{-1}$?
+\end{enumerate}
+\end{tcolorbox}
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,27\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=81.05bp, top=65.49bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 28
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.85\textwidth}
+\begin{tcolorbox}[enhanced,frame hidden,colback=white,left=26pt,right=0pt,top=0pt,bottom=8pt,boxsep=0pt,arc=0pt,overlay={\fill[salmon,rounded corners=2pt] (frame.south west) rectangle ([xshift=10pt]frame.north west);}]
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=38pt,itemsep=3pt,topsep=0pt,start=5]
+\item A solution of glucose in water is labelled as 10\% w/w, what would be the molality and mole fraction of each component in the solution? If the density of solution is 1.2 g mL$^{-1}$, then what shall be the molarity of the solution?
+\item How many mL of 0.1 M HCl are required to react completely with 1 g mixture of Na$_2$CO$_3$ and NaHCO$_3$ containing equimolar amounts of both?
+\item A solution is obtained by mixing 300 g of 25\% solution and 400 g of 40\% solution by mass. Calculate the mass percentage of the resulting solution.
+\item An antifreeze solution is prepared from 222.6 g of ethylene glycol (C$_2$H$_6$O$_2$) and 200 g of water. Calculate the molality of the solution. If the density of the solution is 1.072 g mL$^{-1}$, then what shall be the molarity of the solution?
+\item A sample of drinking water was found to be severely contaminated with chloroform (CHCl$_3$) supposed to be a carcinogen. The level of contamination was 15 ppm (by mass):
+\begin{enumerate}[label=(\roman*),leftmargin=20pt,itemsep=1pt,topsep=2pt]
+\item express this in percent by mass
+\item determine the molality of chloroform in the water sample.
+\end{enumerate}
+\item What role does the molecular interaction play in a solution of alcohol and water?
+\item Why do gases always tend to be less soluble in liquids as the temperature is raised?
+\item State Henry's law and mention some important applications.
+\item The partial pressure of ethane over a solution containing 6.56 $\times$ 10$^{-3}$ g of ethane is 1 bar. If the solution contains 5.00 $\times$ 10$^{-2}$ g of ethane, then what shall be the partial pressure of the gas?
+\item What is meant by positive and negative deviations from Raoult's law and how is the sign of $\Delta_{\text{mix}}$H related to positive and negative deviations from Raoult's law?
+\item An aqueous solution of 2\% non-volatile solute exerts a pressure of 1.004 bar at the normal boiling point of the solvent. What is the molar mass of the solute?
+\item Heptane and octane form an ideal solution. At 373 \textit{K}, the vapour pressures of the two liquid components are 105.2 kPa and 46.8 kPa respectively. What will be the vapour pressure of a mixture of 26.0 g of heptane and 35 g of octane?
+\item The vapour pressure of water is 12.3 kPa at 300 \textit{K}. Calculate vapour pressure of 1 molal solution of a non-volatile solute in it.
+\item Calculate the mass of a non-volatile solute (molar mass 40 g mol$^{-1}$) which should be dissolved in 114 g octane to reduce its vapour pressure to 80\%.
+\item A solution containing 30 g of non-volatile solute exactly in 90 g of water has a vapour pressure of 2.8 kPa at 298 \textit{K}. Further, 18 g of water is then added to the solution and the new vapour pressure becomes 2.9 kPa at 298 \textit{K}. Calculate:\\
+(i) molar mass of the solute\hspace{2em}(ii) vapour pressure of water at 298 \textit{K}.
+\item A 5\% solution (by mass) of cane sugar in water has freezing point of 271\textit{K}. Calculate the freezing point of 5\% glucose in water if freezing point of pure water is 273.15 \textit{K}.
+\item Two elements A and B form compounds having formula AB$_2$ and AB$_4$. When dissolved in 20 g of benzene (C$_6$H$_6$), 1 g of AB$_2$ lowers the freezing point by 2.3 \textit{K} whereas 1.0 g of AB$_4$ lowers it by 1.3 \textit{K}. The molar depression constant for benzene is 5.1 \textit{K} kg mol$^{-1}$. Calculate atomic masses of A and B.
+\end{enumerate}
+\end{tcolorbox}
+\end{minipage}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,28\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=77.75bp, top=65.49bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 29
+% ====================================================================
+
+\noindent\begin{minipage}[t]{0.955\textwidth}
+\begin{tcolorbox}[enhanced,frame hidden,colback=white,left=0pt,right=26pt,top=0pt,bottom=8pt,boxsep=0pt,arc=0pt,overlay={\fill[salmon,rounded corners=2pt] ([xshift=-10pt]frame.south east) rectangle (frame.north east);}]
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=38pt,itemsep=3pt,topsep=0pt,start=22]
+\item At 300 K, 36 g of glucose present in a litre of its solution has an osmotic pressure of 4.98 bar. If the osmotic pressure of the solution is 1.52 bars at the same temperature, what would be its concentration?
+\item Suggest the most important type of intermolecular attractive interaction in the following pairs.
+\begin{enumerate}[label=(\roman*),leftmargin=24pt,itemsep=0pt,topsep=2pt]
+\item n-hexane and n-octane
+\item I$_2$ and CCl$_4$
+\item NaClO$_4$ and water
+\item methanol and acetone
+\item acetonitrile (CH$_3$CN) and acetone (C$_3$H$_6$O).
+\end{enumerate}
+\item Based on solute-solvent interactions, arrange the following in order of increasing solubility in n-octane and explain. Cyclohexane, KCl, CH$_3$OH, CH$_3$CN.
+\item Amongst the following compounds, identify which are insoluble, partially soluble and highly soluble in water?\\[2pt]
+\begin{tabular}{@{}p{0.34\linewidth}p{0.32\linewidth}p{0.30\linewidth}@{}}
+\hspace*{0.3em}(i)\; phenol & (ii)\; toluene & (iii)\; formic acid\\
+(iv)\; ethylene glycol & (v)\; chloroform & (vi)\; pentanol.
+\end{tabular}
+\item If the density of some lake water is 1.25g mL$^{-1}$ and contains 92 g of Na$^+$ ions per kg of water, calculate the molarity of Na$^+$ ions in the lake.
+\item If the solubility product of CuS is 6 $\times$ 10$^{-16}$, calculate the maximum molarity of CuS in aqueous solution.
+\item Calculate the mass percentage of aspirin (C$_9$H$_8$O$_4$) in acetonitrile (CH$_3$CN) when 6.5 g of C$_9$H$_8$O$_4$ is dissolved in 450 g of CH$_3$CN.
+\item Nalorphene (C$_{19}$H$_{21}$NO$_3$), similar to morphine, is used to combat withdrawal symptoms in narcotic users. Dose of nalorphene generally given is 1.5 mg. Calculate the mass of 1.5 $\times$ 10$^{-3}$ m aqueous solution required for the above dose.
+\item Calculate the amount of benzoic acid (C$_6$H$_5$COOH) required for preparing 250 mL of 0.15 M solution in methanol.
+\item The depression in freezing point of water observed for the same amount of acetic acid, trichloroacetic acid and trifluoroacetic acid increases in the order given above. Explain briefly.
+\item Calculate the depression in the freezing point of water when 10 g of CH$_3$CH$_2$CHClCOOH is added to 250 g of water. $K_\text{a}$ = 1.4 $\times$ 10$^{-3}$, $K_\text{f}$ = 1.86 K kg mol$^{-1}$.
+\item 19.5 g of CH$_2$FCOOH is dissolved in 500 g of water. The depression in the freezing point of water observed is 1.0$^0$ C. Calculate the van't Hoff factor and dissociation constant of fluoroacetic acid.
+\item Vapour pressure of water at 293 \textit{K} is 17.535 mm Hg. Calculate the vapour pressure of water at 293 \textit{K} when 25 g of glucose is dissolved in 450 g of water.
+\item Henry's law constant for the molality of methane in benzene at 298 \textit{K} is 4.27 $\times$ 10$^5$ mm Hg. Calculate the solubility of methane in benzene at 298 \textit{K} under 760 mm Hg.
+\item 100 g of liquid A (molar mass 140 g mol$^{-1}$) was dissolved in 1000 g of liquid B (molar mass 180 g mol$^{-1}$). The vapour pressure of pure liquid B was found to be 500 torr. Calculate the vapour pressure of pure liquid A and its vapour pressure in the solution if the total vapour pressure of the solution is 475 Torr.
+\end{enumerate}
+\end{tcolorbox}
+\end{minipage}
+
+\vfill
+\noindent\hfill\begin{minipage}{0.33\textwidth}
+\colorbox{Goldenrod1}{\color{gray}\,29\,}\hspace{6pt}{\color{gray}Solutions}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\newgeometry{paperwidth=612.0bp, paperheight=784.01bp, left=65.32bp, right=71.52bp, top=63.73bp, bottom=7.21bp, includehead=false, includefoot=false, headheight=0pt, headsep=0pt, footskip=0pt}
+\normalsize
+
+% ====================================================================
+% PAGE 30
+% ====================================================================
+
+\noindent\hfill\begin{minipage}[t]{0.85\textwidth}
+\begin{tcolorbox}[enhanced,frame hidden,colback=white,left=26pt,right=0pt,top=0pt,bottom=4pt,boxsep=0pt,arc=0pt,overlay={\fill[salmon,rounded corners=2pt] (frame.south west) rectangle ([xshift=10pt]frame.north west);}]
+\begin{enumerate}[label=\textbf{1.\arabic*},leftmargin=38pt,itemsep=3pt,topsep=0pt,start=37]
+\item Vapour pressures of pure acetone and chloroform at 328 \textit{K} are 741.8 mm Hg and 632.8 mm Hg respectively. Assuming that they form ideal solution over the entire range of composition, plot $p_{\text{total}}$, $p_{\text{chloroform}}$, and $p_{\text{acetone}}$ as a function of $x_{\text{acetone}}$. The experimental data observed for different compositions of mixture is:
+
+\vspace{2pt}
+\begin{tcolorbox}[colback=white,colframe=salmon,boxrule=1pt,arc=2mm,left=4pt,right=4pt,top=2pt,bottom=2pt,boxsep=0pt]
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}l@{\hspace{10pt}}r@{\hspace{8pt}}r@{\hspace{6pt}}r@{\hspace{6pt}}r@{\hspace{6pt}}r@{\hspace{6pt}}r@{\hspace{6pt}}r@{\hspace{6pt}}r@{}}
+100 x $x_{\text{acetone}}$ & 0 & 11.8 & 23.4 & 36.0 & 50.8 & 58.2 & 64.5 & 72.1\\
+p$_{\text{acetone}}$ /mm Hg & 0 & 54.9 & 110.1 & 202.4 & 322.7 & 405.9 & 454.1 & 521.1\\
+p$_{\text{chloroform}}$ /mm Hg & 632.8 & 548.1 & 469.4 & 359.7 & 257.7 & 193.6 & 161.2 & 120.7\\
+\end{tabular}
+\end{tcolorbox}
+
+Plot this data also on the same graph paper. Indicate whether it has positive deviation or negative deviation from the ideal solution.
+\item Benzene and toluene form ideal solution over the entire range of composition. The vapour pressure of pure benzene and toluene at 300 \textit{K} are 50.71 mm Hg and 32.06 mm Hg respectively. Calculate the mole fraction of benzene in vapour phase if 80 g of benzene is mixed with 100 g of toluene.
+\item The air is a mixture of a number of gases. The major components are oxygen and nitrogen with approximate proportion of 20\% is to 79\% by volume at 298 \textit{K}. The water is in equilibrium with air at a pressure of 10 atm. At 298 \textit{K} if the Henry's law constants for oxygen and nitrogen at 298 \textit{K} are 3.30 $\times$ 10$^7$ mm and 6.51 $\times$ 10$^7$ mm respectively, calculate the composition of these gases in water.
+\item Determine the amount of CaCl$_2$ (\textit{i} = 2.47) dissolved in 2.5 litre of water such that its osmotic pressure is 0.75 atm at 27$^\circ$ C.
+\item Determine the osmotic pressure of a solution prepared by dissolving 25 mg of K$_2$SO$_4$ in 2 litre of water at 25$^\circ$ C, assuming that it is completely dissociated.
+\end{enumerate}
+\end{tcolorbox}
+\end{minipage}
+
+\vspace{18pt}
+\begin{center}
+\textbf{Answers to Some Intext Questions}
+\end{center}
+\vspace{-2pt}
+\noindent\hspace*{0.18\textwidth}\begin{tabular}{@{}l@{\hspace{12pt}}l@{}}
+\textbf{1.1} & C$_6$H$_6$ = 15.28\%, CCl$_4$ = 84.72\%\\[3pt]
+\textbf{1.2} & 0.459, 0.541\\[3pt]
+\textbf{1.3} & 0.024 M, 0.03 M\\[3pt]
+\textbf{1.4} & 36.946 g\\[3pt]
+\textbf{1.5} & 1.5 mol kg$^{-1}$ , 1.45 mol L$^{-1}$\;\; 0.0263\\[3pt]
+\textbf{1.9} & 23.4 mm Hg\\[3pt]
+\textbf{1.10} & 121.67 g\\[3pt]
+\textbf{1.11} & 5.077 g\\[3pt]
+\textbf{1.12} & 30.96 Pa\\
+\end{tabular}
+
+\vfill
+\noindent\begin{minipage}{0.3\textwidth}
+{\color{gray}Chemistry}\hspace{6pt}\colorbox{Goldenrod1}{\color{gray}\,30\,}\\[-6pt]
+{\color{Goldenrod1}\rule{\linewidth}{1pt}}
+\end{minipage}
+\begin{center}
+{\sffamily\small Reprint 2024-25}
+\end{center}
+
+\end{document}

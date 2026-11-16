@@ -1,0 +1,41 @@
+{
+  "chapter": "Electromagnetic Induction",
+  "toc": {
+    "topics": [
+      "Faraday's Law of Induction",
+      "Lenz's Law",
+      "Eddy Currents"
+    ]
+  },
+  "chunks": [
+    {
+      "topic": "Faraday's Law of Induction",
+      "title": "Faraday's Law of Induction",
+      "text": "\\section{Faraday's Law of Induction}\nMichael Faraday demonstrated through a series of experiments that an electromotive force (emf) is induced in a circuit whenever the magnetic flux linked with that circuit changes with time.\n\nThe magnetic flux $\\Phi_B$ through a planar area $A$ placed in a uniform magnetic field $\\mathbf{B}$ is defined as:\n\\begin{equation}\n\\Phi_B = \\mathbf{B} \\cdot \\mathbf{A} = B A \\cos\\theta\n\\end{equation}\nwhere $\\theta$ is the angle between the magnetic field $\\mathbf{B}$ and the normal vector to the surface area $\\mathbf{A}$. The SI unit of magnetic flux is the weber ($\\text{Wb}$) or tesla-square metre ($\\text{T m}^2$).\n\nFaraday stated his quantitative law of electromagnetic induction as follows:\n\\begin{quote}\nThe magnitude of the induced electromotive force in a circuit is equal to the time rate of change of magnetic flux through the circuit.\n\\end{quote}\nMathematically, for a single loop of wire:\n\\begin{equation}\n\\mathcal{E} = -\\frac{d\\Phi_B}{dt}\n\\end{equation}\nIf a closely wound coil has $N$ turns, each having the same magnetic flux linkage, the total induced emf is given by:\n\\begin{equation}\n\\mathcal{E} = -N \\frac{d\\Phi_B}{dt}\n\\end{equation}\n\nThe negative sign in the equation represents Lenz's law, which specifies the direction of the induced emf and resulting current."
+    },
+    {
+      "topic": "Lenz's Law",
+      "title": "Lenz's Law",
+      "text": "\\section{Lenz's Law}\nIn 1834, Russian physicist Heinrich Friedrich Emil Lenz formulated a rule to determine the direction of induced current in a closed loop, known as Lenz's Law.\n\n\\begin{quote}\nThe polarity of induced emf is such that it tends to produce a current which opposes the change in magnetic flux that produces it.\n\\end{quote}\n\n\\subsection{Lenz's Law and Conservation of Energy}\nLenz's law is a direct consequence of the law of conservation of energy. Consider a bar magnet with its North pole being pushed towards a closed conducting loop.\nAs the North pole approaches, the magnetic flux through the loop increases. According to Lenz's law, the induced current in the loop must produce a magnetic field that opposes this increase. Hence, the face of the loop towards the approaching magnet develops North polarity, exerting a repulsive force on the approaching magnet.\n\nTo move the magnet closer against this repulsive force, external mechanical work must be done on the magnet. This mechanical work done by the external agent is transferred and converted into electrical energy in the loop, which eventually dissipates as heat energy via Joule heating ($I^2 R t$).\n\nConversely, if the induced current were in the direction aiding the approaching magnet (South polarity facing the approaching North pole), the magnet would accelerate towards the loop without external force, generating endless electrical energy from nothing, violating the first law of thermodynamics."
+    },
+    {
+      "topic": "Eddy Currents",
+      "title": "Eddy Currents",
+      "text": "\\section{Eddy Currents}\nWhen large, bulk pieces of conductors are placed in changing magnetic fields or moved through non-uniform magnetic fields, induced currents are set up in closed swirling paths throughout the body of the conductor. These are called eddy currents or Foucault currents because they resemble swirling eddies in water.\n\n\\subsection{Undesirable Effects and Mitigation}\nEddy currents dissipate useful electrical energy into unwanted heat energy in electrical machinery, such as transformers, induction motors, and alternators. The heat produced can damage insulation and reduce machine efficiency.\nTo minimize eddy currents, magnetic cores are constructed not from solid metal blocks, but from thin sheets or laminations of soft iron insulated from one another by lacquer or varnish coatings. The laminations are arranged parallel to the lines of magnetic force. The high electrical resistance across the insulating layers breaks the large circular loops of eddy currents into tiny paths, drastically reducing $I^2 R$ energy losses.\n\n\\subsection{Applications of Eddy Currents}\n1. \\textbf{Electromagnetic Damping}: When a galvanometer coil oscillates, eddy currents induced in its metallic former oppose the motion and bring the pointer swiftly to rest without oscillating (dead-beat galvanometer).\n2. \\textbf{Induction Furnace}: High-frequency alternating magnetic fields induce massive eddy currents in metals placed within the coil, producing high temperatures that melt metals.\n3. \\textbf{Magnetic Braking in Trains}: Strong electromagnets placed above rails induce opposing eddy currents in rails when activated, smoothly braking high-speed trains without mechanical wear."
+    }
+  ],
+  "questions": [
+    "State Faraday's law of electromagnetic induction and write the formula for induced EMF in a coil of N turns.",
+    "A circular coil of 200 turns and radius 10 cm is placed perpendicular to a magnetic field changing at 0.5 T/s. Calculate the induced electromotive force in the coil.",
+    "Explain why the magnetic flux linked with a coil changes when it is rotated in a uniform magnetic field with angular velocity omega.",
+    "Derive the expression for the instantaneous EMF E = NBA omega sin(omega t) induced in a rotating rectangular coil in a uniform magnetic field from first principles.",
+    "State Lenz's law and explain why it is a direct consequence of the principle of conservation of energy.",
+    "A bar magnet falls vertically through a stationary copper ring with its north pole pointing downwards. Predict the direction of induced current viewed from above as the magnet approaches and as it leaves.",
+    "Why does a metallic ring feel warm when a bar magnet is repeatedly thrust into and pulled out of it?",
+    "A rectangular loop moves with constant velocity into a region of uniform magnetic field perpendicular to the loop. Plot the induced current versus time.",
+    "Predict the polarity of the capacitor in a closed loop when the north pole of a magnet approaches one face and the south pole of another magnet approaches the opposite face simultaneously.",
+    "What are eddy currents? Mention two undesirable effects of eddy currents and explain how they are minimized in transformer cores.",
+    "Explain the principle of electromagnetic damping in a dead-beat moving coil galvanometer.",
+    "A copper plate is allowed to swing like a pendulum between the poles of a strong electromagnet. Why does it come to rest quickly when the magnet is turned on?"
+  ]
+}

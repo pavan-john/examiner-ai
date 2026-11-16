@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CBSE Solutions Chapter Topic Weight & Examination Paper Report</title>
+<style>
+    @page {
+        size: A4;
+        margin: 14mm 12mm 14mm 12mm;
+        @bottom-right {
+            content: "Page " counter(page) " of " counter(pages);
+            font-size: 8pt;
+            color: #64748b;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        color: #1e293b;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-size: 9.5pt;
+        line-height: 1.45;
+    }
+
+    /* Cover / Executive Header */
+    .report-header {
+        border-bottom: 3px solid #1e3a8a;
+        padding-bottom: 12px;
+        margin-bottom: 18px;
+    }
+
+    .org-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+
+    .org-title {
+        font-size: 11pt;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        color: #1e3a8a;
+        text-transform: uppercase;
+    }
+
+    .report-badge {
+        background: #1e3a8a;
+        color: #ffffff;
+        font-size: 8pt;
+        font-weight: 700;
+        padding: 3px 8px;
+        border-radius: 4px;
+        letter-spacing: 0.04em;
+    }
+
+    .report-main-title {
+        font-size: 19pt;
+        font-weight: 800;
+        color: #0f172a;
+        margin: 4px 0 6px 0;
+        line-height: 1.2;
+    }
+
+    .report-sub-title {
+        font-size: 11pt;
+        color: #475569;
+        margin: 0 0 10px 0;
+        font-weight: 500;
+    }
+
+    .meta-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .meta-box {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-left: 3px solid #3b82f6;
+        padding: 8px 10px;
+        border-radius: 4px;
+    }
+
+    .meta-label {
+        font-size: 7.5pt;
+        text-transform: uppercase;
+        color: #64748b;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        margin-bottom: 2px;
+    }
+
+    .meta-value {
+        font-size: 10pt;
+        font-weight: 700;
+        color: #0f172a;
+    }
+
+    /* Section Headings */
+    h2.section-heading {
+        font-size: 13pt;
+        font-weight: 800;
+        color: #0f172a;
+        border-bottom: 1.5px solid #cbd5e1;
+        padding-bottom: 4px;
+        margin: 22px 0 10px 0;
+        display: flex;
+        align-items: center;
+        page-break-after: avoid;
+    }
+
+    h2.section-heading::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 15px;
+        background-color: #2563eb;
+        margin-right: 8px;
+        border-radius: 2px;
+    }
+
+    /* Architecture Diagram Box */
+    .arch-card {
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        padding: 10px 14px;
+        margin-bottom: 14px;
+        page-break-inside: avoid;
+    }
+
+    .arch-flow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    .arch-step {
+        background: #ffffff;
+        border: 1px solid #94a3b8;
+        border-radius: 6px;
+        padding: 8px 10px;
+        flex: 1;
+        margin: 0 4px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    .arch-step-title {
+        font-size: 8pt;
+        font-weight: 800;
+        color: #1e3a8a;
+        text-transform: uppercase;
+    }
+
+    .arch-step-desc {
+        font-size: 7.5pt;
+        color: #475569;
+        margin-top: 3px;
+    }
+
+    .arch-arrow {
+        font-size: 14pt;
+        font-weight: 800;
+        color: #3b82f6;
+        padding: 0 2px;
+    }
+
+    /* Metrics Table */
+    table.data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0 18px 0;
+        font-size: 8.5pt;
+    }
+
+    table.data-table th {
+        background: #1e293b;
+        color: #ffffff;
+        font-weight: 700;
+        padding: 6px 8px;
+        text-align: left;
+        border: 1px solid #1e293b;
+        font-size: 8pt;
+        letter-spacing: 0.02em;
+    }
+
+    table.data-table td {
+        padding: 5px 8px;
+        border: 1px solid #e2e8f0;
+    }
+
+    table.data-table tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    table.data-table tr.highlight-row {
+        background-color: #eff6ff;
+        font-weight: 600;
+    }
+
+    table.data-table tr.zero-quota {
+        color: #94a3b8;
+    }
+
+    .text-center { text-align: center; }
+    .font-mono { font-family: 'Consolas', monospace; }
+    .font-bold { font-weight: 700; }
+
+    .diff-badge {
+        background: #f1f5f9;
+        border: 1px solid #cbd5e1;
+        border-radius: 3px;
+        padding: 1px 4px;
+        font-size: 7.5pt;
+        font-weight: 700;
+    }
+
+    .quota-pill {
+        display: inline-block;
+        padding: 2px 7px;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 7.5pt;
+    }
+
+    .quota-1 { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+    .quota-2 { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+    .quota-3 { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .quota-0 { background: #f1f5f9; color: #94a3b8; border: 1px solid #e2e8f0; }
+
+    /* Examination Paper Section */
+    .page-break {
+        page-break-before: always;
+    }
+
+    .exam-banner {
+        background: #f8fafc;
+        border: 2px solid #0f172a;
+        padding: 10px 14px;
+        text-align: center;
+        border-radius: 4px;
+        margin-bottom: 14px;
+        page-break-after: avoid;
+    }
+
+    .exam-main-title {
+        font-size: 13pt;
+        font-weight: 900;
+        color: #0f172a;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .exam-sub-title {
+        font-size: 10.5pt;
+        font-weight: 700;
+        color: #334155;
+        margin: 3px 0;
+    }
+
+    .exam-sub3-title {
+        font-size: 9pt;
+        font-weight: 600;
+        color: #475569;
+        margin: 3px 0 0 0;
+    }
+
+    .topic-section-header {
+        background: #e2e8f0;
+        border-left: 4px solid #1e3a8a;
+        padding: 5px 10px;
+        margin: 16px 0 10px 0;
+        border-radius: 0 4px 4px 0;
+        page-break-after: avoid;
+    }
+
+    .topic-section-header h2 {
+        font-size: 10pt;
+        margin: 0;
+        color: #0f172a;
+        font-weight: 800;
+    }
+
+    /* Question Cards */
+    .question-card {
+        background: #ffffff;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        padding: 9px 12px;
+        margin-bottom: 12px;
+        page-break-inside: avoid;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .question-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
+    }
+
+    .q-number {
+        font-size: 11pt;
+        font-weight: 800;
+        color: #1e3a8a;
+    }
+
+    .q-badges {
+        display: flex;
+        gap: 4px;
+    }
+
+    .badge {
+        font-size: 7.5pt;
+        font-weight: 700;
+        padding: 2px 6px;
+        border-radius: 3px;
+        display: inline-block;
+    }
+
+    .tier-1 { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+    .tier-2 { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+    .badge-marks { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
+    .badge-cat { background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; }
+
+    .q-field {
+        margin: 3px 0;
+        font-size: 9pt;
+    }
+
+    .field-label {
+        font-weight: 800;
+        color: #334155;
+        font-size: 8.5pt;
+    }
+
+    .concept-text {
+        color: #0369a1;
+        font-weight: 600;
+    }
+
+    .question-body {
+        margin: 6px 0;
+        font-size: 9.5pt;
+        color: #0f172a;
+    }
+
+    .question-body p {
+        margin: 4px 0;
+    }
+
+    .mcq-option {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 3px 8px;
+        border-radius: 4px;
+        margin: 2px 0;
+        font-size: 8.5pt;
+    }
+
+    .marking-scheme-box {
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        border-left: 3px solid #22c55e;
+        border-radius: 4px;
+        padding: 6px 10px;
+        margin: 6px 0;
+        font-size: 8.5pt;
+    }
+
+    .marking-title {
+        font-weight: 800;
+        color: #15803d;
+        font-size: 8pt;
+        text-transform: uppercase;
+        margin-bottom: 3px;
+    }
+
+    .marking-list {
+        margin: 2px 0 2px 16px;
+        padding: 0;
+    }
+
+    .marking-list li {
+        margin-bottom: 3px;
+    }
+
+    .mark-allocation {
+        display: inline-block;
+        background: #22c55e;
+        color: #ffffff;
+        font-size: 7pt;
+        font-weight: 800;
+        padding: 1px 4px;
+        border-radius: 3px;
+        margin-left: 4px;
+    }
+
+    .why-tier {
+        font-size: 8pt;
+        color: #64748b;
+        font-style: italic;
+        margin-top: 4px;
+        border-top: 1px dashed #e2e8f0;
+        padding-top: 3px;
+    }
+
+    .inline-math {
+        font-family: 'Cambria Math', 'Times New Roman', serif;
+        font-style: italic;
+        background: #f8fafc;
+        padding: 0 2px;
+        border-radius: 2px;
+    }
+
+    .display-math {
+        text-align: center;
+        font-family: 'Cambria Math', 'Times New Roman', serif;
+        font-size: 10pt;
+        margin: 5px 0;
+        background: #f8fafc;
+        padding: 4px;
+        border-radius: 4px;
+    }
+</style>
+</head>
+<body>
+
+    <!-- EXECUTIVE COVER / HEADER -->
+    <div class="report-header">
+        <div class="org-banner">
+            <span class="org-title">CBSE AI Question Generation & Curriculum Alignment Engine</span>
+            <span class="report-badge">CONFIDENTIAL / OFFICIAL REPORT</span>
+        </div>
+        <div class="report-main-title">Whole-Chapter Topic Weight Orchestration & Generated Examination Paper</div>
+        <div class="report-sub-title">End-to-End Evaluation Report: Class 12 Chemistry — Unit 1: Solutions</div>
+
+        <div class="meta-grid">
+            <div class="meta-box">
+                <div class="meta-label">Total Execution Time</div>
+                <div class="meta-value">38.30 seconds</div>
+            </div>
+            <div class="meta-box">
+                <div class="meta-label">Nimble Pass 1 & 2 Time</div>
+                <div class="meta-value">2.04 seconds</div>
+            </div>
+            <div class="meta-box">
+                <div class="meta-label">Gemini Generation Time</div>
+                <div class="meta-value">35.87 seconds</div>
+            </div>
+            <div class="meta-box">
+                <div class="meta-label">Questions Generated / Target</div>
+                <div class="meta-value">20 / 20 (100% Complete)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. EXECUTIVE SUMMARY & PIPELINE ARCHITECTURE -->
+    <h2 class="section-heading">1. Orchestration Architecture & Workflow</h2>
+    <div class="arch-card">
+        <p style="margin: 0 0 8px 0; font-size: 8.5pt;">
+            The system coordinates raw chapter datasets across three inputs (TOC JSON, LaTeX textbook source, and Question Bank JSON)
+            to determine deterministic whole-chapter topic weights and route exact question quotas into Google Gemini.
+        </p>
+        <div class="arch-flow">
+            <div class="arch-step">
+                <div class="arch-step-title">1. Content Ingestion</div>
+                <div class="arch-step-desc">TOC (19 Topics)<br>LaTeX (135 KB Chunks)<br>Bank (194 Questions)</div>
+            </div>
+            <div class="arch-arrow">&rarr;</div>
+            <div class="arch-step">
+                <div class="arch-step-title">2. Nimble Pass 1</div>
+                <div class="arch-step-desc">Topic Classification<br>&amp; Cognitive Depth Scoring<br>(I_j = &Sigma; w_type)</div>
+            </div>
+            <div class="arch-arrow">&rarr;</div>
+            <div class="arch-step">
+                <div class="arch-step-title">3. Nimble Pass 2</div>
+                <div class="arch-step-desc">LaTeX Technical Rigor<br>Difficulty Multiplier<br>(D_j &isin; [1.0, 2.0])</div>
+            </div>
+            <div class="arch-arrow">&rarr;</div>
+            <div class="arch-step">
+                <div class="arch-step-title">4. Synthesis &amp; Quota</div>
+                <div class="arch-step-desc">W_j = (I_j + 0.5) &times; D_j<br>Hamilton Apportionment<br>(&Sigma; Quotas = 20)</div>
+            </div>
+            <div class="arch-arrow">&rarr;</div>
+            <div class="arch-step">
+                <div class="arch-step-title">5. Gemini Generation</div>
+                <div class="arch-step-desc">CBSE Blueprint Prompts<br>Step-wise Solutions<br>Consecutive Q1..Q20</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. SYNTHESIZED WEIGHTS TABLE -->
+    <h2 class="section-heading">2. Synthesized Chapter Topic Weights &amp; Allocation Quotas</h2>
+    <p style="margin: 0 0 6px 0; font-size: 8.5pt; color: #475569;">
+        Topic weights were synthesized using Ollama Nimble's <code>/v1/systemone</code> decision pass over 194 candidate questions and 19 chapter topics.
+        Quotas are computed via Hamilton's Largest Remainder Method, guaranteeing exact sum = 20.
+    </p>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th style="width: 5%;">#</th>
+                <th style="width: 36%;">TOC Topic Name</th>
+                <th style="width: 10%; text-align: center;">Bank Qs</th>
+                <th style="width: 11%; text-align: center;">Impact (I_j)</th>
+                <th style="width: 11%; text-align: center;">Difficulty (D_j)</th>
+                <th style="width: 11%; text-align: center;">Final Weight (P_j)</th>
+                <th style="width: 8%; text-align: center;">Share %</th>
+                <th style="width: 8%; text-align: center;">Quota (20)</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr class="">
+            <td class="text-center font-mono">1</td>
+            <td class="topic-name"><strong>1.1 Types of Solutions</strong></td>
+            <td class="text-center">6</td>
+            <td class="text-center">9.0</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0264</td>
+            <td class="text-center">2.64%</td>
+            <td class="text-center"><span class="quota-pill quota-1">1 Q</span></td>
+        </tr>
+        
+
+        <tr class="highlight-row">
+            <td class="text-center font-mono">2</td>
+            <td class="topic-name"><strong>1.2 Expressing Concentration of Solutions</strong></td>
+            <td class="text-center">18</td>
+            <td class="text-center">32.0</td>
+            <td class="text-center"><span class="diff-badge">1.50</span></td>
+            <td class="text-center font-bold">0.0966</td>
+            <td class="text-center">9.66%</td>
+            <td class="text-center"><span class="quota-pill quota-2">2 Q</span></td>
+        </tr>
+        
+
+        <tr class="">
+            <td class="text-center font-mono">3</td>
+            <td class="topic-name"><strong>1.3 Solubility</strong></td>
+            <td class="text-center">13</td>
+            <td class="text-center">20.5</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0582</td>
+            <td class="text-center">5.82%</td>
+            <td class="text-center"><span class="quota-pill quota-1">1 Q</span></td>
+        </tr>
+        
+
+        <tr class="highlight-row">
+            <td class="text-center font-mono">4</td>
+            <td class="topic-name"><strong>1.3.1 Solubility of a Solid in a Liquid</strong></td>
+            <td class="text-center">26</td>
+            <td class="text-center">37.5</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.1054</td>
+            <td class="text-center">10.54%</td>
+            <td class="text-center"><span class="quota-pill quota-2">2 Q</span></td>
+        </tr>
+        
+
+        <tr class="highlight-row">
+            <td class="text-center font-mono">5</td>
+            <td class="topic-name"><strong>1.3.2 Solubility of a Gas in a Liquid</strong></td>
+            <td class="text-center">15</td>
+            <td class="text-center">24.5</td>
+            <td class="text-center"><span class="diff-badge">1.50</span></td>
+            <td class="text-center font-bold">0.0743</td>
+            <td class="text-center">7.43%</td>
+            <td class="text-center"><span class="quota-pill quota-2">2 Q</span></td>
+        </tr>
+        
+
+        <tr class="zero-quota">
+            <td class="text-center font-mono">6</td>
+            <td class="topic-name"><strong>1.4 Vapour Pressure of Liquid Solutions</strong></td>
+            <td class="text-center">0</td>
+            <td class="text-center">0.0</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0014</td>
+            <td class="text-center">0.14%</td>
+            <td class="text-center"><span class="quota-pill quota-0">0</span></td>
+        </tr>
+        
+
+        <tr class="highlight-row">
+            <td class="text-center font-mono">7</td>
+            <td class="topic-name"><strong>1.4.1 Vapour Pressure of Liquid-Liquid Solutions</strong></td>
+            <td class="text-center">30</td>
+            <td class="text-center">49.5</td>
+            <td class="text-center"><span class="diff-badge">1.75</span></td>
+            <td class="text-center font-bold">0.1734</td>
+            <td class="text-center">17.34%</td>
+            <td class="text-center"><span class="quota-pill quota-3">3 Q</span></td>
+        </tr>
+        
+
+        <tr class="">
+            <td class="text-center font-mono">8</td>
+            <td class="topic-name"><strong>1.4.2 Raoult's Law as a Special Case of Henry's Law</strong></td>
+            <td class="text-center">5</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center"><span class="diff-badge">1.50</span></td>
+            <td class="text-center font-bold">0.0253</td>
+            <td class="text-center">2.53%</td>
+            <td class="text-center"><span class="quota-pill quota-1">1 Q</span></td>
+        </tr>
+        
+
+        <tr class="zero-quota">
+            <td class="text-center font-mono">9</td>
+            <td class="topic-name"><strong>1.4.3 Vapour Pressure of Solutions of Solids in Liquids</strong></td>
+            <td class="text-center">1</td>
+            <td class="text-center">2.0</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0069</td>
+            <td class="text-center">0.69%</td>
+            <td class="text-center"><span class="quota-pill quota-0">0</span></td>
+        </tr>
+        
+
+        <tr class="highlight-row">
+            <td class="text-center font-mono">10</td>
+            <td class="topic-name"><strong>1.5 Ideal and Non-ideal Solutions</strong></td>
+            <td class="text-center">18</td>
+            <td class="text-center">29.0</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0818</td>
+            <td class="text-center">8.18%</td>
+            <td class="text-center"><span class="quota-pill quota-2">2 Q</span></td>
+        </tr>
+        
+
+        <tr class="zero-quota">
+            <td class="text-center font-mono">11</td>
+            <td class="topic-name"><strong>1.5.1 Ideal Solutions</strong></td>
+            <td class="text-center">0</td>
+            <td class="text-center">0.0</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0014</td>
+            <td class="text-center">0.14%</td>
+            <td class="text-center"><span class="quota-pill quota-0">0</span></td>
+        </tr>
+        
+
+        <tr class="zero-quota">
+            <td class="text-center font-mono">12</td>
+            <td class="topic-name"><strong>1.5.2 Non-ideal Solutions</strong></td>
+            <td class="text-center">4</td>
+            <td class="text-center">5.5</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0166</td>
+            <td class="text-center">1.66%</td>
+            <td class="text-center"><span class="quota-pill quota-0">0</span></td>
+        </tr>
+        
+
+        <tr class="zero-quota">
+            <td class="text-center font-mono">13</td>
+            <td class="topic-name"><strong>1.6 Colligative Properties and Determination of Molar Mass</strong></td>
+            <td class="text-center">6</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0236</td>
+            <td class="text-center">2.36%</td>
+            <td class="text-center"><span class="quota-pill quota-0">0</span></td>
+        </tr>
+        
+
+        <tr class="">
+            <td class="text-center font-mono">14</td>
+            <td class="topic-name"><strong>1.6.1 Relative Lowering of Vapour Pressure</strong></td>
+            <td class="text-center">6</td>
+            <td class="text-center">11.0</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0319</td>
+            <td class="text-center">3.19%</td>
+            <td class="text-center"><span class="quota-pill quota-1">1 Q</span></td>
+        </tr>
+        
+
+        <tr class="">
+            <td class="text-center font-mono">15</td>
+            <td class="topic-name"><strong>1.6.2 Elevation of Boiling Point</strong></td>
+            <td class="text-center">9</td>
+            <td class="text-center">14.5</td>
+            <td class="text-center"><span class="diff-badge">1.80</span></td>
+            <td class="text-center font-bold">0.0535</td>
+            <td class="text-center">5.35%</td>
+            <td class="text-center"><span class="quota-pill quota-1">1 Q</span></td>
+        </tr>
+        
+
+        <tr class="highlight-row">
+            <td class="text-center font-mono">16</td>
+            <td class="topic-name"><strong>1.6.3 Depression of Freezing Point</strong></td>
+            <td class="text-center">11</td>
+            <td class="text-center">20.0</td>
+            <td class="text-center"><span class="diff-badge">1.85</span></td>
+            <td class="text-center font-bold">0.0751</td>
+            <td class="text-center">7.51%</td>
+            <td class="text-center"><span class="quota-pill quota-2">2 Q</span></td>
+        </tr>
+        
+
+        <tr class="highlight-row">
+            <td class="text-center font-mono">17</td>
+            <td class="topic-name"><strong>1.6.4 Osmosis and Osmotic Pressure</strong></td>
+            <td class="text-center">18</td>
+            <td class="text-center">28.5</td>
+            <td class="text-center"><span class="diff-badge">1.80</span></td>
+            <td class="text-center font-bold">0.1034</td>
+            <td class="text-center">10.34%</td>
+            <td class="text-center"><span class="quota-pill quota-2">2 Q</span></td>
+        </tr>
+        
+
+        <tr class="zero-quota">
+            <td class="text-center font-mono">18</td>
+            <td class="topic-name"><strong>1.6.5 Reverse Osmosis and Water Purification</strong></td>
+            <td class="text-center">5</td>
+            <td class="text-center">7.5</td>
+            <td class="text-center"><span class="diff-badge">1.40</span></td>
+            <td class="text-center font-bold">0.0222</td>
+            <td class="text-center">2.22%</td>
+            <td class="text-center"><span class="quota-pill quota-0">0</span></td>
+        </tr>
+        
+
+        <tr class="zero-quota">
+            <td class="text-center font-mono">19</td>
+            <td class="topic-name"><strong>1.7 Abnormal Molar Masses</strong></td>
+            <td class="text-center">3</td>
+            <td class="text-center">5.5</td>
+            <td class="text-center"><span class="diff-badge">1.90</span></td>
+            <td class="text-center font-bold">0.0226</td>
+            <td class="text-center">2.26%</td>
+            <td class="text-center"><span class="quota-pill quota-0">0</span></td>
+        </tr>
+        
+        </tbody>
+    </table>
+
+    <!-- 3. SYSTEM ENHANCEMENTS -->
+    <h2 class="section-heading">3. Key Architectural Enhancements &amp; Performance Protections</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 8px 10px;">
+            <strong style="color: #1e3a8a; font-size: 8.5pt;">1. Hierarchical Topic Chunk Coalescence</strong>
+            <p style="margin: 3px 0 0 0; font-size: 8pt; color: #475569;">
+                Parent section container topics (e.g. 1.3 Solubility) recursively coalesce child subtopic text, expanding context from 1.2 KB to 17.3 KB and eliminating [SKIPPED] model warnings.
+            </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 8px 10px;">
+            <strong style="color: #1e3a8a; font-size: 8.5pt;">2. Non-Inflating Consecutive Question Sequence</strong>
+            <p style="margin: 3px 0 0 0; font-size: 8pt; color: #475569;">
+                Strict quota trimming prevents models from generating excess questions, and skipped topics never advance the index counter, guaranteeing gap-free numbering Q1 to Q20.
+            </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 8px 10px;">
+            <strong style="color: #1e3a8a; font-size: 8.5pt;">3. In-Memory Ingestion Caching</strong>
+            <p style="margin: 3px 0 0 0; font-size: 8pt; color: #475569;">
+                Parsed 135 KB LaTeX chunks and question bank JSON are memoized in <code>_INGESTION_CACHE</code>, bypassing repeated disk I/O and reducing pipeline re-run latency.
+            </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 8px 10px;">
+            <strong style="color: #1e3a8a; font-size: 8.5pt;">4. LaTeX Math Sanitization</strong>
+            <p style="margin: 3px 0 0 0; font-size: 8pt; color: #475569;">
+                All string templates use raw string literals, eliminating ASCII Form Feed, Bell, and Tab unescape corruptions.
+            </p>
+        </div>
+    </div>
+
+    <!-- 4. GENERATED EXAMINATION PAPER -->
+    <div class="page-break"></div>
+    <div class="exam-banner">
+        <div class="exam-main-title">Central Board of Secondary Education</div>
+        <div class="exam-sub-title">Senior School Certificate Examination (Class XII) &bull; Academic Year 2026&ndash;27</div>
+        <div class="exam-sub3-title">Subject: CHEMISTRY (Theory) &bull; Chapter: Unit 1 &mdash; Solutions &bull; Total Questions: 20</div>
+    </div>
+
+    <h1 class="exam-main-title">CENTRAL BOARD OF SECONDARY EDUCATION</h1>
+<h2 class="exam-sub-title">SENIOR SCHOOL CERTIFICATE EXAMINATION (CLASS 12)</h2>
+<h3 class="exam-sub3-title">SUBJECT: CHEMISTRY | CHAPTER: CLASS 12 CHEMISTRY - UNIT 1: SOLUTIONS</h3>
+<p>**Target Questions:** 20</p>
+<p>**General Instructions:** Questions are apportioned in accordance with topic difficulty and syllabus weights.</p>
+<div class="topic-section-header"><h2>Section: 1.1 Types of Solutions (Syllabus Weight: 2.64% | Allocated Quota: 1)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ1</span>
+                    <div class="q-badges"><span class="badge badge-cat">Objective — MCQ</span> <span class="badge badge-marks">1 Mark</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Types of Solutions and Determination of Physical State of Solutions</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>Which of the following components determines the physical state in which a binary solution exists?</p>
+<div class="mcq-option">(A) The component present in the smaller quantity (Solute)</div>
+<div class="mcq-option">(B) The component present in the largest quantity (Solvent)</div>
+<div class="mcq-option">(C) Always the solid component regardless of amount</div>
+<div class="mcq-option">(D) Always the gaseous component regardless of amount</div>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Correct Option:** (B) <span class="mark-allocation">1 Mark</span></li>
+<li>**Explanation:** According to the fundamental definition of solutions, the component present in the largest quantity is known as the solvent, which exclusively determines the physical state in which the solution exists.</li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> This is a direct fundamental concept tested frequently to check basic understanding of solution terminology.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.2 Expressing Concentration of Solutions (Syllabus Weight: 9.66% | Allocated Quota: 2)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ2</span>
+                    <div class="q-badges"><span class="badge badge-cat">Short Answer (SA)</span> <span class="badge badge-marks">3 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Temperature dependence of concentration terms (Molarity vs. Molality)</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>State the key difference between molarity and molality in terms of their dependence on temperature. Explain why one of them changes with temperature while the other remains unaffected.</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Definition / Distinction:** Molarity depends on volume, whereas molality depends on the mass of the solvent. <span class="mark-allocation">1 Mark</span></li>
+<li>**Reason for Temperature Dependence:** Molarity involves the volume of the solution in the denominator (<span class="inline-math">Molarity = \frac{Moles of solute{Volume in L</span>). Since volume changes with a change in temperature (due to thermal expansion or contraction), molarity is a function of temperature. <span class="mark-allocation">1 Mark</span></li>
+<li>**Reason for Temperature Independence:** Molality involves the mass of the solvent in the denominator (<span class="inline-math">mol  kg^{-1</span>). Mass does not change with temperature; hence, molality is independent of temperature. <span class="mark-allocation">1 Mark</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> A standard conceptual board question frequently tested to evaluate the fundamental understanding of solution concentration parameters.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ3</span>
+                    <div class="q-badges"><span class="badge badge-cat">Long Answer (LA) / Derivation</span> <span class="badge badge-marks">5 Marks</span> <span class="badge tier-2">🟡 Tier 2</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Interconversion of concentration terms (Mass percentage, Density, Molality, Molarity, and Mole Fraction)</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>Calculate (a) molality, (b) molarity, and (c) mole fraction of KI if the density of a 20\% (mass/mass) aqueous solution of KI is <span class="inline-math">1.202  g mL^{-1</span>.</p>
+<p>*(Given atomic masses: <span class="inline-math">K = 39  g mol^{-1</span>, <span class="inline-math">I = 127  g mol^{-1</span>, <span class="inline-math">H = 1  g mol^{-1</span>, <span class="inline-math">O = 16  g mol^{-1</span>)*</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Preliminary Molar Mass & Basis Selection:**</li>
+<li>Let the total mass of the solution be <span class="inline-math">100  g</span>.</li>
+<li>Mass of KI (solute) = <span class="inline-math">20  g</span>, Mass of <span class="inline-math">H<sub>2O</sub></span> (solvent) = <span class="inline-math">100 - 20 = 80  g</span>.</li>
+<li>Molar mass of KI <span class="inline-math">= 39 + 127 = 166  g mol^{-1</span>.</li>
+<li>Moles of KI (<span class="inline-math">n_{KI</span>) <span class="inline-math">= \frac{20  g{166  g mol^{-1 = 0.1205  mol</span>.</li>
+<li>Moles of water (<span class="inline-math">n_{H<sub>2O</sub></span>) <span class="inline-math">= \frac{80  g{18  g mol^{-1 = 4.444  mol</span>. <span class="mark-allocation">1 Mark</span></li>
+<li>**(a) Calculation of Molality (<span class="inline-math">m</span>):**</li>
+<li><span class="inline-math">Molality = \frac{Moles of KI{Mass of solvent in kg = \frac{0.1205  mol{0.080  kg = 1.506  mol kg^{-1</span> (or <span class="inline-math">1.51  m</span>). <span class="mark-allocation">1 Mark</span></li>
+<li>**(b) Calculation of Molarity (<span class="inline-math">M</span>):**</li>
+<li>Volume of solution (<span class="inline-math">V</span>) <span class="inline-math">= \frac{Mass of solution{Density = \frac{100  g{1.202  g mL^{-1 = 83.19  mL = 0.08319  L</span>.</li>
+<li><span class="inline-math">Molarity = \frac{Moles of KI{Volume of solution in L = \frac{0.1205  mol{0.08319  L = 1.448  mol L^{-1</span> (or <span class="inline-math">1.45  M</span>). <span class="mark-allocation">2 Marks</span></li>
+<li>**(c) Calculation of Mole Fraction of KI (<span class="inline-math">x_{KI</span>):**</li>
+<li><span class="inline-math">x_{KI = \frac{n_{KI{n_{KI + n_{H<sub>2O</sub> = \frac{0.1205{0.1205 + 4.444 = \frac{0.1205{4.5645 = 0.0264</span>. <span class="mark-allocation">1 Mark</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> A comprehensive multi-step numerical problem that tests the interrelationship between mass %, density, molality, molarity, and mole fraction, highly favored in CBSE board exams.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.3 Solubility (Syllabus Weight: 5.82% | Allocated Quota: 1)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ4</span>
+                    <div class="q-badges"><span class="badge badge-cat">Objective — MCQ</span> <span class="badge badge-marks">1 Mark(s)</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Henry's Law and relation between <span class="inline-math">K<sub>H</sub></span> value and gas solubility</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>Which of the following statements is correct regarding Henry's law constant (<span class="inline-math">K<sub>H</sub></span>)?</p>
+<div class="mcq-option">(A) <span class="inline-math">K<sub>H</sub></span> is a universal constant independent of the nature of the gas and solvent.\\</div>
+<div class="mcq-option">(B) Higher the value of <span class="inline-math">K<sub>H</sub></span> at a given pressure, lower is the solubility of the gas in the liquid.\\</div>
+<div class="mcq-option">(C) <span class="inline-math">K<sub>H</sub></span> decreases with an increase in temperature for all gases.\\</div>
+<div class="mcq-option">(D) The unit of <span class="inline-math">K<sub>H</sub></span> is <span class="inline-math">atm^{-1</span> or <span class="inline-math">bar^{-1</span>.</div>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Correct Option:** (B) <span class="mark-allocation">1 Mark</span></li>
+<li>**Explanation:** According to Henry's law, <span class="inline-math">p = K<sub>Hx</sub></span>, which rearranges to <span class="inline-math">x = \frac{p{K<sub>H</sub></span>. Thus, mole fraction <span class="inline-math">x</span> (representing solubility) is inversely proportional to <span class="inline-math">K<sub>H</sub></span>. Therefore, a higher <span class="inline-math">K<sub>H</sub></span> value implies lower solubility of the gas in the liquid. Option (A) is incorrect because <span class="inline-math">K<sub>H</sub></span> depends on the nature of the gas; (C) is incorrect because <span class="inline-math">K<sub>H</sub></span> generally increases with temperature; and (D) is incorrect because the unit of <span class="inline-math">K<sub>H</sub></span> is pressure units (e.g., bar or kbar).</li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> This is a fundamental conceptual question frequently tested in board examinations regarding the physical significance of the Henry's law constant.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.3.1 Solubility of a Solid in a Liquid (Syllabus Weight: 10.54% | Allocated Quota: 2)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ5</span>
+                    <div class="q-badges"><span class="badge badge-cat">Objective — MCQ</span> <span class="badge badge-marks">1 Mark(s)</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Effect of temperature on solubility of a solid in a liquid based on Le Chatelier's Principle</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>Consider a nearly saturated solution of a solid in a liquid where the dissolution process is endothermic (<span class="inline-math">&Delta;_{solH > 0</span>). According to Le Chatelier's Principle, how will the solubility of the solid change when the temperature of the system is increased?</p>
+<div class="mcq-option">(A) Solubility will decrease.</div>
+<div class="mcq-option">(B) Solubility will increase.</div>
+<div class="mcq-option">(C) Solubility will remain completely unaffected.</div>
+<div class="mcq-option">(D) Solubility will first increase and then drop to zero.</div>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Correct Option:** (B) <span class="mark-allocation">1 Mark</span></li>
+<li>**Explanation:** For an endothermic dissolution process (<span class="inline-math">&Delta;_{solH > 0</span>), supplying heat (raising temperature) shifts the dynamic equilibrium in the forward direction to absorb the added heat, thereby increasing the solubility of the solid.</li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Core concept directly tested in board exams linking Le Chatelier's principle with solubility trends.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ6</span>
+                    <div class="q-badges"><span class="badge badge-cat">Very Short Answer (VSA)</span> <span class="badge badge-marks">2 Mark(s)</span> <span class="badge tier-2">🟡 Tier 2</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Dynamic equilibrium in saturated solutions and the principle of "like dissolves like"</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) Why do naphthalene and anthracene readily dissolve in benzene while sodium chloride and sugar do not?</p>
+<p>(b) State the exact condition under which a solution is said to be saturated with respect to the dissolved solid solute.</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) Naphthalene and anthracene are non-polar solutes which dissolve in non-polar solvents (benzene) following the rule "like dissolves like" due to similar intermolecular interactions. <span class="mark-allocation">1 Mark</span></li>
+<li>(b) A solution is saturated when it is in a state of dynamic equilibrium with undissolved solute, meaning the rate of dissolution equals the rate of crystallisation. <span class="mark-allocation">1 Mark</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Tests both intermolecular forces and the dynamic nature of solution equilibrium frequently asked in 2-mark CBSE sections.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.3.2 Solubility of a Gas in a Liquid (Syllabus Weight: 7.43% | Allocated Quota: 2)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ7</span>
+                    <div class="q-badges"><span class="badge badge-cat">Short Answer (SA)</span> <span class="badge badge-marks">3 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Henry's Law and factors affecting solubility of gases in liquids</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) State Henry's law relating the solubility of a gas to its partial pressure. Write the mathematical expression for it. (<span class="inline-math">1  mark</span>)</p>
+<p>(b) Explain why aquatic species are more comfortable in cold water rather than in warm water. (<span class="inline-math">2  marks</span>)</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) Henry's law states that at a constant temperature, the solubility of a gas in a liquid is directly proportional to the partial pressure of the gas present above the surface of the liquid (or, the partial pressure of the gas in the vapour phase is proportional to its mole fraction in the solution). Expression: <span class="inline-math">p = K<sub>H</sub> x</span> <span class="mark-allocation"><span class="inline-math">1  mark</span> (<span class="inline-math">0.5  mark</span> for statement, <span class="inline-math">0.5  mark</span> for expression)</span></li>
+<li>(b) Dissolution of a gas in a liquid is an exothermic process (heat is evolved). According to Le Chatelier's principle, an increase in temperature shifts the equilibrium in the backward direction, causing a decrease in solubility. <span class="mark-allocation"><span class="inline-math">1  mark</span></span></li>
+<p>Therefore, warm water contains lesser dissolved oxygen compared to cold water, making it harder for aquatic species to breathe; hence they are more comfortable in cold water. — **[<span class="inline-math">1  mark</span>]**</p>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> This is a core conceptual board-staple that tests fundamental law recall and Le Chatelier's principle application to environmental phenomena.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ8</span>
+                    <div class="q-badges"><span class="badge badge-cat">Long Answer (LA) / Derivation</span> <span class="badge badge-marks">5 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Henry's Law Numerical Application and Calculation of Mole Fraction/Mass of Dissolved Gas</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) Neon gas is bubbled through water at <span class="inline-math">298 K</span> with a partial pressure of <span class="inline-math">1.5 bar</span>. If the Henry's law constant (<span class="inline-math">K<sub>H</sub></span>) for neon in water at <span class="inline-math">298 K</span> is <span class="inline-math">144.97 kbar</span>, calculate the concentration of neon in terms of mole fraction in the aqueous solution. (<span class="inline-math">3  marks</span>)</p>
+<p>(b) Why do scuba divers use air diluted with helium instead of compressed air at high underwater pressures? Explain based on Henry's law. (<span class="inline-math">2  marks</span>)</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) **Step 1:** State Henry's law formula relating partial pressure and mole fraction:</li>
+<p><div class="display-math">p = K_H \cdot x</div> — **[<span class="inline-math">0.5  mark</span>]**</p>
+<li>**Step 2:** Substitute the given values into the expression (<span class="inline-math">p = 1.5 bar</span> and <span class="inline-math">K<sub>H</sub> = 144.97 &times; 10<sup>3</sup> bar</span>):</li>
+<p><div class="display-math">x = \frac{p}{K_H} = \frac{1.5\text{ bar}}{144970\text{ bar}}</div> — **[<span class="inline-math">1  mark</span>]**</p>
+<li>**Step 3:** Compute final numerical value for mole fraction of Neon:</li>
+<p><div class="display-math">x = 1.035 \times 10^{-5}</div> — **[<span class="inline-math">1.5  marks</span> (<span class="inline-math">1  mark</span> for calculation, <span class="inline-math">0.5  mark</span> for correct sig figs/units)]**</p>
+<li>(b) **Explanation:** At high pressures underwater, scuba divers breathe air at high pressure, causing a higher concentration of atmospheric gases (<span class="inline-math">N<sub>2</sub></span> and <span class="inline-math">O<sub>2</sub></span>) to dissolve in their blood in accordance with Henry's law. When they ascend to the surface quickly, pressure decreases, causing dissolved <span class="inline-math">N<sub>2</sub></span> gas to form bubbles in the blood stream. This blocks capillaries, causing a painful and dangerous medical condition known as "bends". To avoid this, scuba diver tanks are diluted with helium (which has low solubility in blood). <span class="mark-allocation"><span class="inline-math">2  marks</span> (<span class="inline-math">1  mark</span> for mechanism via Henry's law, <span class="inline-math">1  mark</span> for consequence/bends & helium role)</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Combines a standard quantitative board numerical application of Henry's Law with a crucial real-world industrial/biological application frequently asked in exams.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.4.1 Vapour Pressure of Liquid-Liquid Solutions (Syllabus Weight: 17.34% | Allocated Quota: 3)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ9</span>
+                    <div class="q-badges"><span class="badge badge-cat">Objective — MCQ</span> <span class="badge badge-marks">1 Mark(s)</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Raoult's Law and Vapour Phase Mole Fractions (<span class="inline-math">y<sub>i</sub></span>)</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>Two volatile liquids A and B are mixed in a closed container to form an ideal solution. The vapour pressure of pure liquid A (<span class="inline-math">p<sub>A</sub><sup>0</sup></span>) is <span class="inline-math">150 mm Hg</span> and that of pure liquid B (<span class="inline-math">p<sub>B</sub><sup>0</sup></span>) is <span class="inline-math">300 mm Hg</span>. If the mole fraction of liquid B in the solution mixture is <span class="inline-math">0.4</span>, what is the mole fraction of component B in the vapour phase (<span class="inline-math">y<sub>B</sub></span>)?</p>
+<div class="mcq-option">(A) <span class="inline-math">0.40</span></div>
+<div class="mcq-option">(B) <span class="inline-math">0.57</span></div>
+<div class="mcq-option">(C) <span class="inline-math">0.63</span></div>
+<div class="mcq-option">(D) <span class="inline-math">0.28</span></div>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>Calculation of total vapour pressure: <span class="inline-math">p_{total = p<sub>A</sub><sup>0</sup> + (p<sub>B</sub><sup>0</sup> - p<sub>A</sub><sup>0</sup>)x<sub>B</sub> = 150 + (300 - 150) &times; 0.4 = 150 + 60 = 210 mm Hg</span>. <span class="mark-allocation"><span class="inline-math">1/2</span> M</span></li>
+<li>Calculation of partial pressure of B: <span class="inline-math">p<sub>B</sub> = x<sub>B</sub> &times; p<sub>B</sub><sup>0</sup> = 0.4 &times; 300 = 120 mm Hg</span>. <span class="mark-allocation"><span class="inline-math">1/4</span> M</span></li>
+<li>Calculation of vapour phase mole fraction (<span class="inline-math">y<sub>B</sub></span>): <span class="inline-math">y<sub>B</sub> = \frac{p<sub>B</sub>{p_{total = \frac{120{210 &asymp; 0.57</span>. <span class="mark-allocation"><span class="inline-math">1/4</span> M</span></li>
+<li>**Correct Option:** (B)</li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Tests the crucial board concept connecting liquid mole fraction, total pressure, and vapour-phase composition.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ10</span>
+                    <div class="q-badges"><span class="badge badge-cat">Short Answer (SA)</span> <span class="badge badge-marks">3 Mark(s)</span> <span class="badge tier-2">🟡 Tier 2</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Graphical representation and interpretation of Raoult's law for liquid-liquid solutions</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) State Raoult's law for a solution of volatile liquids. (<span class="inline-math">1 Mark</span>)</p>
+<p>(b) Draw a schematic plot of vapour pressure versus mole fraction for an ideal binary solution of two volatile liquids where component 2 is more volatile than component 1 (<span class="inline-math">p<sub>2</sub><sup>0</sup> > p<sub>1</sub><sup>0</sup></span>). Label the lines representing partial pressures (<span class="inline-math">p<sub>1</sub></span>, <span class="inline-math">p<sub>2</sub></span>) and total pressure (<span class="inline-math">p_{total</span>). (<span class="inline-math">2 Marks</span>)</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) **Raoult's law:** It states that for a solution of volatile liquids, the partial vapour pressure of each component of the solution is directly proportional to its mole fraction present in the solution (<span class="inline-math">p<sub>i</sub> = p<sub>i</sub><sup>0</sup> x<sub>i</sub></span>). <span class="mark-allocation"><span class="inline-math">1</span> M</span></li>
+<li>(b) **Graphical plot description / requirements:**</li>
+<li>Axes correctly labeled: Vapour pressure on y-axis, Mole fractions (<span class="inline-math">x<sub>1</sub>, x<sub>2</sub></span>) on x-axis. <span class="mark-allocation"><span class="inline-math">1/2</span> M</span></li>
+<li>Two linear plots (lines I and II) starting from <span class="inline-math">p<sub>1</sub><sup>0</sup></span> to <span class="inline-math">0</span> and <span class="inline-math">0</span> to <span class="inline-math">p<sub>2</sub><sup>0</sup></span> representing <span class="inline-math">p<sub>1</sub></span> and <span class="inline-math">p<sub>2</sub></span>. <span class="mark-allocation"><span class="inline-math">1/2</span> M</span></li>
+<li>A line (line III) connecting <span class="inline-math">p<sub>1</sub><sup>0</sup></span> and <span class="inline-math">p<sub>2</sub><sup>0</sup></span> representing linear variation of <span class="inline-math">p_{total</span>. <span class="mark-allocation"><span class="inline-math">1</span> M</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Evaluates both theoretical statement recall and graphical visualization skills frequently asked in board exams.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ11</span>
+                    <div class="q-badges"><span class="badge badge-cat">Long Answer (LA) / Derivation</span> <span class="badge badge-marks">5 Mark(s)</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Mathematical derivation of total vapour pressure equation and numerical application involving vapour phase composition</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) Derive the mathematical expression for the total vapour pressure of an ideal binary solution containing two volatile liquids (component 1 and component 2) in terms of the mole fraction of one of the components (<span class="inline-math">x<sub>2</sub></span>). (<span class="inline-math">3 Marks</span>)</p>
+<p>(b) Benzene (<span class="inline-math">C<sub>6H</sub><sub>6</sub></span>) and Toluene (<span class="inline-math">C<sub>7H</sub><sub>8</sub></span>) form an ideal solution over the entire range of composition. The vapour pressure of pure benzene and pure toluene at <span class="inline-math">300 K</span> are <span class="inline-math">50.71 mm Hg</span> and <span class="inline-math">32.06 mm Hg</span> respectively. Calculate the mole fraction of benzene in the vapour phase if <span class="inline-math">78 g</span> of benzene is mixed with <span class="inline-math">92 g</span> of toluene. (<span class="inline-math">2 Marks</span>)</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Part (a):**</li>
+<li>State individual partial pressures using Raoult's Law: <span class="inline-math">p<sub>1</sub> = p<sub>1</sub><sup>0</sup> x<sub>1</sub></span> and <span class="inline-math">p<sub>2</sub> = p<sub>2</sub><sup>0</sup> x<sub>2</sub></span>. <span class="mark-allocation"><span class="inline-math">1</span> M</span></li>
+<li>Apply Dalton's law of partial pressures: <span class="inline-math">p_{total = p<sub>1</sub> + p<sub>2</sub> = p<sub>1</sub><sup>0</sup> x<sub>1</sub> + p<sub>2</sub><sup>0</sup> x<sub>2</sub></span>. <span class="mark-allocation"><span class="inline-math">1</span> M</span></li>
+<li>Substitute <span class="inline-math">x<sub>1</sub> = 1 - x<sub>2</sub></span> to get: <span class="inline-math">p_{total = p<sub>1</sub><sup>0</sup>(1 - x<sub>2</sub>) + p<sub>2</sub><sup>0</sup> x<sub>2</sub> = p<sub>1</sub><sup>0</sup> + (p<sub>2</sub><sup>0</sup> - p<sub>1</sub><sup>0</sup>)x<sub>2</sub></span>. <span class="mark-allocation"><span class="inline-math">1</span> M</span></li>
+<li>**Part (b):**</li>
+<li>Moles of benzene (<span class="inline-math">M = 78 g mol^{-1</span>): <span class="inline-math">n_{benzene = \frac{78 g{78 g mol^{-1 = 1.0 mol</span>.</li>
+<p>Moles of toluene (<span class="inline-math">M = 92 g mol^{-1</span>): <span class="inline-math">n_{toluene = \frac{92 g{92 g mol^{-1 = 1.0 mol</span>.</p>
+<p>Total moles = <span class="inline-math">2.0 mol</span>, so <span class="inline-math">x_{benzene = 0.5</span> and <span class="inline-math">x_{toluene = 0.5</span>. — **[<span class="inline-math">1/2</span> M]**</p>
+<li>Calculate total vapour pressure:</li>
+<p><span class="inline-math">p_{total = p_{benzene<sup>0</sup> x_{benzene + p_{toluene<sup>0</sup> x_{toluene = (50.71 &times; 0.5) + (32.06 &times; 0.5) = 25.355 + 16.03 = 41.385 mm Hg</span>. — **[<span class="inline-math">1/2</span> M]**</p>
+<li>Partial pressure of benzene: <span class="inline-math">p_{benzene = 50.71 &times; 0.5 = 25.355 mm Hg</span>. <span class="mark-allocation"><span class="inline-math">1/2</span> M</span></li>
+<li>Vapour phase mole fraction (<span class="inline-math">y_{benzene</span>):</li>
+<p><span class="inline-math">y_{benzene = \frac{p_{benzene{p_{total = \frac{25.355{41.385 = 0.613</span>. — **[<span class="inline-math">1/2</span> M]**</p>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Combines a primary textbook derivation with a standard multi-step numerical problem carrying full board weightage.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.4.2 Raoult's Law as a Special Case of Henry's Law (Syllabus Weight: 2.53% | Allocated Quota: 1)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ12</span>
+                    <div class="q-badges"><span class="badge badge-cat">Short Answer (SA)</span> <span class="badge badge-marks">3 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Raoult's Law as a special case of Henry's Law</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>State Henry's law and Raoult's law for a volatile liquid component in a solution. By comparing their mathematical expressions, explain how Raoult's law can be considered a special case of Henry's law.</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Statement of Henry's Law:** The partial pressure of the gas in vapour phase (<span class="inline-math">p</span>) is proportional to the mole fraction of the gas (<span class="inline-math">x</span>) in the solution, given by <span class="inline-math">p = K<sub>H</sub> x</span>. <span class="mark-allocation">1 Mark</span></li>
+<li>**Statement of Raoult's Law:** The vapour pressure of a volatile component in a given solution is directly proportional to its mole fraction (<span class="inline-math">x<sub>i</sub></span>), given by <span class="inline-math">p<sub>i</sub> = x<sub>i</sub> p<sub>i</sub><sup>0</sup></span> (where <span class="inline-math">p<sub>i</sub><sup>0</sup></span> is the vapour pressure of pure component). <span class="mark-allocation">1 Mark</span></li>
+<li>**Comparison and Conclusion:** Comparing both equations (<span class="inline-math">p = K<sub>H</sub> x</span> and <span class="inline-math">p<sub>i</sub> = x<sub>i</sub> p<sub>i</sub><sup>0</sup></span>), it is observed that both state that the partial pressure of a volatile component is directly proportional to its mole fraction in solution. Raoult's law becomes a special case of Henry's law when the Henry's law constant (<span class="inline-math">K<sub>H</sub></span>) becomes equal to the vapour pressure of the pure component (<span class="inline-math">p<sub>i</sub><sup>0</sup></span>). <span class="mark-allocation">1 Mark</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> This is a classic conceptual derivation frequently tested in board examinations to check the fundamental understanding of solution thermodynamics.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.5 Ideal and Non-ideal Solutions (Syllabus Weight: 8.18% | Allocated Quota: 2)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ13</span>
+                    <div class="q-badges"><span class="badge badge-cat">Objective — MCQ</span> <span class="badge badge-marks">1 Mark(s)</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Characteristics of Ideal and Non-ideal Solutions (<span class="inline-math">&Delta;_{mixH</span> and <span class="inline-math">&Delta;_{mixV</span>)</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>Which of the following conditions must be satisfied by a binary liquid-liquid system to form a perfectly ideal solution?</p>
+<div class="mcq-option">(A) <span class="inline-math">&Delta;_{mixH > 0</span> and <span class="inline-math">&Delta;_{mixV > 0</span></div>
+<div class="mcq-option">(B) <span class="inline-math">&Delta;_{mixH = 0</span> and <span class="inline-math">&Delta;_{mixV = 0</span></div>
+<div class="mcq-option">(C) <span class="inline-math">&Delta;_{mixH < 0</span> and <span class="inline-math">&Delta;_{mixV < 0</span></div>
+<div class="mcq-option">(D) <span class="inline-math">&Delta;_{mixH = 0</span> and <span class="inline-math">&Delta;_{mixV \neq 0</span></div>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Correct Option:** **(B)** <span class="mark-allocation">1 Mark</span></li>
+<li>*Explanation:* For an ideal solution, the intermolecular attractive forces between A-A and B-B are nearly equal to those between A-B, resulting in no heat absorption/evolution (<span class="inline-math">&Delta;_{mixH = 0</span>) and no volume change upon mixing (<span class="inline-math">&Delta;_{mixV = 0</span>).</li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Fundamental board definition tested repeatedly in multiple-choice formats.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ14</span>
+                    <div class="q-badges"><span class="badge badge-cat">Very Short Answer (VSA)</span> <span class="badge badge-marks">2 Mark(s)</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Molecular cause of negative deviation from Raoult's law and hydrogen bonding</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>A mixture of chloroform and acetone shows negative deviation from Raoult's law. Give a reason for this behavior at the molecular level, and state how it affects the escaping tendency of the component molecules.</p>
+<p>*Diagram Setup / Visual Description:* Chloroform (<span class="inline-math">CHCl<sub>3</sub></span>) forms a hydrogen bond with acetone (<span class="inline-math">(CH<sub>3</sub>)<sub>2CO</sub></span>) via the phenolic/chloroformic proton and the carbonyl oxygen lone pair: <span class="inline-math">H<sub>3C-C</sub>(CH<sub>3</sub>)=O\cdotsH-C(Cl)<sub>3</sub></span>.</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Molecular Reason:** The intermolecular attractive forces (hydrogen bonding) between chloroform and acetone (A-B interactions) are stronger than the respective attractive forces in the pure components (A-A and B-B interactions). <span class="mark-allocation">1 Mark</span></li>
+<li>**Effect on Escaping Tendency:** Due to stronger attractive interactions in the solution, the escaping tendency of molecules decreases, resulting in a lower vapour pressure than predicted by Raoult's law. <span class="mark-allocation">1 Mark</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Standard conceptual application involving intermolecular hydrogen bonding and non-ideal deviation mechanics.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.6.1 Relative Lowering of Vapour Pressure (Syllabus Weight: 3.19% | Allocated Quota: 1)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ15</span>
+                    <div class="q-badges"><span class="badge badge-cat">Objective — MCQ</span> <span class="badge badge-marks">1 Mark(s)</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Relative lowering of vapour pressure and its dependence on solute concentration.</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>Which of the following statements is correct regarding the relative lowering of vapour pressure for a solution containing a non-volatile solute?</p>
+<div class="mcq-option">(A) It depends on the chemical identity and nature of the solute particles.\\</div>
+<div class="mcq-option">(B) It is equal to the mole fraction of the solvent in the solution.\\</div>
+<div class="mcq-option">(C) It is equal to the mole fraction of the solute in the solution.\\</div>
+<div class="mcq-option">(D) It is inversely proportional to the number of moles of solute present.</div>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>**Correct Option:** (C) <span class="mark-allocation">1 Mark</span></li>
+<li>**Explanation:** According to Raoult's law, the relative lowering of vapour pressure (<span class="inline-math">\frac{p<sub>1</sub>^{\,0 - p<sub>1</sub>{p<sub>1</sub>^{\,0</span>) is equal to the mole fraction of the solute (<span class="inline-math">x<sub>2</sub></span>) and is independent of the identity of the solute particles.</li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> A core conceptual standard-board MCQ testing direct understanding of Raoult's law formulations.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.6.2 Elevation of Boiling Point (Syllabus Weight: 5.35% | Allocated Quota: 1)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ16</span>
+                    <div class="q-badges"><span class="badge badge-cat">Short Answer (SA)</span> <span class="badge badge-marks">3 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Elevation of Boiling Point and Calculation of Molar Mass (<span class="inline-math">M<sub>2</sub></span>)</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>When <span class="inline-math">1.00 g</span> of a non-volatile, non-electrolyte solute is dissolved in <span class="inline-math">50 g</span> of benzene, the boiling point of benzene rises from <span class="inline-math">353.23 K</span> to <span class="inline-math">354.11 K</span>. Calculate the molar mass of the solute.</p>
+<p>(Given: <span class="inline-math">K<sub>b</sub></span> for benzene = <span class="inline-math">2.53 K kg mol^{-1</span>)</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>Identifying the given values: <span class="inline-math">w<sub>2</sub> = 1.00 g</span>, <span class="inline-math">w<sub>1</sub> = 50 g</span>, <span class="inline-math">T<sub>b</sub>^{\,0 = 353.23 K</span>, <span class="inline-math">T<sub>b</sub> = 354.11 K</span>, and <span class="inline-math">K<sub>b</sub> = 2.53 K kg mol^{-1</span> <span class="mark-allocation">1/2 Mark</span></li>
+<li>Calculating the elevation in boiling point (<span class="inline-math">&Delta; T<sub>b</sub></span>):</li>
+<p><div class="display-math">\Delta T_\text{b} = T_\text{b} - T_\text{b}^{\,0} = 354.11\text{ K} - 353.23\text{ K} = 0.88\text{ K}</div> — **[1/2 Mark]**</p>
+<li>Applying the formula for molar mass (<span class="inline-math">M<sub>2</sub></span>):</li>
+<p><div class="display-math">M_2 = \frac{1000 \times w_2 \times K_\text{b}}{\Delta T_\text{b} \times w_1}</div> — **[1/2 Mark]**</p>
+<li>Substituting the values:</li>
+<p><div class="display-math">M_2 = \frac{1000\text{ g kg}^{-1} \times 1.00\text{ g} \times 2.53\text{ K kg mol}^{-1}}{0.88\text{ K} \times 50\text{ g}}</div> — **[1 Mark]**</p>
+<li>Final calculation and units:</li>
+<p><div class="display-math">M_2 = 57.5\text{ g mol}^{-1} \text{ (or } 58\text{ g mol}^{-1}\text{ depending on rounding)}</div> — **[1/2 Mark]**</p>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> This is a standard board-exam numerical testing direct application of the ebullioscopic constant formula and boiling point elevation principles.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.6.3 Depression of Freezing Point (Syllabus Weight: 7.51% | Allocated Quota: 2)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ17</span>
+                    <div class="q-badges"><span class="badge badge-cat">Short Answer (SA)</span> <span class="badge badge-marks">3 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Depression of freezing point and its relation to molality</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>When a non-volatile solute is added to a pure solvent, the freezing point of the solution decreases compared to that of the pure solvent.</p>
+<p>(a) Define the freezing point of a substance in terms of vapour pressure. — **[1 Mark]**</p>
+<p>(b) Calculate the freezing point of an aqueous solution containing <span class="inline-math">18 g</span> of glucose (<span class="inline-math">C<sub>6H</sub>_{12O<sub>6</sub></span>) dissolved in <span class="inline-math">100 g</span> of water.</p>
+<p>*(Given: <span class="inline-math">K_{f</span> for water <span class="inline-math">= 1.86 K kg mol^{-1</span>, Molar mass of glucose <span class="inline-math">= 180 g mol^{-1</span>, Freezing point of pure water <span class="inline-math">= 273.15 K</span>)* — **[2 Marks]**</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) The freezing point of a substance is defined as the temperature at which the vapour pressure of the substance in its liquid phase is equal to its vapour pressure in the solid phase. <span class="mark-allocation">1 Mark</span></li>
+<li>(b) **Step 1:** Calculate the molality (<span class="inline-math">m</span>) of the solution:</li>
+<p><div class="display-math">\text{Moles of glucose} = \frac{w_2}{M_2} = \frac{18\text{ g}}{180\text{ g mol}^{-1}} = 0.1\text{ mol}</div></p>
+<p><div class="display-math">\text{Mass of solvent } (w_1) = 100\text{ g} = 0.1\text{ kg}</div></p>
+<p><div class="display-math">\text{Molality } (\text{m}) = \frac{0.1\text{ mol}}{0.1\text{ kg}} = 1.0\text{ mol kg}^{-1}</div> — **[1 Mark]**</p>
+<li>**Step 2:** Calculate freezing point depression (<span class="inline-math">&Delta; T_{f</span>) and freezing point of the solution (<span class="inline-math">T_{f</span>):</li>
+<p><div class="display-math">\Delta T_{\text{f}} = K_{\text{f}} \times \text{m} = 1.86\text{ K kg mol}^{-1} \times 1.0\text{ mol kg}^{-1} = 1.86\text{ K}</div></p>
+<p><div class="display-math">T_{\text{f}} = T_{\text{f}}^{\,0} - \Delta T_{\text{f}} = 273.15\text{ K} - 1.86\text{ K} = 271.29\text{ K}</div> — **[1 Mark]**</p>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Standard board numerical testing the core application of the molal freezing point depression formula.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ18</span>
+                    <div class="q-badges"><span class="badge badge-cat">Long Answer (LA)</span> <span class="badge badge-marks">5 Marks</span> <span class="badge tier-2">🟡 Tier 2</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Colligative properties and determination of molar mass using cryoscopic constant relation</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) State Raoult's law explanation for the depression in freezing point when a non-volatile solute is dissolved in a solvent. Explain why the freezing point of a solution is lower than that of the pure solvent with the help of vapour pressure concepts. — **[2 Marks]**</p>
+<p>(b) Derive the mathematical expression relating the depression in freezing point (<span class="inline-math">&Delta; T_{f</span>) to the molar mass (<span class="inline-math">M<sub>2</sub></span>) of a non-volatile solute. — **[2 Marks]**</p>
+<p>(c) An organic substance weighing <span class="inline-math">2.5 g</span> was dissolved in <span class="inline-math">80 g</span> of benzene. The depression in freezing point of benzene was found to be <span class="inline-math">0.45 K</span>. Calculate the molar mass of the solid substance. *(Given: <span class="inline-math">K_{f</span> for benzene <span class="inline-math">= 5.12 K kg mol^{-1</span>)* — **[1 Mark]**</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) According to Raoult's law, adding a non-volatile solute lowers the vapour pressure of the solution. Since the solid phase and liquid phase are in dynamic equilibrium at the freezing point, the lower vapour pressure of the solution becomes equal to that of the solid solvent at a lower temperature compared to the pure solvent, resulting in a decrease in the freezing point. <span class="mark-allocation">2 Marks</span></li>
+<li>(b) **Derivation:**</li>
+<p>1. Depression in freezing point (<span class="inline-math">&Delta; T_{f</span>) for dilute solutions is directly proportional to molality (<span class="inline-math">m</span>):</p>
+<p><div class="display-math">\Delta T_{\text{f}} \propto \text{m} \implies \Delta T_{\text{f}} = K_{\text{f}}\text{m}</div> — **[1/2 Mark]**</p>
+<p>2. Molality (<span class="inline-math">m</span>) is defined as the number of moles of solute (<span class="inline-math">w<sub>2</sub>/M<sub>2</sub></span>) per kilogram of solvent (<span class="inline-math">w<sub>1</sub>/1000</span>):</p>
+<p><div class="display-math">\text{m} = \frac{w_2 / M_2}{w_1 / 1000} = \frac{w_2 \times 1000}{M_2 \times w_1}</div> — **[1/2 Mark]**</p>
+<p>3. Substituting <span class="inline-math">m</span> into the proportionality equation:</p>
+<p><div class="display-math">\Delta T_{\text{f}} = \frac{K_{\text{f}} \times w_2 \times 1000}{M_2 \times w_1}</div> — **[1/2 Mark]**</p>
+<p>4. Rearranging for molar mass (<span class="inline-math">M<sub>2</sub></span>):</p>
+<p><div class="display-math">M_2 = \frac{K_{\text{f}} \times w_2 \times 1000}{\Delta T_{\text{f}} \times w_1}</div> — **[1/2 Mark]**</p>
+<li>(c) **Calculation:**</li>
+<p><div class="display-math">M_2 = \frac{5.12\text{ K kg mol}^{-1} \times 2.5\text{ g} \times 1000\text{ g kg}^{-1}}{0.45\text{ K} \times 80\text{ g}} = \frac{12800}{36} = 355.56\text{ g mol}^{-1}</div> — **[1 Mark]**</p>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Combines conceptual reasoning, mathematical derivation of a key colligative formula, and numerical calculation required for senior secondary board exams.</div>
+</div>
+<div class="topic-section-header"><h2>Section: 1.6.4 Osmosis and Osmotic Pressure (Syllabus Weight: 10.34% | Allocated Quota: 2)</h2></div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ19</span>
+                    <div class="q-badges"><span class="badge badge-cat">Short Answer (SA)</span> <span class="badge badge-marks">3 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Isotonic, hypertonic, and hypotonic solutions and their effects on biological cells.</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) What is meant by isotonic solutions? Give one biological example.  *(1 Mark)*</p>
+<p>(b) Predict what will happen to red blood cells (RBCs) when they are placed in a solution containing more than <span class="inline-math">0.9\%</span> (mass/volume) sodium chloride (hypertonic solution). Give a reason for your prediction.  *(2 Marks)*</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) **Isotonic solutions Definition:** Two solutions having the same osmotic pressure at a given temperature.  <span class="mark-allocation">1/2 Mark</span></li>
+<li>**Example:** Fluid inside blood cells is isotonic with <span class="inline-math">0.9\%</span> (mass/volume) <span class="inline-math">NaCl</span> solution (normal saline).  <span class="mark-allocation">1/2 Mark</span></li>
+<li>(b) **Prediction:** Red blood cells will shrink / collapse (crenation).  — **[1] Mark]**</li>
+<li>**Reason:** In a hypertonic solution (concentration <span class="inline-math">> 0.9\%  w/v</span>), water flows out of the cells into the surrounding solution through the semipermeable cell membrane via osmosis due to the concentration gradient.  — **[1] Mark]**</li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> This is a high-frequency board concept linking colligative properties directly to real-world biological phenomena.</div>
+</div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="q-number">QQ20</span>
+                    <div class="q-badges"><span class="badge badge-cat">Long Answer (LA) / Derivation</span> <span class="badge badge-marks">5 Marks</span> <span class="badge tier-1">🔴 Tier 1</span></div>
+                </div>
+            
+<div class="q-field"><span class="field-label">Target Concept:</span> <span class="concept-text">Osmotic pressure relation with molar mass and its experimental superiority over other colligative properties.</span></div>
+<div class="q-field"><span class="field-label">Question:</span></div><div class="question-body">
+<p>(a) Define osmotic pressure. Why is osmotic pressure considered a colligative property?  *(2 Marks)*</p>
+<p>(b) Starting from the experimental observation that osmotic pressure (<span class="inline-math">&Pi;</span>) is proportional to the molarity (<span class="inline-math">C</span>) of the solution at temperature <span class="inline-math">T</span>, derive the expression for calculating the molar mass (<span class="inline-math">M<sub>2</sub></span>) of a non-volatile solute. State the terms involved in the final expression.  *(3 Marks)*</p>
+</div><div class="marking-scheme-box"><div class="marking-title">Marking Scheme & Detailed Solution:</div><ul class="marking-list">
+<li>(a) **Definition:** The excess pressure that must be applied to a solution to prevent osmosis (i.e., to stop the passage of solvent molecules through a semipermeable membrane into the solution).  <span class="mark-allocation">1 Mark</span></li>
+<li>**Colligative Property Reason:** It depends on the number of solute particles (moles) present in the solution and not on their chemical identity.  <span class="mark-allocation">1 Mark</span></li>
+<li>(b) **Derivation:**</li>
+<li>Experimentally, <span class="inline-math">&Pi; &prop; C &times; T</span>, where <span class="inline-math">C</span> is molarity.</li>
+<p><div class="display-math">\Pi = C R T</div>  — **[1/2 Mark]**</p>
+<li>Since molarity <span class="inline-math">C = \frac{n<sub>2</sub>{V</span> (where <span class="inline-math">V</span> is volume in litres and <span class="inline-math">n<sub>2</sub></span> is moles of solute), we substitute <span class="inline-math">C</span>:</li>
+<p><div class="display-math">\Pi = \left(\frac{n_2}{V}\right) R T \implies \Pi V = n_2 R T</div>  — **[1 Mark]**</p>
+<li>Substituting <span class="inline-math">n<sub>2</sub> = \frac{w<sub>2</sub>{M<sub>2</sub></span> (where <span class="inline-math">w<sub>2</sub></span> is mass of solute in grams and <span class="inline-math">M<sub>2</sub></span> is molar mass):</li>
+<p><div class="display-math">\Pi V = \frac{w_2 R T}{M_2} \implies M_2 = \frac{w_2 R T}{\Pi V}</div>  — **[1 Mark]**</p>
+<li>**Nomenclature/Terms:** <span class="inline-math">M<sub>2</sub> = molar mass of solute</span>, <span class="inline-math">w<sub>2</sub> = given mass of solute</span>, <span class="inline-math">R = gas constant</span>, <span class="inline-math">T = temperature in Kelvin</span>, <span class="inline-math">&Pi; = osmotic pressure</span>, <span class="inline-math">V = volume of solution in litres</span>.  <span class="mark-allocation">1/2 Mark</span></li>
+</ul></div><div class="why-tier"><span class="field-label">Why this Tier:</span> Standard core board derivation that tests foundational theoretical understanding and mathematical manipulation of colligative properties.</div>
+</div>
+
+</body>
+</html>
